@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>01-CounterSample </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="01-CounterSample ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../../assets/Logo.png" height="46" width="46" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="01-countersample">01-CounterSample</h1>
+
+<p>This sample shows how to take the standard Visual Studio Blazor template and add Blazor-State.</p>
+<p><a href="http://blazor-state-sample-01.azurewebsites.net/">Run this sample online</a></p>
+<h3 id="creating-the-project">Creating the project</h3>
+<ol>
+<li>Create a new Blazor website using the <code>Hosted Blazor</code> template in Visual Studio
+(See the <a href="(https://blazor.net/docs/get-started.html)">Getting Started Guide</a> for details on how to use Blazor).</li>
+<li>Name the project <code>CounterSample</code>.</li>
+<li>Add the Blazor-State NuGet package to <code>CounterSample.Client</code> project.
+Note that you might have to tick the checkbox <code>Include prerelease</code>.</li>
+</ol>
+<h3 id="configure-the-services">Configure the services</h3>
+<ol>
+<li>In the <code>CounterSample.Client</code> project in the <code>Program.cs</code> file.</li>
+<li>Add <code>using BlazorState;</code></li>
+<li>Change the serviceProvider initialization code to add Blazor-State</li>
+</ol>
+<pre><code>  var serviceProvider = new BrowserServiceProvider(services =&gt;
+  {
+    services.AddBlazorState(options =&gt;
+    {
+      options.UseReduxDevToolsBehavior = false; // See other demo on using this
+      options.UseRouting = false; // See other demo on routing.
+      options.UseCloneStateBehavior = true; // The basics.
+    });
+  });
+</code></pre>
+<h3 id="file-strucutre-of-feature-state-request-handler">File Strucutre of: Feature, State, Request, Handler</h3>
+<p>With the Mediator Pattern for each Request there is an associated Handler
+and possibly other items like a Validator, Mapper etc..
+The Request, Handler and associated items are what I call a <code>Feature</code>.<br>
+I organize the Features by the State they act upon.</p>
+<ol>
+<li>In the Client project add a folder named <code>Features</code>.</li>
+</ol>
+<h3 id="adding-state">Adding state</h3>
+<ol>
+<li>In the <code>Features</code> folder add a folder named <code>Counter</code>.</li>
+<li>Within the <code>Counter</code> folder create a class file named <code>CounterState.cs</code>.</li>
+<li>Add <code>using BlazorState;</code></li>
+</ol>
+<p>Your class should:</p>
+<ul>
+<li>descend from <code>State&lt;CounterState&gt;</code>:</li>
+<li>override the <code>Clone()</code> method.
+<em>Blazor-State will <code>Clone</code> the <code>State</code> prior to the sending of any <code>Request</code>.
+Thus the <code>Handler</code> of the request can modify state as desired.</em></li>
+<li>override the <code>Initialize()</code> method. To set the initial values of the state.</li>
+</ul>
+<ol start="4">
+<li>Enter the code as follows:</li>
+</ol>
+<pre><code>public class CounterState : State&lt;CounterState&gt;
+  {
+    /// &lt;summary&gt;
+    /// Parameterless constructor needed for deserialization.
+    /// &lt;/summary&gt;
+    public CounterState() { } // needed for serialization
+
+    /// &lt;summary&gt;
+    /// Utilize a constructor for cloning
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;aState&quot;&gt;&lt;/param&gt;
+    protected CounterState(CounterState aState) : this()
+    {
+      Count = aState.Count;
+    }
+
+    public int Count { get; set; }
+
+    public override object Clone() =&gt; new CounterState(this);
+
+    /// &lt;summary&gt;
+    /// Set the initial state
+    /// &lt;/summary&gt;
+    protected override void Initialize()
+    {
+      Count = 3;
+    }
+  }
+</code></pre>
+<h3 id="seperation-of-html-and-c">Seperation of HTML and C#.</h3>
+<p>I like to keep my C# code separated from the HTML and yet collocated.
+So instead of a @functions sections for each .cshtml file we
+will have an associated .cshtml.cs. file and Visual Studio will automatically group these together.
+This is not required but I find it easier to reason about.</p>
+<p><em>Currently this requires the page inherting from the associated Model.<br>
+But I belive this will become a normal feature of Blazor, similar to &quot;Code behind.&quot;</em></p>
+<h3 id="create-the-countermodel-for-the-counter-page">Create the <code>CounterModel</code> for the <code>Counter</code> Page.</h3>
+<ol>
+<li>Create a new file named <code>Counter.cshtml.cs</code>
+CounterModel should:</li>
+</ol>
+<ul>
+<li>inherit from BlazorComponent</li>
+<li>implement IBlazorStateComponent
+optionally:</li>
+<li>add property to access State from the store.
+as follows:</li>
+</ul>
+<pre><code>  public class CounterModel : BlazorComponent, IBlazorStateComponent
+  {
+    public CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
+
+    [Inject] public IMediator Mediator { get; set; }
+    [Inject] public IStore Store { get; set; }
+  }
+</code></pre>
+<h3 id="displaying-state-in-the-user-interface-without-using-a-base-component">Displaying state in the user interface without using a base component.</h3>
+<ol>
+<li>Edit <code>Pages\Counter.cshtml</code> and add the following <code>inherits</code> clause.</li>
+</ol>
+<pre><code>@inherits CounterModel
+</code></pre>
+<ol start="2">
+<li>Change the HTML that displays the value of the counter to <code>@CounterState.Count</code>.</li>
+<li>Remove the @functions sections.</li>
+</ol>
+<h3 id="sending-requests-that-will-mutate-the-state">Sending requests that will mutate the state</h3>
+<p>Changes to state are done by sending a Request through the mediator pipeline.
+The Request is then Handled by a Handler which can freely mutate the state.
+State should NOT be mutated by the presentation layer (.cshtml) or the associated Model.</p>
+<h3 id="create-request">Create Request</h3>
+<ol>
+<li>In the Client project's <code>Featuers\Counter</code> folder add a new folder named <code>IncrementCount</code>.</li>
+<li>In this folder create a class named <code>IncrementCountRequest.cs</code>.</li>
+</ol>
+<ul>
+<li>The class should inherit from IRequest
+as follows:</li>
+</ul>
+<pre><code>namespace CounterSample.Client.Features.Counter.IncrementCount
+{
+  using MediatR;
+
+  public class IncrementCountRequest : IRequest
+  {
+    public int Amount { get; set; }
+  }
+}
+</code></pre>
+<h3 id="sending-the-request-to-the-mediator-pipeline">Sending the request to the mediator pipeline</h3>
+<p>To Send the request to the Pipeline when the user clicks the <code>Click me</code> button.</p>
+<p>Add the following method <code>Pages\Counter.cshtml.cs</code> file.</p>
+<pre><code>public void IncrementCount()
+    {
+      var incrementCountRequest = new IncrementCountRequest { Amount = 3 };
+      Mediator.Send(incrementCountRequest);
+    }
+</code></pre>
+<h3 id="handling-the-request">Handling the request</h3>
+<p>The Handler is where we actually mutate the state to fulfill the Request.</p>
+<ol>
+<li>In the <code>Features\Counter\IncrementCounter</code> folder create a new file named
+<code>IncrementCountHandler.cs</code></li>
+</ol>
+<p>The Handler should:</p>
+<ul>
+<li>Inherit from BlazorState.Handlers.RequestHandler.</li>
+<li>The generic parameters are the RequestType and State.</li>
+<li>Override the Handle method
+as follows:</li>
+</ul>
+<pre><code>  public class IncrementCountHandler : Handlers.RequestHandler&lt;IncrementCountRequest, CounterState&gt;
+  {
+    public IncrementCountHandler(IStore aStore) : base(aStore) { }
+
+    public CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
+
+    public override Task&lt;CounterState&gt; Handle(IncrementCountRequest request, CancellationToken cancellationToken)
+    {
+      CounterState.Count += request.Amount;
+      return Task.FromResult(CounterState);
+    }
+  }
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/dev/samples/01-CounterSample/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

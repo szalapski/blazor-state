@@ -1,0 +1,1382 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/agent/_work/2/s/documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "../assets/Logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "assets/Logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../assets/Logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "assets/Logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/01-CounterSample/CounterSample.Client/wwwroot/css/open-iconic/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/01-CounterSample/CounterSample.Client/wwwroot/css/open-iconic/README.html",
+          "hash": "x/kvHp+FbRmiR+go/Kv7aQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/01-CounterSample/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/01-CounterSample/README.html",
+          "hash": "LyduGhktH1v8vI/IVT2hcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/BlazorState.Client/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/BlazorState.Client/README.html",
+          "hash": "Q8xSlJj6VK4TY/QOgJ1PsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/BlazorState.Client/wwwroot/css/open-iconic/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/BlazorState.Client/wwwroot/css/open-iconic/README.html",
+          "hash": "wjrjTxgNQ+2APDWCbV2A5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html",
+          "hash": "Q2ii8i9dJ2ZV/4xK6y0Q5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html",
+          "hash": "fv0Uy2f0Fw693nyYe08xcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.DispatchRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.DispatchRequest-1.html",
+          "hash": "kHUunxnyR2q5pzwN8fs5oA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.CommitHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.CommitHandler.html",
+          "hash": "6i3OU748QRERtqcssBLKGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.CommitRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.CommitRequest.html",
+          "hash": "E+amJQJj8e8i0p6aYtyzxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Commit.html",
+          "hash": "fdDtvmWit/nv0lfc+qlE6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.JumpToStateHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.JumpToStateHandler.html",
+          "hash": "q/+Uyyxc4lanAvkV3RsFPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.JumpToStateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.JumpToStateRequest.html",
+          "hash": "uYWta6OEjrBcFqhmwj1BJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.JumpToState.html",
+          "hash": "MpWkC4mCnNw/JKKObT3ugw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.StartHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.StartHandler.html",
+          "hash": "ftBWAGgcyDQBukBrlARK6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.StartRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.StartRequest.html",
+          "hash": "v3P+iZFVI0Xqvk53RHlVYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.Features.Start.html",
+          "hash": "AVQZnLoCQqk1QOH9pw5vog=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html",
+          "hash": "ZGDwCkPr4JiiKtSjb33p/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsBehavior-2.html",
+          "hash": "JRVfOiAjXR/eZLPo3T1PzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsComponent.html",
+          "hash": "Dn2Xbbrhf4MtMJCn1lFBgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html",
+          "hash": "+AU7duT9bH6H4lIeCMIENg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.html",
+          "hash": "/W1yOAAFcpZsY4aqLD8BLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.State.CloneStateBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.State.CloneStateBehavior-2.html",
+          "hash": "nAY7D3krW9xGxB/2tNMPtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Behaviors.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Behaviors.State.html",
+          "hash": "ZtiarJGtsssw/7B6ynNAfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.BlazorStateComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.BlazorStateComponent.html",
+          "hash": "0DaLAglIHRBkgTzuuikZFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Behaviors.MyBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Behaviors.MyBehavior-2.html",
+          "hash": "PEDt1m52F1SHJBhEXWJB7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Behaviors.html",
+          "hash": "zI3/CEnHbs9XR7ZLbd3NzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Components.BaseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Components.BaseComponent.html",
+          "hash": "X9+j/CBoJ5/cbEModqgvuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Components.html",
+          "hash": "PsyrLG1KaSbnCbdt7HtsCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Base.BaseHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Base.BaseHandler-2.html",
+          "hash": "q8QbQ6s+/mE83ep33fTLSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Base.html",
+          "hash": "wmv7fJpkZ+z+kJZ/U6ffDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.Handler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.Handler.html",
+          "hash": "jBLKnpT7QlvZEWOPQwirlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.IncrementCountHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.IncrementCountHandler.html",
+          "hash": "XEZVqWx2wpM5Eje33C3rpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.Request.html",
+          "hash": "6wFIZxmesTkOLfAVLsXAMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.Root.IncrementCount.html",
+          "hash": "aNvtWJ2gxFjbAIkUnd882Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.AjaxResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.AjaxResponse.html",
+          "hash": "eCZKYsk+D3UyZcvEuCz24w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.Handler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.Handler.html",
+          "hash": "fCawpZ3sfLQUBRyfu/j4wg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.Request.html",
+          "hash": "VoKlBsAdBOQeYUhVx25IaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Features.WeatherForecast.Fetch.html",
+          "hash": "Lf+JrZx0KqSlJU8KcBN3fQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.Program.html",
+          "hash": "donUqrYpe1th4Zo4kziJEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.State.ApplicationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.State.ApplicationState.html",
+          "hash": "K+f4WkxcZgTry3fMzfoC0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.State.CounterState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.State.CounterState.html",
+          "hash": "ACCTnernNFvHmw7SdXYIpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.State.WeatherForecastsState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.State.WeatherForecastsState.html",
+          "hash": "wPLB6uYumODY/SZ5yfAFeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.State.html",
+          "hash": "Tg9ZYNxsvZDIZ8fh8BDA7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Client.html",
+          "hash": "2dbKj+dNw9hXjKwc8yzgjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.CloneStateRequestHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.CloneStateRequestHandler-2.html",
+          "hash": "KPsKGBi0HPtOq8q5ea1uVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.BaseJsonRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.BaseJsonRequest.html",
+          "hash": "yMSc8/C0tqe9+WayMReRRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInstanceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInstanceHelper.html",
+          "hash": "7WArdzDGa9bSFsvz72YN2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInteropComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInteropComponent.html",
+          "hash": "HsAxLdNcOpHwAOZh98XwLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequest-1.html",
+          "hash": "Lr/mQW620Qd4Uhc6bzOGNw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html",
+          "hash": "FpQkEJjN4QXtE223NvZ83A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.JavaScriptInterop.html",
+          "hash": "JXTKMArzBnmnLk76fbRMbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.ChangeRouteHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.ChangeRouteHandler.html",
+          "hash": "yzp17J0rXS45Ke0OVvwyfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.ChangeRouteRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.ChangeRouteRequest.html",
+          "hash": "e7RES5imEDkeod6RV4ZLag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.InitializeRouteHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.InitializeRouteHandler.html",
+          "hash": "YSQsJ4kf1dlsk7Hy3LHsxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.InitializeRouteRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.InitializeRouteRequest.html",
+          "hash": "Z650phac0ka9n5GT9diDAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.RouteManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.RouteManager.html",
+          "hash": "Fk1RWpPQRA/KOCZ/bEhErA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.RouteManagerComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.RouteManagerComponent.html",
+          "hash": "hqUBtKRcfjqsdRvVIIPksQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.RouteState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.RouteState.html",
+          "hash": "j6WctjHpjZMqfFzBljUn+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.html",
+          "hash": "W1reGSGXRBHUChPR68vhuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.IBlazorStateComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.IBlazorStateComponent.html",
+          "hash": "HQNujDAXlyeudTVLKixc8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.IState-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.IState-1.html",
+          "hash": "fppM4Vng6stTJeUWaIZW4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.IState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.IState.html",
+          "hash": "Y4cX6etutZdO7m3rKei9cg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.IStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.IStore.html",
+          "hash": "UP84AzCj0Dw4DindUpQZ6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Options.html",
+          "hash": "MHNDcYMM4jSRcDj85JTi2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.RequestHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.RequestHandler-2.html",
+          "hash": "BzS1RsuQp8a23knI9hJeHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.BaseController-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.BaseController-2.html",
+          "hash": "CCFasMalhAnwtsDwaaBnvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.BaseError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.BaseError.html",
+          "hash": "mmxKYwCsE1PIA6IxByxJjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.BaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.BaseException.html",
+          "hash": "/B//JWDielEDFtrRenhrSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.BaseRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.BaseRequest.html",
+          "hash": "5jCvKxkbWtC+R1kNUG97pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.BaseResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.BaseResponse.html",
+          "hash": "RV/GEmpklsG6DxHlhdqYAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.Base.html",
+          "hash": "hMElzyue8MLYftYuylwWdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.WeatherForecast.Controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.WeatherForecast.Controller.html",
+          "hash": "VQZqee+6bqbm3kRaF4u7sQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.WeatherForecast.Handler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.WeatherForecast.Handler.html",
+          "hash": "uRAkr6IPu9ayOI7BtzlsLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.WeatherForecast.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.WeatherForecast.Request.html",
+          "hash": "I7Nc5OphCRGz/rwj6jBvWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.WeatherForecast.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.WeatherForecast.Response.html",
+          "hash": "4IabwXo9qoXJCDfIEWDkmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Features.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Features.WeatherForecast.html",
+          "hash": "hK8t77DYDyet6DUUQEEqSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Program.html",
+          "hash": "pPZrK9HQP4zChi8qKMp8sQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.Startup.html",
+          "hash": "AxPwXIHarWY0judh3kv0Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Server.html",
+          "hash": "3NobKNjkiUnudgVqnY+Kmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.ServiceCollectionExtensions.html",
+          "hash": "KgoeXlZvhK9+J8Ss++aDeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Shared.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Shared.WeatherForecast.html",
+          "hash": "2Lz/zcysJMFhxN45+hsGpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Shared.html",
+          "hash": "FZlOz2q1Iu5OU0qI6ATJ3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.State-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.State-1.html",
+          "hash": "ysBO6uCTd+qPCXEEf27bOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Store.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Store.html",
+          "hash": "MKgHUBMieZZLLDerqzT7hQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.html",
+          "hash": "qkTplbtCtQjyeeUuk9xDBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Features.Counter.IncrementCount.IncrementCountRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Features.Counter.IncrementCount.IncrementCountRequest.html",
+          "hash": "CCD79Gbb4XWmvRnS76zKkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Features.Counter.IncrementCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Features.Counter.IncrementCount.html",
+          "hash": "YO0fn7aeCoiZADS8ymEKoQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Features.Counter.State.CounterState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Features.Counter.State.CounterState.html",
+          "hash": "n+JymlBNIRW44Wq2CnBCHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Features.Counter.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Features.Counter.State.html",
+          "hash": "eVVFdx+NcYBS7KIN7TBcpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Pages.CounterModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Pages.CounterModel.html",
+          "hash": "NcwHTCBcs/27a72fl0Fa4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Pages.html",
+          "hash": "nf9MqVR6OCHvvvKMNzC0mA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.Program.html",
+          "hash": "Hqo+nCt4JF9cefYRR0NBYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Client.html",
+          "hash": "mhlBIDryoWR1xYBp9lA+8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Server.Controllers.SampleDataController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Server.Controllers.SampleDataController.html",
+          "hash": "qxVLn5z2G+tXwtNIHR/48Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Server.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Server.Controllers.html",
+          "hash": "V2OvYCEfi7xWpTN8PdZuwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Server.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Server.Program.html",
+          "hash": "WJ9FDVHAs1r2mD0RIZcdMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Server.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Server.Startup.html",
+          "hash": "eeBTFd4f+Gvm8rhKawObrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Server.html",
+          "hash": "NC3954GwbTvSDqKRmjU80Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Shared.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Shared.WeatherForecast.html",
+          "hash": "Yh2ooJ9wM3YCrBIumsYxtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CounterSample.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CounterSample.Shared.html",
+          "hash": "8GPeUoRFI1kj84Cbh7xAPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "k71zXSt5ZmQA3up8YuswpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "tsP2xsB3PbF0xdDwK2vHmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Details1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Details1.html",
+          "hash": "y+YAEtA9sU3Eb/S/ExE5Yg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Details2.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Details2.html",
+          "hash": "ohkcyUeG8W98kEBl79i49A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/GettingStarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/GettingStarted.html",
+          "hash": "Q1+/o9oWE5jPAGOVK5U9Rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/README.html",
+          "hash": "rkSRVoUntfrMSN0d/O3RLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html",
+          "hash": "NV3H6Lu6VlsgLVjxOMyzTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "/YZQu2rtRUdnYvZJMVmtgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "pYPjN/0jKLB8681Q5YcI3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
