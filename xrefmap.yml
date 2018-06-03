@@ -2692,6 +2692,12 @@ references:
   isSpec: "True"
   fullName: BlazorState.Store.SetState
   nameWithType: Store.SetState
+- uid: BlazorStateSample:01:README.md
+  name: Blazor-State Sample Application Part 01
+  href: samples/01-CounterSample/README.html
+- uid: BlazorStateSample:Part2.md
+  name: Blazor-State Sample Application Part 02
+  href: samples/01-CounterSample/Part2.html
 - uid: CounterSample.Client
   name: CounterSample.Client
   href: api/CounterSample.Client.html
