@@ -783,9 +783,9 @@ references:
   fullName.vb: BlazorState.State(Of TState).Initialize
   nameWithType: State<TState>.Initialize
   nameWithType.vb: State(Of TState).Initialize
-- uid: BlazorStateSample:01:README.md
-  name: Blazor-State Sample Application Part 01
-  href: samples/BlazorStateSample/README.html
 - uid: BlazorStateSample:Part2.md
   name: Blazor-State Sample Application Part 02
   href: samples/BlazorStateSample/Part2.html
+- uid: BlazorStateSample:README.md
+  name: Blazor-State Sample Application Part 01
+  href: samples/BlazorStateSample/README.html
