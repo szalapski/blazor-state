@@ -62,9 +62,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="blazor-state">Blazor-State</h1>
 
-<p><a href="https://github.com/TimeWarpEngineering/blazor-state">Project Site</a></p>
-<p>Blazor-State is a client side pipeline architecture utilizing MediatR with plugin behaviors.<br>
-If you are familiar with
+<p>Blazor-State is a client side pipeline architecture utilizing MediatR with plugin behaviors.</p>
+<h2 id="github-site"><a href="https://github.com/TimeWarpEngineering/blazor-state">GitHub Site</a></h2>
+<p>If you are familiar with
 <a href="https://github.com/jbogard/MediatR%5D">MediatR</a>,
 <a href="https://redux.js.org/">Redux</a>,
 or the <a href="https://en.wikipedia.org/wiki/Command_pattern">Command Pattern</a>
@@ -74,7 +74,7 @@ You can pick and choose which behaviors you would like to use or even write your
 <h2 id="installation">Installation</h2>
 <p>Blazor-State is available as a <a href="https://www.nuget.org/packages/Blazor-State/">Nuget Package</a></p>
 <h2 id="getting-started">Getting Started</h2>
-<p>The easiest way to get started is to down load the repository and take a look at the <a class="xref" href="samples/BlazorStateSample/README.html">sample</a> project.</p>
+<p>The easiest way to get started is to follow the <a class="xref" href="samples/BlazorStateSample/README.html">tutorial</a>.</p>
 <h2 id="architecture">Architecture</h2>
 <p>Blazor-State Implements a single <code>Store</code> with a collection of <code>State</code>s.
 The MediatR pipeline allows for easy integration
@@ -115,13 +115,13 @@ Given we are using MediatR will use the names associated with it but list other 
 <h3 id="signalsactionsrequestscommands">Signals/Actions/<strong>Requests</strong>/Commands/</h3>
 <p>In Redux they call them &quot;Action&quot;.<br>
 In UML they are &quot;Signal&quot;.<br>
-In Command Pattern they are &quot;Command&quot;
+In Command Pattern they are &quot;Command&quot;<br>
 In MediatR they are <code>Request</code></p>
 <h3 id="reducerhandlerexecutor">Reducer/<strong>Handler</strong>/Executor</h3>
-<p>This the code that processes the <code>Request</code> and returns the <code>Response</code>.</p>
+<p>This is the code that processes the <code>Request</code> and returns the <code>Response</code>.</p>
 <p>In Redux they call them &quot;Reducer&quot;.
-(State in State out doesn't reduce anything but they still call them that)
-In Command Pattern we call them &quot;Executor&quot;.
+(State in, State out, doesn't reduce anything yet they still call them that)<br>
+In Command Pattern we call them &quot;Executor&quot;.<br>
 In MediatR they are <code>Handler</code>.</p>
 <h3 id="feature">Feature</h3>
 <p>A Feature is the collection of the code needed to implement a
@@ -145,7 +145,7 @@ As they are processed via the pipeline the same.
 Thus, async calls to fetch data, send emails, or just update local state
 are implemented in the same manner. Although the developer should be aware that Handlers have side effects and
 if the developer chose they could mark the Requests as such. i.e. IRequestWithSideEffect</p>
-<h2 id="acknowlegements">Acknowlegements</h2>
+<h2 id="acknowledgements">Acknowledgements</h2>
 <p>Jimmy Bogard (MediatR). Jimmy is an amazing developer and a knowledge sharer.<br>
 Through his course at <a href="https://11xengineering.com/">https://11xengineering.com/</a> ,
 his many blog posts on Los Techies and now <a href="https://jimmybogard.com/">https://jimmybogard.com/</a>.
@@ -176,7 +176,7 @@ Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/dev/documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

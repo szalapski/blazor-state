@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "Qb4wN3NUg2DteAseOqzqKQ=="
+          "hash": "GkruUp8UqDKzivVTm38uYw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -43,10 +43,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorState.Client/README.html",
-          "hash": "26EMHY1J2b0acqAOUCOaaw=="
+          "hash": "ujz9GzUSFSBSllkUWJnvHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -104,6 +104,18 @@
         ".html": {
           "relative_path": "Todo.html",
           "hash": "b/N/xrwKt/KMFctxcy+bSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "acknowledgements.md",
+      "output": {
+        ".html": {
+          "relative_path": "acknowledgements.html",
+          "hash": "/YWGzC2jE+OoRPI7K4FluA=="
         }
       },
       "is_incremental": false,
@@ -411,14 +423,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "contributing.html",
+          "hash": "FrIGjrw6uT7r6rNzuWKisA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/overview.md",
       "output": {
         ".html": {
           "relative_path": "docs/overview.html",
-          "hash": "/SnCDFVtMXLTtZlWqKWptA=="
+          "hash": "LAR4DFDy5V/cCKELdHp7MQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -439,10 +463,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "V97q3xHhCu5g8S5yFWbuTw=="
+          "hash": "ScLaHUqdDk2SzpFxf774FQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -451,10 +475,10 @@
       "output": {
         ".html": {
           "relative_path": "terminology.html",
-          "hash": "lvNAxJ0Z25xtLOCVN3c72g=="
+          "hash": "RezKENBUIjiwVTCs89Liow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -482,17 +506,17 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
