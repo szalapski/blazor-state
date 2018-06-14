@@ -12,7 +12,7 @@
           "hash": "GkruUp8UqDKzivVTm38uYw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -46,7 +46,7 @@
           "hash": "ujz9GzUSFSBSllkUWJnvHw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -118,7 +118,7 @@
           "hash": "/YWGzC2jE+OoRPI7K4FluA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -427,7 +427,7 @@
       "output": {
         ".html": {
           "relative_path": "contributing.html",
-          "hash": "FrIGjrw6uT7r6rNzuWKisA=="
+          "hash": "6vQHawhcw7v6s7sRVH3exQ=="
         }
       },
       "is_incremental": false,
@@ -439,7 +439,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/overview.html",
-          "hash": "LAR4DFDy5V/cCKELdHp7MQ=="
+          "hash": "pNTInl1uXaZoF7o6bCSceg=="
         }
       },
       "is_incremental": false,
@@ -463,7 +463,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ScLaHUqdDk2SzpFxf774FQ=="
+          "hash": "71NejRfi5gLE6+4s1pormA=="
         }
       },
       "is_incremental": false,
@@ -478,7 +478,7 @@
           "hash": "RezKENBUIjiwVTCs89Liow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -501,6 +501,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -512,11 +517,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
