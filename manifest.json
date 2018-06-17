@@ -127,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html",
-          "hash": "CXcNnCF0I53nvmLoYDANog=="
+          "hash": "8/L3MrEVheroTbZrQ+63vQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -139,10 +139,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html",
-          "hash": "3LBrFZJmEj0k6uJnzBhMwQ=="
+          "hash": "/VQ7o4hCm83c43a0uxa1ww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -151,10 +151,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html",
-          "hash": "ELOYsgpvENMBnvHEOKKVJA=="
+          "hash": "iU7ractAPNFA7wAFkHSKHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -163,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsComponent.html",
-          "hash": "hX9E24Drb9QasS4z9dqLpA=="
+          "hash": "tri1H/jrl8NHZHJ1UyD/yw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -178,7 +178,7 @@
           "hash": "JqtX9yYlvGAvkAYvr7xtGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -187,10 +187,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.BlazorStateComponent.html",
-          "hash": "5KityVS4s8CKs8NNrN4gxA=="
+          "hash": "RXmcodVCW2Fw2hIw1GqoHQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -199,10 +199,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.BaseJsonRequest.html",
-          "hash": "8ndPRDBT6ZGohGeRk6oipA=="
+          "hash": "dDhbOBQ7koU3IdN+exrwgg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -211,10 +211,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInstanceHelper.html",
-          "hash": "j7w0j3S8qM9H1NBQvNUNpw=="
+          "hash": "ul0jP2iTjpSoo23NqWTwiA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -223,10 +223,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInteropComponent.html",
-          "hash": "BSxR3OtSARRxai0oyRl/Qg=="
+          "hash": "l/n4R9bggGzDcH5blP4GeQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,10 +235,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequest-1.html",
-          "hash": "etOWfoFmvYaJOE13G6ia+g=="
+          "hash": "AOJEXma2lderC/ozBrYHGg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -247,10 +247,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html",
-          "hash": "7LrjqiWtig3w/1DO5+i/jQ=="
+          "hash": "U9USRfVbwCzpnJeQnUsoOg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -262,7 +262,7 @@
           "hash": "48hsRRs5NqG5wzngwOY6+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -271,10 +271,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.Routing.RouteManagerComponent.html",
-          "hash": "bsoGujUnDWBknhPu2pcFbA=="
+          "hash": "sNFwWKkB23fZv3vHcumiEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -286,7 +286,7 @@
           "hash": "yqg1M9vtXPBGECAdyvQ+qA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -295,10 +295,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IBlazorStateComponent.html",
-          "hash": "eTtKOS3dT4cijSy9b6nIkQ=="
+          "hash": "vXrkL7Yj37pe3B0b/e/Vkw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -307,10 +307,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState-1.html",
-          "hash": "u2lmRPJxoESTiQicbPmvww=="
+          "hash": "8qpv5EYCHUOpVxJT9YUEUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -319,10 +319,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState.html",
-          "hash": "lCMM503gl4wuWuhAvBnTLw=="
+          "hash": "M+7i+Gw7HJu2tO/3TgcX7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -331,10 +331,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IStore.html",
-          "hash": "cCCc+s88yR/Rt0eTm2MQ0w=="
+          "hash": "7kaFr4dpybivGt3R/KJzgA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -343,10 +343,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Options.html",
-          "hash": "dXPDDzGaU8fBvh/+XIGRVA=="
+          "hash": "vgpMo1CqoBVpkZ0TpXGwsw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -355,10 +355,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.RequestHandler-2.html",
-          "hash": "gqJLdEc+6P0cySEfZ7htFQ=="
+          "hash": "ES4Zhs8E2Y87QxXSCfqTVA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,10 +367,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.ServiceCollectionExtensions.html",
-          "hash": "vC65OI7xpRHS3L0oBg6/Gw=="
+          "hash": "Ya5ryPFj11jOEb48nCR9tA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -379,10 +379,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.State-1.html",
-          "hash": "ZoS2S0dm+OqRbNVZ7qOukw=="
+          "hash": "PBFalxAoEAaSWYWD0dlWxw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -394,7 +394,7 @@
           "hash": "8VGmAtXfd6spxdSDsyyJAA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -506,11 +506,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
