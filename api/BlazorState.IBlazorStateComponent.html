@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IBlazorStateComponent
    ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.37.2.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,8 @@
   
   <h1 id="BlazorState_IBlazorStateComponent" data-uid="BlazorState.IBlazorStateComponent" class="text-break">Interface IBlazorStateComponent
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Minimum implementation needed for BlazorState to function</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BlazorState.html">BlazorState</a></h6>
   <h6><strong>Assembly</strong>: BlazorState.dll</h6>
@@ -81,6 +82,14 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IBlazorStateComponent</code></pre>
   </div>
+  <h5 id="BlazorState_IBlazorStateComponent_examples"><strong>Examples</strong></h5>
+  <p>public class BlazorStateComponent : BlazorComponent,
+IBlazorStateComponent
+{
+[Inject] public IMediator Mediator { get; set; }
+[Inject] public IStore Store { get; set; }
+}</p>
+
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">

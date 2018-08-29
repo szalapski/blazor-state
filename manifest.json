@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/agent/_work/7/s/documentation",
+  "source_base_path": "C:/agent/_work/10/s/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "GkruUp8UqDKzivVTm38uYw=="
+          "hash": "D4vgAdIb1jR1rAEMR5EvAQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -39,14 +39,38 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "../samples/01-Sample/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/01-Sample/README.html",
+          "hash": "GugOTdDN9w4+mWufUuFfcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/01-Sample/Sample.Client/wwwroot/css/open-iconic/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/01-Sample/Sample.Client/wwwroot/css/open-iconic/README.html",
+          "hash": "jukXn63ROBtJe0y8kBQY3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../samples/BlazorState.Client/README.md",
       "output": {
         ".html": {
           "relative_path": "samples/BlazorState.Client/README.html",
-          "hash": "ujz9GzUSFSBSllkUWJnvHw=="
+          "hash": "XauhBeqkebsFp++dCn07HA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,10 +79,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorState.Client/wwwroot/css/open-iconic/README.html",
-          "hash": "Rni3M+AcjdXb3ZvTPdMngA=="
+          "hash": "NGRghr/82NdaTidXym0WgA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -67,10 +91,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/BlazorStateSample.Client/wwwroot/css/open-iconic/README.html",
-          "hash": "N2Krqx8PYk0sOiKzGbts7A=="
+          "hash": "xOr7OrVih3LyK2pdblWDPg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -79,10 +103,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/Part2.html",
-          "hash": "YCXKjOy83sXSbKwH17jl8w=="
+          "hash": "Qdknc5x/szNBcpMm0/B2kQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -91,10 +115,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/README.html",
-          "hash": "vsPs+o3KzRTDbFbXi4ruOQ=="
+          "hash": "ag4Cl0ABOAxV3u59hP2/ww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -103,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "Todo.html",
-          "hash": "b/N/xrwKt/KMFctxcy+bSg=="
+          "hash": "YLikRZlQahe28+oeSL/D+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,10 +139,10 @@
       "output": {
         ".html": {
           "relative_path": "acknowledgements.html",
-          "hash": "/YWGzC2jE+OoRPI7K4FluA=="
+          "hash": "BpoMvFAwb809erG0VxXFXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -127,7 +151,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html",
-          "hash": "8/L3MrEVheroTbZrQ+63vQ=="
+          "hash": "2qDOMWkTSUwR/M+xPRPUqQ=="
         }
       },
       "is_incremental": false,
@@ -139,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html",
-          "hash": "/VQ7o4hCm83c43a0uxa1ww=="
+          "hash": "QpogYdT5vNJX0X2AsweYTg=="
         }
       },
       "is_incremental": false,
@@ -151,7 +175,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html",
-          "hash": "iU7ractAPNFA7wAFkHSKHg=="
+          "hash": "tAjH5UvlU08aCdcyXYQqYQ=="
         }
       },
       "is_incremental": false,
@@ -159,11 +183,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsComponent.yml",
+      "source_relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsComponent.html",
-          "hash": "tri1H/jrl8NHZHJ1UyD/yw=="
+          "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html",
+          "hash": "g4wVgAu1W3T8WtfiHmfgLA=="
         }
       },
       "is_incremental": false,
@@ -175,7 +199,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.html",
-          "hash": "JqtX9yYlvGAvkAYvr7xtGA=="
+          "hash": "Q9hhmCUKdPgu5Fo6xqO4LQ=="
         }
       },
       "is_incremental": false,
@@ -187,7 +211,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.BlazorStateComponent.html",
-          "hash": "RXmcodVCW2Fw2hIw1GqoHQ=="
+          "hash": "ajS35vBVYX9QrkTMGU+ioQ=="
         }
       },
       "is_incremental": false,
@@ -199,31 +223,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.BaseJsonRequest.html",
-          "hash": "dDhbOBQ7koU3IdN+exrwgg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInstanceHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInstanceHelper.html",
-          "hash": "ul0jP2iTjpSoo23NqWTwiA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInteropComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazorState.Features.JavaScriptInterop.JavaScriptInteropComponent.html",
-          "hash": "l/n4R9bggGzDcH5blP4GeQ=="
+          "hash": "e+kPBvpLGP1j7KRALT/6Pw=="
         }
       },
       "is_incremental": false,
@@ -235,7 +235,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequest-1.html",
-          "hash": "AOJEXma2lderC/ozBrYHGg=="
+          "hash": "G0zkabZTtjDLFvJqRaPtvg=="
         }
       },
       "is_incremental": false,
@@ -247,7 +247,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html",
-          "hash": "U9USRfVbwCzpnJeQnUsoOg=="
+          "hash": "YcxUURQUptYZQqjfy/eniQ=="
         }
       },
       "is_incremental": false,
@@ -259,7 +259,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.html",
-          "hash": "48hsRRs5NqG5wzngwOY6+w=="
+          "hash": "NSpiImY4K6S6qv09syCA1Q=="
         }
       },
       "is_incremental": false,
@@ -267,11 +267,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazorState.Features.Routing.RouteManagerComponent.yml",
+      "source_relative_path": "api/BlazorState.Features.Routing.RouteManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazorState.Features.Routing.RouteManagerComponent.html",
-          "hash": "sNFwWKkB23fZv3vHcumiEg=="
+          "relative_path": "api/BlazorState.Features.Routing.RouteManager.html",
+          "hash": "H6hiMyYK845JXrzvSyDMug=="
         }
       },
       "is_incremental": false,
@@ -283,7 +283,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.Routing.html",
-          "hash": "yqg1M9vtXPBGECAdyvQ+qA=="
+          "hash": "oMHV0hcQz0khJTRhu0QOug=="
         }
       },
       "is_incremental": false,
@@ -295,7 +295,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IBlazorStateComponent.html",
-          "hash": "vXrkL7Yj37pe3B0b/e/Vkw=="
+          "hash": "DtZs7Xgsdx1Tmqw0QM4VRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.IReduxDevToolsStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.IReduxDevToolsStore.html",
+          "hash": "4AM5ZfdGMicd0jVy/Vdp4A=="
         }
       },
       "is_incremental": false,
@@ -307,7 +319,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState-1.html",
-          "hash": "8qpv5EYCHUOpVxJT9YUEUA=="
+          "hash": "NAamOWr2FBxwuztqE7BKdg=="
         }
       },
       "is_incremental": false,
@@ -319,7 +331,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState.html",
-          "hash": "M+7i+Gw7HJu2tO/3TgcX7w=="
+          "hash": "2R8PJfCybGn1exBOV7jYPA=="
         }
       },
       "is_incremental": false,
@@ -331,7 +343,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IStore.html",
-          "hash": "7kaFr4dpybivGt3R/KJzgA=="
+          "hash": "Qs/PS4XQyEv7jKlqGkgzMw=="
         }
       },
       "is_incremental": false,
@@ -343,7 +355,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Options.html",
-          "hash": "vgpMo1CqoBVpkZ0TpXGwsw=="
+          "hash": "OV2pTS0NTwGMPzAM6s1K6g=="
         }
       },
       "is_incremental": false,
@@ -355,7 +367,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.RequestHandler-2.html",
-          "hash": "ES4Zhs8E2Y87QxXSCfqTVA=="
+          "hash": "c9QuZYuj305tCKi4GNgh7w=="
         }
       },
       "is_incremental": false,
@@ -367,7 +379,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.ServiceCollectionExtensions.html",
-          "hash": "Ya5ryPFj11jOEb48nCR9tA=="
+          "hash": "etp01GZc+d5RYpldMY4Obg=="
         }
       },
       "is_incremental": false,
@@ -379,7 +391,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.State-1.html",
-          "hash": "PBFalxAoEAaSWYWD0dlWxw=="
+          "hash": "+qqiT3tl2sZB/HfhBNnDeQ=="
         }
       },
       "is_incremental": false,
@@ -391,7 +403,31 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.html",
-          "hash": "8VGmAtXfd6spxdSDsyyJAA=="
+          "hash": "q0fHRIcQaubtYp8TeCHkyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.CamelCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.CamelCase.html",
+          "hash": "Apsdok/NwcAWMmTY0QbZHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.html",
+          "hash": "2Q9IzpyP13yrA+kv/rV1rA=="
         }
       },
       "is_incremental": false,
@@ -403,10 +439,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "+P6PeW9sK7T6qB7+52g1VA=="
+          "hash": "HLX1qu7deMGsv3ZKjbxtuQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,7 +451,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rPoaPtg+kAvnK7xVqp0ZcQ=="
+          "hash": "iYIDT3lUU7cjdzKXu+T47A=="
         }
       },
       "is_incremental": false,
@@ -427,10 +463,34 @@
       "output": {
         ".html": {
           "relative_path": "contributing.html",
-          "hash": "6vQHawhcw7v6s7sRVH3exQ=="
+          "hash": "nPJfURQEZsedl1YdMvR9dw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/CodeBehind.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/CodeBehind.html",
+          "hash": "NwI6TVhEDvXeJrmzbhWz9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FileStructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FileStructure.html",
+          "hash": "FZFY3whZZ/PEhBjBmD6eSw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -439,10 +499,22 @@
       "output": {
         ".html": {
           "relative_path": "docs/overview.html",
-          "hash": "pNTInl1uXaZoF7o6bCSceg=="
+          "hash": "yOVXnJ6oWyTzHe51MM6OMg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/partialClasses.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/partialClasses.html",
+          "hash": "DAmc8FE1FvF8f5Hy3LpnSg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -451,7 +523,18 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "LqA3zQwmufBtlrMJLFW1/Q=="
+          "hash": "3msd9ib1dV2qfs0wbp+cYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/SampleAppDemo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/SampleAppDemo.gif"
         }
       },
       "is_incremental": false,
@@ -463,10 +546,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "71NejRfi5gLE6+4s1pormA=="
+          "hash": "3IVsbOXDuBTYhOKJUN6Z+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -475,10 +558,10 @@
       "output": {
         ".html": {
           "relative_path": "terminology.html",
-          "hash": "RezKENBUIjiwVTCs89Liow=="
+          "hash": "WyIIOF4cQZJHtzWhiGAt9g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -497,7 +580,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -506,25 +590,25 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}

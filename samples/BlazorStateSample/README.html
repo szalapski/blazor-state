@@ -8,14 +8,14 @@
     <title>Blazor-State Sample Application Part 01 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State Sample Application Part 01 ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.37.2.0">
     
     <link rel="shortcut icon" href="../../assets/Logo.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../../docs/toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     
     
@@ -57,14 +57,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
+        <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="BlazorStateSample:README.md">
 <h1 id="blazor-state-sample-application-part-01">Blazor-State Sample Application Part 01</h1>
@@ -77,7 +70,7 @@
 <h2 id="creating-the-project">Creating the project</h2>
 <ol>
 <li>Create a new Blazor website using the <code>Hosted Blazor</code> template in Visual Studio
-(See the [Blazor Getting Started Guide] for details on how to use Blazor).</li>
+(See the <a href="https://blazor.net/docs/get-started.html">Blazor Getting Started Guide</a> for details on how to use Blazor).</li>
 <li>Name the project <code>BlazorStateSample</code>.</li>
 <li>Add the Blazor-State NuGet package to <code>BlazorStateSample.Client</code> project.
 Note that you might have to check the <code>Include prerelease</code> checkbox.</li>
@@ -127,8 +120,8 @@ Thus the <code>Handler</code> of the request can modify state as desired.</em></
 <ol start="4">
 <li>Enter the code as follows:</li>
 </ol>
-<pre><code class="lang-csharp" name="CounterState">  
-public class CounterState : State&lt;CounterState&gt;
+<pre><code class="lang-csharp" name="CounterState">
+public partial class CounterState : State&lt;CounterState&gt;
 {
   /// &lt;summary&gt;
   /// Parameterless constructor needed for deserialization.
@@ -151,11 +144,9 @@ public class CounterState : State&lt;CounterState&gt;
   /// &lt;summary&gt;
   /// Set the initial state
   /// &lt;/summary&gt;
-  protected override void Initialize()
-  {
-    Count = 3;
-  }
+  protected override void Initialize() =&gt; Count = 3;
 }
+
 </code></pre><h2 id="seperation-of-html-and-c">Seperation of HTML and C#.</h2>
 <p>I like to keep my C# code separated from the HTML and yet co-located.
 Instead of a <code>@functions</code> sections for each .cshtml file we
@@ -221,7 +212,7 @@ as follows:</li>
 </ul>
 <pre><code class="lang-csharp" name="CounterState">namespace BlazorStateSample.Client.Features.Counter.IncrementCount
 {
-  using BlazorStateSample.Client.Features.Counter.State;
+  using BlazorStateSample.Client.Features.Counter;
   using MediatR;
 
   public class IncrementCountRequest : IRequest&lt;CounterState&gt;
@@ -258,7 +249,7 @@ as follows:</li>
   using System.Threading.Tasks;
   using BlazorState;
   using BlazorStateSample.Client.Features.Counter.IncrementCount;
-  using BlazorStateSample.Client.Features.Counter.State;
+  using BlazorStateSample.Client.Features.Counter;
 
   public class IncrementCountHandler : RequestHandler&lt;IncrementCountRequest, CounterState&gt;
   {
@@ -266,9 +257,9 @@ as follows:</li>
 
     public CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
 
-    public override Task&lt;CounterState&gt; Handle(IncrementCountRequest request, CancellationToken cancellationToken)
+    public override Task&lt;CounterState&gt; Handle(IncrementCountRequest aIncrementCountRequest, CancellationToken aCancellationToken)
     {
-      CounterState.Count += request.Amount;
+      CounterState.Count += aIncrementCountRequest.Amount;
       return Task.FromResult(CounterState);
     }
   }
@@ -284,7 +275,7 @@ as follows:</li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/dev/samples/BlazorStateSample/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/samples/BlazorStateSample/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
