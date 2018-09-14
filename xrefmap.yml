@@ -375,6 +375,86 @@ references:
   isSpec: "True"
   fullName: BlazorState.Features.Routing.RouteManager.RouteManager
   nameWithType: RouteManager.RouteManager
+- uid: BlazorState.Features.Routing.RouteState
+  name: RouteState
+  href: api/BlazorState.Features.Routing.RouteState.html
+  commentId: T:BlazorState.Features.Routing.RouteState
+  fullName: BlazorState.Features.Routing.RouteState
+  nameWithType: RouteState
+- uid: BlazorState.Features.Routing.RouteState.#ctor
+  name: RouteState()
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState__ctor
+  commentId: M:BlazorState.Features.Routing.RouteState.#ctor
+  fullName: BlazorState.Features.Routing.RouteState.RouteState()
+  nameWithType: RouteState.RouteState()
+- uid: BlazorState.Features.Routing.RouteState.#ctor(BlazorState.Features.Routing.RouteState)
+  name: RouteState(RouteState)
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState__ctor_BlazorState_Features_Routing_RouteState_
+  commentId: M:BlazorState.Features.Routing.RouteState.#ctor(BlazorState.Features.Routing.RouteState)
+  fullName: BlazorState.Features.Routing.RouteState.RouteState(BlazorState.Features.Routing.RouteState)
+  nameWithType: RouteState.RouteState(RouteState)
+- uid: BlazorState.Features.Routing.RouteState.#ctor*
+  name: RouteState
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState__ctor_
+  commentId: Overload:BlazorState.Features.Routing.RouteState.#ctor
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.RouteState.RouteState
+  nameWithType: RouteState.RouteState
+- uid: BlazorState.Features.Routing.RouteState.Clone
+  name: Clone()
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Clone
+  commentId: M:BlazorState.Features.Routing.RouteState.Clone
+  fullName: BlazorState.Features.Routing.RouteState.Clone()
+  nameWithType: RouteState.Clone()
+- uid: BlazorState.Features.Routing.RouteState.Clone*
+  name: Clone
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Clone_
+  commentId: Overload:BlazorState.Features.Routing.RouteState.Clone
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.RouteState.Clone
+  nameWithType: RouteState.Clone
+- uid: BlazorState.Features.Routing.RouteState.Hydrate(IDictionary{System.String,System.Object})
+  name: Hydrate(IDictionary<String, Object>)
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Hydrate_IDictionary_System_String_System_Object__
+  commentId: M:BlazorState.Features.Routing.RouteState.Hydrate(IDictionary{System.String,System.Object})
+  name.vb: Hydrate(IDictionary(Of String, Object))
+  fullName: BlazorState.Features.Routing.RouteState.Hydrate(IDictionary<System.String, System.Object>)
+  fullName.vb: BlazorState.Features.Routing.RouteState.Hydrate(IDictionary(Of System.String, System.Object))
+  nameWithType: RouteState.Hydrate(IDictionary<String, Object>)
+  nameWithType.vb: RouteState.Hydrate(IDictionary(Of String, Object))
+- uid: BlazorState.Features.Routing.RouteState.Hydrate*
+  name: Hydrate
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Hydrate_
+  commentId: Overload:BlazorState.Features.Routing.RouteState.Hydrate
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.RouteState.Hydrate
+  nameWithType: RouteState.Hydrate
+- uid: BlazorState.Features.Routing.RouteState.Initialize
+  name: Initialize()
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Initialize
+  commentId: M:BlazorState.Features.Routing.RouteState.Initialize
+  fullName: BlazorState.Features.Routing.RouteState.Initialize()
+  nameWithType: RouteState.Initialize()
+- uid: BlazorState.Features.Routing.RouteState.Initialize*
+  name: Initialize
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Initialize_
+  commentId: Overload:BlazorState.Features.Routing.RouteState.Initialize
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.RouteState.Initialize
+  nameWithType: RouteState.Initialize
+- uid: BlazorState.Features.Routing.RouteState.Route
+  name: Route
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Route
+  commentId: P:BlazorState.Features.Routing.RouteState.Route
+  fullName: BlazorState.Features.Routing.RouteState.Route
+  nameWithType: RouteState.Route
+- uid: BlazorState.Features.Routing.RouteState.Route*
+  name: Route
+  href: api/BlazorState.Features.Routing.RouteState.html#BlazorState_Features_Routing_RouteState_Route_
+  commentId: Overload:BlazorState.Features.Routing.RouteState.Route
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.RouteState.Route
+  nameWithType: RouteState.Route
 - uid: BlazorState.IBlazorStateComponent
   name: IBlazorStateComponent
   href: api/BlazorState.IBlazorStateComponent.html

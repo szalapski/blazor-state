@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "IYyp3ztdBRSMXPif2UitUg=="
+          "hash": "sirVLjm+sJEiUEf8B0GIyQ=="
         }
       },
       "is_incremental": false,
@@ -43,10 +43,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/01-Sample/README.html",
-          "hash": "GugOTdDN9w4+mWufUuFfcg=="
+          "hash": "I0uqKkwq1+TgP2X+qMrGug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,34 +55,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/01-Sample/Sample.Client/wwwroot/css/open-iconic/README.html",
-          "hash": "jukXn63ROBtJe0y8kBQY3w=="
+          "hash": "uMryvTvAgIUMe2y0EgUK6w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "../samples/BlazorState.Client/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "samples/BlazorState.Client/README.html",
-          "hash": "XauhBeqkebsFp++dCn07HA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "../samples/BlazorState.Client/wwwroot/css/open-iconic/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "samples/BlazorState.Client/wwwroot/css/open-iconic/README.html",
-          "hash": "NGRghr/82NdaTidXym0WgA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -91,10 +67,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/BlazorStateSample.Client/wwwroot/css/open-iconic/README.html",
-          "hash": "xOr7OrVih3LyK2pdblWDPg=="
+          "hash": "XQuh2Itkw0R1xal0U39alQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -103,10 +79,10 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/Part2.html",
-          "hash": "Qdknc5x/szNBcpMm0/B2kQ=="
+          "hash": "5A9buGPEvnjSvN5nXFSJZw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,10 +91,34 @@
       "output": {
         ".html": {
           "relative_path": "samples/BlazorStateSample/README.html",
-          "hash": "ag4Cl0ABOAxV3u59hP2/ww=="
+          "hash": "QKoLFKRSwO/QwGsp/X/OeA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/TimeWarpBlazor/BlazorState.Client/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/TimeWarpBlazor/BlazorState.Client/README.html",
+          "hash": "S7R9GvzED4Q35YACU0ipUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../samples/TimeWarpBlazor/BlazorState.Client/wwwroot/css/open-iconic/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "samples/TimeWarpBlazor/BlazorState.Client/wwwroot/css/open-iconic/README.html",
+          "hash": "XVU98tvlhbFYAEBoRZsrlw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -127,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "Todo.html",
-          "hash": "YLikRZlQahe28+oeSL/D+Q=="
+          "hash": "kRKiMlraiTPXFmVGpdHBvg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -139,10 +139,10 @@
       "output": {
         ".html": {
           "relative_path": "acknowledgements.html",
-          "hash": "BpoMvFAwb809erG0VxXFXA=="
+          "hash": "iO6Hu2y+pWaeYXXcYquOOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -151,10 +151,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html",
-          "hash": "2qDOMWkTSUwR/M+xPRPUqQ=="
+          "hash": "t4sbP3IwCGd8sfADS3jEzw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -163,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html",
-          "hash": "QpogYdT5vNJX0X2AsweYTg=="
+          "hash": "Y+/Kph2+MNIeCyQFy/rcGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -175,10 +175,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html",
-          "hash": "tAjH5UvlU08aCdcyXYQqYQ=="
+          "hash": "e5O1wqnnbtb3yC4aZpHuKw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -187,10 +187,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html",
-          "hash": "g4wVgAu1W3T8WtfiHmfgLA=="
+          "hash": "oU3+PSHhrHVXUlh5RZlIUQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -199,10 +199,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Behaviors.ReduxDevTools.html",
-          "hash": "Q9hhmCUKdPgu5Fo6xqO4LQ=="
+          "hash": "m7OCt7QOi4GkO542Fnvwpw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -211,10 +211,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.BlazorStateComponent.html",
-          "hash": "ajS35vBVYX9QrkTMGU+ioQ=="
+          "hash": "5fcaQ5fZ1ke6YyN5rWWigA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -223,10 +223,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.BaseJsonRequest.html",
-          "hash": "e+kPBvpLGP1j7KRALT/6Pw=="
+          "hash": "LMr8SsxC1FQVYvJ04SlD+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,10 +235,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequest-1.html",
-          "hash": "G0zkabZTtjDLFvJqRaPtvg=="
+          "hash": "/K9djrNamatyQYQ39PHaIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -247,10 +247,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html",
-          "hash": "YcxUURQUptYZQqjfy/eniQ=="
+          "hash": "v0bFBJWquuaaOpmc7UOv3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -259,10 +259,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.JavaScriptInterop.html",
-          "hash": "NSpiImY4K6S6qv09syCA1Q=="
+          "hash": "xalRUltEWHfep8NVMJjaMQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -271,10 +271,22 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.Routing.RouteManager.html",
-          "hash": "H6hiMyYK845JXrzvSyDMug=="
+          "hash": "SwdkVrOiPOLZV976YjxA/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorState.Features.Routing.RouteState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorState.Features.Routing.RouteState.html",
+          "hash": "OuFNR5qiZvLmfzjLamHoMQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -283,10 +295,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Features.Routing.html",
-          "hash": "oMHV0hcQz0khJTRhu0QOug=="
+          "hash": "mDx2BAJa7lTeJHSRzAcuGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -295,10 +307,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IBlazorStateComponent.html",
-          "hash": "DtZs7Xgsdx1Tmqw0QM4VRQ=="
+          "hash": "XKpqnPfkOuniJ+4sucTYrw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -307,10 +319,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IReduxDevToolsStore.html",
-          "hash": "4AM5ZfdGMicd0jVy/Vdp4A=="
+          "hash": "Ud/nbn25Kgn1tc804vZeWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -319,10 +331,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState-1.html",
-          "hash": "NAamOWr2FBxwuztqE7BKdg=="
+          "hash": "UuAie7xo36HLBAidxhDR9g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -331,10 +343,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IState.html",
-          "hash": "2R8PJfCybGn1exBOV7jYPA=="
+          "hash": "IMgdCrsH70FZIu5gwQWN/g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -343,10 +355,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.IStore.html",
-          "hash": "Qs/PS4XQyEv7jKlqGkgzMw=="
+          "hash": "kjBbmJY2yCkNYY7tEWtJbw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -355,10 +367,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.Options.html",
-          "hash": "OV2pTS0NTwGMPzAM6s1K6g=="
+          "hash": "QXwHMvlwkANbTczwVLgfEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,10 +379,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.RequestHandler-2.html",
-          "hash": "c9QuZYuj305tCKi4GNgh7w=="
+          "hash": "4CeqpJj/wYS+oL7/j4FtuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -379,10 +391,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.ServiceCollectionExtensions.html",
-          "hash": "etp01GZc+d5RYpldMY4Obg=="
+          "hash": "4x9JeKC1NijwhDmORGv7VA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -391,10 +403,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.State-1.html",
-          "hash": "+qqiT3tl2sZB/HfhBNnDeQ=="
+          "hash": "tApY3oJ6//HbFwf6ay7ctQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -403,10 +415,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BlazorState.html",
-          "hash": "q0fHRIcQaubtYp8TeCHkyw=="
+          "hash": "GnIkpwyw54VWmq6WI/eBTg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,10 +427,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.JSInterop.CamelCase.html",
-          "hash": "Apsdok/NwcAWMmTY0QbZHg=="
+          "hash": "0BIbYOwjCc+wlXoUvVbxUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -427,10 +439,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.JSInterop.html",
-          "hash": "2Q9IzpyP13yrA+kv/rV1rA=="
+          "hash": "camxcXdYGVIE5OGTdi1lCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -439,10 +451,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "HLX1qu7deMGsv3ZKjbxtuQ=="
+          "hash": "rhTTja/wnFcRqDzpxXykPQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -451,7 +463,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "iYIDT3lUU7cjdzKXu+T47A=="
+          "hash": "CbOyP9rkVURWVvp9cAjFLw=="
         }
       },
       "is_incremental": false,
@@ -463,10 +475,10 @@
       "output": {
         ".html": {
           "relative_path": "contributing.html",
-          "hash": "nPJfURQEZsedl1YdMvR9dw=="
+          "hash": "/0JXNo4VXy0QbLTbeyABRQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -475,10 +487,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/CodeBehind.html",
-          "hash": "NwI6TVhEDvXeJrmzbhWz9A=="
+          "hash": "g4S8MumSZgc0uU6xRbVS9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -487,10 +499,34 @@
       "output": {
         ".html": {
           "relative_path": "docs/FileStructure.html",
-          "hash": "FZFY3whZZ/PEhBjBmD6eSw=="
+          "hash": "qfVoTXreznecs7ys2PyRfA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Template/TemplateOverview.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Template/TemplateOverview.html",
+          "hash": "spAiEmMspU7thZ8ZdD2WWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/Template/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Template/toc.html",
+          "hash": "oC/UuYwz/cvyATmRtjk3ng=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -499,10 +535,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/overview.html",
-          "hash": "yOVXnJ6oWyTzHe51MM6OMg=="
+          "hash": "juj9f4uwGAh1EhRqMuP1IA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -511,10 +547,10 @@
       "output": {
         ".html": {
           "relative_path": "docs/partialClasses.html",
-          "hash": "DAmc8FE1FvF8f5Hy3LpnSg=="
+          "hash": "14sZnbndy0c7mVEkiYwPng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -523,7 +559,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "3msd9ib1dV2qfs0wbp+cYQ=="
+          "hash": "1kU3Cker9LLjjc0hDWoA+w=="
         }
       },
       "is_incremental": false,
@@ -546,10 +582,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3IVsbOXDuBTYhOKJUN6Z+Q=="
+          "hash": "c+ECkxdQB93mrhC87VVVUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -558,10 +594,10 @@
       "output": {
         ".html": {
           "relative_path": "terminology.html",
-          "hash": "WyIIOF4cQZJHtzWhiGAt9g=="
+          "hash": "Cb1NK+k2AtT8Dsli1YfYBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -570,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Md7HyORSjSKc+ToJ01C3pw=="
+          "hash": "TzITFzgL+eqVoF5l4i2wmA=="
         }
       },
       "is_incremental": false,
@@ -580,26 +616,27 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.37.2.0 to 2.39.2.0.",
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
