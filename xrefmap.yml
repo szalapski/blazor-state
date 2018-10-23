@@ -356,6 +356,25 @@ references:
   commentId: N:BlazorState.Features.Routing
   fullName: BlazorState.Features.Routing
   nameWithType: BlazorState.Features.Routing
+- uid: BlazorState.Features.Routing.ChangeRouteRequest
+  name: ChangeRouteRequest
+  href: api/BlazorState.Features.Routing.ChangeRouteRequest.html
+  commentId: T:BlazorState.Features.Routing.ChangeRouteRequest
+  fullName: BlazorState.Features.Routing.ChangeRouteRequest
+  nameWithType: ChangeRouteRequest
+- uid: BlazorState.Features.Routing.ChangeRouteRequest.NewRoute
+  name: NewRoute
+  href: api/BlazorState.Features.Routing.ChangeRouteRequest.html#BlazorState_Features_Routing_ChangeRouteRequest_NewRoute
+  commentId: P:BlazorState.Features.Routing.ChangeRouteRequest.NewRoute
+  fullName: BlazorState.Features.Routing.ChangeRouteRequest.NewRoute
+  nameWithType: ChangeRouteRequest.NewRoute
+- uid: BlazorState.Features.Routing.ChangeRouteRequest.NewRoute*
+  name: NewRoute
+  href: api/BlazorState.Features.Routing.ChangeRouteRequest.html#BlazorState_Features_Routing_ChangeRouteRequest_NewRoute_
+  commentId: Overload:BlazorState.Features.Routing.ChangeRouteRequest.NewRoute
+  isSpec: "True"
+  fullName: BlazorState.Features.Routing.ChangeRouteRequest.NewRoute
+  nameWithType: ChangeRouteRequest.NewRoute
 - uid: BlazorState.Features.Routing.RouteManager
   name: RouteManager
   href: api/BlazorState.Features.Routing.RouteManager.html
