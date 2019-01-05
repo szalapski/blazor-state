@@ -8,7 +8,7 @@
     <title>The use of Partial Classes </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="The use of Partial Classes ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -72,7 +72,8 @@
 <p>We recommend partial classes when declaring States for two reasons.</p>
 <h3 id="child-classes">Child Classes</h3>
 <p>We declare all <code>Request Handlers</code> as child classes of the state they act upon.
-Child classes have access to private members of the parent class. This allows us to make the parent class public data immutable to and allow only the <code>Handlers</code> to modify the private data.</p>
+Child classes have access to private members of the parent class.
+This allows us to make the parent class public data immutable and allow only the <code>Handlers</code> to modify the private data.</p>
 <p>This ensures that all attempts to mutate state are passed through the MediatR pipeline.  And yet lets us separate the handlers into a file of their own for better organization.</p>
 <h3 id="aspects">Aspects</h3>
 <p>Each specific State has explicit aspects.</p>

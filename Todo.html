@@ -8,7 +8,7 @@
     <title> </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -64,12 +64,9 @@
 <ul>
 <li><p>[ ] Move ReduxDevToolsBehavoir to top of pipeline.  So when doing time travel we can disable actions from actually being executed.</p>
 </li>
-<li><p>[ ] JsonRequestHandler should be in its own component <code>JavascriptInteropComponent</code>
-And moved into the App.cshtml Singletons.</p>
-</li>
 <li><p>[ ] Move JavaScriptInterop Folder out of Behaviors (It isn't a behavior) although ReduxDevTools depends on it.</p>
 </li>
-<li><p>[ ] Update RouteManager to subscribe to Route Change and update the URL if not already there.
+<li><p>[x] Update RouteManager to subscribe to Route Change and update the URL if not already there.
 This will let dev tools go back to pages.</p>
 </li>
 <li><p>[ ] <del>Implement Routing Feature so the Route is in RouteState.</del></p>
@@ -119,6 +116,15 @@ if blazor-state\Directory.Build.props has <code>&lt;LangVersion&gt;latest&lt;/La
 <li><p>[ ] Add vsts vsts.ci.yaml into the template project.</p>
 </li>
 <li><p>[ ] Update global.json to latest</p>
+</li>
+<li><p>[ ] Add DualMode.js to the template.</p>
+</li>
+<li><p>[ ] Write Console App that updates the version for all of Blazor-State
+I think changes in like 4 or 5 places.</p>
+<ul>
+<li>[ ] Create Pull Request template to show what each pull request should have.  Investigate if I can get AzureDevOps to default to that template.</li>
+<li>[ ] Add Javascript project to the template.</li>
+</ul>
 </li>
 </ul>
 </article>

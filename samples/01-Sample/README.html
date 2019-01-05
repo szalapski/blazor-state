@@ -8,7 +8,7 @@
     <title>Sample Application Part 01 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Sample Application Part 01 ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../../assets/Logo.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -212,12 +212,12 @@ Thus the <code>Handler</code> of the request can modify state as desired.</em></
 <ul>
 <li>add property to access State from the store.</li>
 </ul>
-<pre><code class="lang-csharp" name="CounterState">
-public class CounterModel : BlazorComponent, IBlazorStateComponent
+<pre><code class="lang-csharp" name="CounterState">public class CounterModel : BlazorComponent, IBlazorStateComponent
 {
   public CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
   [Inject] public IMediator Mediator { get; set; }
   [Inject] public IStore Store { get; set; }
+
 </code></pre><h2 id="displaying-state-in-the-user-interface">Displaying state in the user interface.</h2>
 <ul>
 <li>Edit <code>Pages\Counter.cshtml</code> and add the following <code>inherits</code> clause.</li>

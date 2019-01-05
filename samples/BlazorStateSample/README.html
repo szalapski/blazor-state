@@ -8,7 +8,7 @@
     <title>Blazor-State Sample Application Part 01 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State Sample Application Part 01 ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../../assets/Logo.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -81,18 +81,7 @@ Note that you might have to check the <code>Include prerelease</code> checkbox.<
 <li>Add <code>using BlazorState;</code></li>
 <li>Change the serviceProvider initialization code to add Blazor-State</li>
 </ol>
-<pre><code class="lang-csharp" name="serviceProvider initialization">
-var serviceProvider = new BrowserServiceProvider(services =&gt;
-{
-  services.AddBlazorState(options =&gt;
-  {
-    options.UseReduxDevToolsBehavior = false; // See other demo on using ReduxDevTools
-    options.UseRouting = false; // See other demo on Routing.
-    options.UseCloneStateBehavior = true; // The basics.
-  });
-});
-
-</code></pre><h2 id="file-strucutre-of-feature-state-request-handler">File Strucutre of: Feature, State, Request, Handler</h2>
+<pre><code class="lang-csharp" name="serviceProvider initialization"></code></pre><h2 id="file-strucutre-of-feature-state-request-handler">File Strucutre of: Feature, State, Request, Handler</h2>
 <p>With the mediator pattern for each <code>Request</code> there is an associated <code>Handler</code>
 and possibly other items like a Validator, Mapper etc..
 The Request, Handler and associated items are what we call a <code>Feature</code>.<br>

@@ -19,32 +19,6 @@ references:
   commentId: T:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent
   fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent
   nameWithType: BlazorStateDevToolsComponent
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ComponentRegistry
-  commentId: P:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry
-  nameWithType: BlazorStateDevToolsComponent.ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry*
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ComponentRegistry_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry
-  isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry
-  nameWithType: BlazorStateDevToolsComponent.ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose
-  name: Dispose()
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Dispose
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose()
-  nameWithType: BlazorStateDevToolsComponent.Dispose()
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose*
-  name: Dispose
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Dispose_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose
-  isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose
-  nameWithType: BlazorStateDevToolsComponent.Dispose
 - uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.OnInit
   name: OnInit()
   href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_OnInit
@@ -58,98 +32,53 @@ references:
   isSpec: "True"
   fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.OnInit
   nameWithType: BlazorStateDevToolsComponent.OnInit
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender
-  name: ReRender()
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ReRender
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender()
-  nameWithType: BlazorStateDevToolsComponent.ReRender()
-- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender*
-  name: ReRender
-  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ReRender_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender
+- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions
+  name: Subscriptions
+  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Subscriptions
+  commentId: P:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions
+  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions
+  nameWithType: BlazorStateDevToolsComponent.Subscriptions
+- uid: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions*
+  name: Subscriptions
+  href: api/BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Subscriptions_
+  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions
   isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender
-  nameWithType: BlazorStateDevToolsComponent.ReRender
-- uid: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html
-  commentId: T:BlazorState.Behaviors.ReduxDevTools.ComponentRegistry
-  fullName: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry
-  nameWithType: ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.#ctor
-  name: ComponentRegistry()
-  href: api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html#BlazorState_Behaviors_ReduxDevTools_ComponentRegistry__ctor
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.#ctor
-  fullName: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ComponentRegistry()
-  nameWithType: ComponentRegistry.ComponentRegistry()
-- uid: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.#ctor*
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html#BlazorState_Behaviors_ReduxDevTools_ComponentRegistry__ctor_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.#ctor
-  isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ComponentRegistry
-  nameWithType: ComponentRegistry.ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll
-  name: ReRenderAll()
-  href: api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html#BlazorState_Behaviors_ReduxDevTools_ComponentRegistry_ReRenderAll
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll
-  fullName: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll()
-  nameWithType: ComponentRegistry.ReRenderAll()
-- uid: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll*
-  name: ReRenderAll
-  href: api/BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html#BlazorState_Behaviors_ReduxDevTools_ComponentRegistry_ReRenderAll_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll
-  isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.ReRenderAll
-  nameWithType: ComponentRegistry.ReRenderAll
+  fullName: BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions
+  nameWithType: BlazorStateDevToolsComponent.Subscriptions
 - uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent
   name: IDevToolsComponent
   href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html
   commentId: T:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent
   fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent
   nameWithType: IDevToolsComponent
-- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_ComponentRegistry
-  commentId: P:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry
-  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry
-  nameWithType: IDevToolsComponent.ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry*
-  name: ComponentRegistry
-  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_ComponentRegistry_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry
+- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions
+  name: Subscriptions
+  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_Subscriptions
+  commentId: P:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions
+  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions
+  nameWithType: IDevToolsComponent.Subscriptions
+- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions*
+  name: Subscriptions
+  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_Subscriptions_
+  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions
   isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ComponentRegistry
-  nameWithType: IDevToolsComponent.ComponentRegistry
-- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender
-  name: ReRender()
-  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_ReRender
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender
-  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender()
-  nameWithType: IDevToolsComponent.ReRender()
-- uid: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender*
-  name: ReRender
-  href: api/BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html#BlazorState_Behaviors_ReduxDevTools_IDevToolsComponent_ReRender_
-  commentId: Overload:BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender
-  isSpec: "True"
-  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.ReRender
-  nameWithType: IDevToolsComponent.ReRender
+  fullName: BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.Subscriptions
+  nameWithType: IDevToolsComponent.Subscriptions
 - uid: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop
   name: ReduxDevToolsInterop
   href: api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html
   commentId: T:BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop
   fullName: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop
   nameWithType: ReduxDevToolsInterop
-- uid: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.#ctor(ILogger{BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop},BlazorState.IReduxDevToolsStore)
-  name: ReduxDevToolsInterop(ILogger<ReduxDevToolsInterop>, IReduxDevToolsStore)
-  href: api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html#BlazorState_Behaviors_ReduxDevTools_ReduxDevToolsInterop__ctor_ILogger_BlazorState_Behaviors_ReduxDevTools_ReduxDevToolsInterop__BlazorState_IReduxDevToolsStore_
-  commentId: M:BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.#ctor(ILogger{BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop},BlazorState.IReduxDevToolsStore)
-  name.vb: ReduxDevToolsInterop(ILogger(Of ReduxDevToolsInterop), IReduxDevToolsStore)
-  fullName: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger<BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop>, BlazorState.IReduxDevToolsStore)
-  fullName.vb: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger(Of BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop), BlazorState.IReduxDevToolsStore)
-  nameWithType: ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger<ReduxDevToolsInterop>, IReduxDevToolsStore)
-  nameWithType.vb: ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger(Of ReduxDevToolsInterop), IReduxDevToolsStore)
+- uid: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.#ctor(ILogger{BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop},BlazorState.IReduxDevToolsStore,BlazorState.Services.JsRuntimeLocation)
+  name: ReduxDevToolsInterop(ILogger<ReduxDevToolsInterop>, IReduxDevToolsStore, JsRuntimeLocation)
+  href: api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html#BlazorState_Behaviors_ReduxDevTools_ReduxDevToolsInterop__ctor_ILogger_BlazorState_Behaviors_ReduxDevTools_ReduxDevToolsInterop__BlazorState_IReduxDevToolsStore_BlazorState_Services_JsRuntimeLocation_
+  commentId: M:BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.#ctor(ILogger{BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop},BlazorState.IReduxDevToolsStore,BlazorState.Services.JsRuntimeLocation)
+  name.vb: ReduxDevToolsInterop(ILogger(Of ReduxDevToolsInterop), IReduxDevToolsStore, JsRuntimeLocation)
+  fullName: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger<BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop>, BlazorState.IReduxDevToolsStore, BlazorState.Services.JsRuntimeLocation)
+  fullName.vb: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger(Of BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop), BlazorState.IReduxDevToolsStore, BlazorState.Services.JsRuntimeLocation)
+  nameWithType: ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger<ReduxDevToolsInterop>, IReduxDevToolsStore, JsRuntimeLocation)
+  nameWithType.vb: ReduxDevToolsInterop.ReduxDevToolsInterop(ILogger(Of ReduxDevToolsInterop), IReduxDevToolsStore, JsRuntimeLocation)
 - uid: BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.#ctor*
   name: ReduxDevToolsInterop
   href: api/BlazorState.Behaviors.ReduxDevTools.ReduxDevToolsInterop.html#BlazorState_Behaviors_ReduxDevTools_ReduxDevToolsInterop__ctor_
@@ -231,6 +160,19 @@ references:
   isSpec: "True"
   fullName: BlazorState.BlazorStateComponent.Mediator
   nameWithType: BlazorStateComponent.Mediator
+- uid: BlazorState.BlazorStateComponent.ReRender
+  name: ReRender()
+  href: api/BlazorState.BlazorStateComponent.html#BlazorState_BlazorStateComponent_ReRender
+  commentId: M:BlazorState.BlazorStateComponent.ReRender
+  fullName: BlazorState.BlazorStateComponent.ReRender()
+  nameWithType: BlazorStateComponent.ReRender()
+- uid: BlazorState.BlazorStateComponent.ReRender*
+  name: ReRender
+  href: api/BlazorState.BlazorStateComponent.html#BlazorState_BlazorStateComponent_ReRender_
+  commentId: Overload:BlazorState.BlazorStateComponent.ReRender
+  isSpec: "True"
+  fullName: BlazorState.BlazorStateComponent.ReRender
+  nameWithType: BlazorStateComponent.ReRender
 - uid: BlazorState.BlazorStateComponent.Store
   name: Store
   href: api/BlazorState.BlazorStateComponent.html#BlazorState_BlazorStateComponent_Store
@@ -337,12 +279,12 @@ references:
   isSpec: "True"
   fullName: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.JsonRequestHandler
   nameWithType: JsonRequestHandler.JsonRequestHandler
-- uid: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String)
-  name: Handle(String)
-  href: api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html#BlazorState_Features_JavaScriptInterop_JsonRequestHandler_Handle_System_String_
-  commentId: M:BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String)
-  fullName: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String)
-  nameWithType: JsonRequestHandler.Handle(String)
+- uid: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String,System.String)
+  name: Handle(String, String)
+  href: api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html#BlazorState_Features_JavaScriptInterop_JsonRequestHandler_Handle_System_String_System_String_
+  commentId: M:BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String,System.String)
+  fullName: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle(System.String, System.String)
+  nameWithType: JsonRequestHandler.Handle(String, String)
 - uid: BlazorState.Features.JavaScriptInterop.JsonRequestHandler.Handle*
   name: Handle
   href: api/BlazorState.Features.JavaScriptInterop.JsonRequestHandler.html#BlazorState_Features_JavaScriptInterop_JsonRequestHandler_Handle_
@@ -493,6 +435,19 @@ references:
   isSpec: "True"
   fullName: BlazorState.IBlazorStateComponent.Mediator
   nameWithType: IBlazorStateComponent.Mediator
+- uid: BlazorState.IBlazorStateComponent.ReRender
+  name: ReRender()
+  href: api/BlazorState.IBlazorStateComponent.html#BlazorState_IBlazorStateComponent_ReRender
+  commentId: M:BlazorState.IBlazorStateComponent.ReRender
+  fullName: BlazorState.IBlazorStateComponent.ReRender()
+  nameWithType: IBlazorStateComponent.ReRender()
+- uid: BlazorState.IBlazorStateComponent.ReRender*
+  name: ReRender
+  href: api/BlazorState.IBlazorStateComponent.html#BlazorState_IBlazorStateComponent_ReRender_
+  commentId: Overload:BlazorState.IBlazorStateComponent.ReRender
+  isSpec: "True"
+  fullName: BlazorState.IBlazorStateComponent.ReRender
+  nameWithType: IBlazorStateComponent.ReRender
 - uid: BlazorState.IBlazorStateComponent.Store
   name: Store
   href: api/BlazorState.IBlazorStateComponent.html#BlazorState_IBlazorStateComponent_Store
@@ -819,6 +774,57 @@ references:
   isSpec: "True"
   fullName: BlazorState.ServiceCollectionExtensions.AddBlazorState
   nameWithType: ServiceCollectionExtensions.AddBlazorState
+- uid: BlazorState.Services
+  name: BlazorState.Services
+  href: api/BlazorState.Services.html
+  commentId: N:BlazorState.Services
+  fullName: BlazorState.Services
+  nameWithType: BlazorState.Services
+- uid: BlazorState.Services.JsRuntimeLocation
+  name: JsRuntimeLocation
+  href: api/BlazorState.Services.JsRuntimeLocation.html
+  commentId: T:BlazorState.Services.JsRuntimeLocation
+  fullName: BlazorState.Services.JsRuntimeLocation
+  nameWithType: JsRuntimeLocation
+- uid: BlazorState.Services.JsRuntimeLocation.HasMono
+  name: HasMono
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_HasMono
+  commentId: P:BlazorState.Services.JsRuntimeLocation.HasMono
+  fullName: BlazorState.Services.JsRuntimeLocation.HasMono
+  nameWithType: JsRuntimeLocation.HasMono
+- uid: BlazorState.Services.JsRuntimeLocation.HasMono*
+  name: HasMono
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_HasMono_
+  commentId: Overload:BlazorState.Services.JsRuntimeLocation.HasMono
+  isSpec: "True"
+  fullName: BlazorState.Services.JsRuntimeLocation.HasMono
+  nameWithType: JsRuntimeLocation.HasMono
+- uid: BlazorState.Services.JsRuntimeLocation.IsClientSide
+  name: IsClientSide
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_IsClientSide
+  commentId: P:BlazorState.Services.JsRuntimeLocation.IsClientSide
+  fullName: BlazorState.Services.JsRuntimeLocation.IsClientSide
+  nameWithType: JsRuntimeLocation.IsClientSide
+- uid: BlazorState.Services.JsRuntimeLocation.IsClientSide*
+  name: IsClientSide
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_IsClientSide_
+  commentId: Overload:BlazorState.Services.JsRuntimeLocation.IsClientSide
+  isSpec: "True"
+  fullName: BlazorState.Services.JsRuntimeLocation.IsClientSide
+  nameWithType: JsRuntimeLocation.IsClientSide
+- uid: BlazorState.Services.JsRuntimeLocation.IsServerSide
+  name: IsServerSide
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_IsServerSide
+  commentId: P:BlazorState.Services.JsRuntimeLocation.IsServerSide
+  fullName: BlazorState.Services.JsRuntimeLocation.IsServerSide
+  nameWithType: JsRuntimeLocation.IsServerSide
+- uid: BlazorState.Services.JsRuntimeLocation.IsServerSide*
+  name: IsServerSide
+  href: api/BlazorState.Services.JsRuntimeLocation.html#BlazorState_Services_JsRuntimeLocation_IsServerSide_
+  commentId: Overload:BlazorState.Services.JsRuntimeLocation.IsServerSide
+  isSpec: "True"
+  fullName: BlazorState.Services.JsRuntimeLocation.IsServerSide
+  nameWithType: JsRuntimeLocation.IsServerSide
 - uid: BlazorState.State`1
   name: State<TState>
   href: api/BlazorState.State-1.html
@@ -950,6 +956,69 @@ references:
   fullName.vb: BlazorState.State(Of TState).ThrowIfNotTestAssembly
   nameWithType: State<TState>.ThrowIfNotTestAssembly
   nameWithType.vb: State(Of TState).ThrowIfNotTestAssembly
+- uid: BlazorState.Subscriptions
+  name: Subscriptions
+  href: api/BlazorState.Subscriptions.html
+  commentId: T:BlazorState.Subscriptions
+  fullName: BlazorState.Subscriptions
+  nameWithType: Subscriptions
+- uid: BlazorState.Subscriptions.#ctor
+  name: Subscriptions()
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions__ctor
+  commentId: M:BlazorState.Subscriptions.#ctor
+  fullName: BlazorState.Subscriptions.Subscriptions()
+  nameWithType: Subscriptions.Subscriptions()
+- uid: BlazorState.Subscriptions.#ctor*
+  name: Subscriptions
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions__ctor_
+  commentId: Overload:BlazorState.Subscriptions.#ctor
+  isSpec: "True"
+  fullName: BlazorState.Subscriptions.Subscriptions
+  nameWithType: Subscriptions.Subscriptions
+- uid: BlazorState.Subscriptions.Add(Type,BlazorState.BlazorStateComponent)
+  name: Add(Type, BlazorStateComponent)
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_Add_Type_BlazorState_BlazorStateComponent_
+  commentId: M:BlazorState.Subscriptions.Add(Type,BlazorState.BlazorStateComponent)
+  fullName: BlazorState.Subscriptions.Add(Type, BlazorState.BlazorStateComponent)
+  nameWithType: Subscriptions.Add(Type, BlazorStateComponent)
+- uid: BlazorState.Subscriptions.Add*
+  name: Add
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_Add_
+  commentId: Overload:BlazorState.Subscriptions.Add
+  isSpec: "True"
+  fullName: BlazorState.Subscriptions.Add
+  nameWithType: Subscriptions.Add
+- uid: BlazorState.Subscriptions.Add``1(BlazorState.BlazorStateComponent)
+  name: Add<T>(BlazorStateComponent)
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_Add__1_BlazorState_BlazorStateComponent_
+  commentId: M:BlazorState.Subscriptions.Add``1(BlazorState.BlazorStateComponent)
+  name.vb: Add(Of T)(BlazorStateComponent)
+  fullName: BlazorState.Subscriptions.Add<T>(BlazorState.BlazorStateComponent)
+  fullName.vb: BlazorState.Subscriptions.Add(Of T)(BlazorState.BlazorStateComponent)
+  nameWithType: Subscriptions.Add<T>(BlazorStateComponent)
+  nameWithType.vb: Subscriptions.Add(Of T)(BlazorStateComponent)
+- uid: BlazorState.Subscriptions.ReRenderSubscribers(Type)
+  name: ReRenderSubscribers(Type)
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_ReRenderSubscribers_Type_
+  commentId: M:BlazorState.Subscriptions.ReRenderSubscribers(Type)
+  fullName: BlazorState.Subscriptions.ReRenderSubscribers(Type)
+  nameWithType: Subscriptions.ReRenderSubscribers(Type)
+- uid: BlazorState.Subscriptions.ReRenderSubscribers*
+  name: ReRenderSubscribers
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_ReRenderSubscribers_
+  commentId: Overload:BlazorState.Subscriptions.ReRenderSubscribers
+  isSpec: "True"
+  fullName: BlazorState.Subscriptions.ReRenderSubscribers
+  nameWithType: Subscriptions.ReRenderSubscribers
+- uid: BlazorState.Subscriptions.ReRenderSubscribers``1
+  name: ReRenderSubscribers<T>()
+  href: api/BlazorState.Subscriptions.html#BlazorState_Subscriptions_ReRenderSubscribers__1
+  commentId: M:BlazorState.Subscriptions.ReRenderSubscribers``1
+  name.vb: ReRenderSubscribers(Of T)()
+  fullName: BlazorState.Subscriptions.ReRenderSubscribers<T>()
+  fullName.vb: BlazorState.Subscriptions.ReRenderSubscribers(Of T)()
+  nameWithType: Subscriptions.ReRenderSubscribers<T>()
+  nameWithType.vb: Subscriptions.ReRenderSubscribers(Of T)()
 - uid: BlazorStateSample:Part2.md
   name: Blazor-State Sample Application Part 02
   href: samples/BlazorStateSample/Part2.html

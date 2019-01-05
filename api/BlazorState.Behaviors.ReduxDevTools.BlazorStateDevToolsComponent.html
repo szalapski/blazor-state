@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlazorStateDevToolsComponent
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,7 +86,6 @@
     <h5>Implements</h5>
     <div><a class="xref" href="BlazorState.IBlazorStateComponent.html">IBlazorStateComponent</a></div>
     <div><a class="xref" href="BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html">IDevToolsComponent</a></div>
-    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -96,36 +95,39 @@
     <div>
       <a class="xref" href="BlazorState.BlazorStateComponent.html#BlazorState_BlazorStateComponent_Store">BlazorStateComponent.Store</a>
     </div>
+    <div>
+      <a class="xref" href="BlazorState.BlazorStateComponent.html#BlazorState_BlazorStateComponent_ReRender">BlazorStateComponent.ReRender()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BlazorState.Behaviors.ReduxDevTools.html">BlazorState.Behaviors.ReduxDevTools</a></h6>
   <h6><strong>Assembly</strong>: BlazorState.dll</h6>
   <h5 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorStateDevToolsComponent : BlazorStateComponent, IBlazorStateComponent, IDevToolsComponent, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BlazorStateDevToolsComponent : BlazorStateComponent, IBlazorStateComponent, IDevToolsComponent</code></pre>
   </div>
   <h5 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>See Peter Morris Issue on Blazor
 <a href="https://github.com/aspnet/Blazor/issues/704">https://github.com/aspnet/Blazor/issues/704</a>
 If one implements their own base class with these interfaces
 They won't be forced to use this one.
-C# 8 with default implementations of interfaces will be quite tempting</p>
+C# 8 with default implementations of interfaces will be quite tempting to solve this.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ComponentRegistry.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Subscriptions.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L20">View Source</a>
+    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L18">View Source</a>
   </span>
-  <a id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ComponentRegistry_" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry*"></a>
-  <h4 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ComponentRegistry" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ComponentRegistry">ComponentRegistry</h4>
+  <a id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Subscriptions_" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions*"></a>
+  <h4 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Subscriptions" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Subscriptions">Subscriptions</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComponentRegistry ComponentRegistry { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Subscriptions Subscriptions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,7 +139,7 @@ C# 8 with default implementations of interfaces will be quite tempting</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BlazorState.Behaviors.ReduxDevTools.ComponentRegistry.html">ComponentRegistry</a></td>
+        <td><a class="xref" href="BlazorState.Subscriptions.html">Subscriptions</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -146,25 +148,10 @@ C# 8 with default implementations of interfaces will be quite tempting</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Dispose.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L22">View Source</a>
-  </span>
-  <a id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Dispose_" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose*"></a>
-  <h4 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_Dispose" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_OnInit.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.OnInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L29">View Source</a>
+    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L20">View Source</a>
   </span>
   <a id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_OnInit_" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.OnInit*"></a>
   <h4 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_OnInit" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.OnInit">OnInit()</h4>
@@ -174,31 +161,12 @@ C# 8 with default implementations of interfaces will be quite tempting</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ReRender.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L27">View Source</a>
-  </span>
-  <a id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ReRender_" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender*"></a>
-  <h4 id="BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent_ReRender" data-uid="BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent.ReRender">ReRender()</h4>
-  <div class="markdown level1 summary"><p>Exposes StateHasChanged</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ReRender()</code></pre>
-  </div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="BlazorState.IBlazorStateComponent.html">IBlazorStateComponent</a>
   </div>
   <div>
       <a class="xref" href="BlazorState.Behaviors.ReduxDevTools.IDevToolsComponent.html">IDevToolsComponent</a>
-  </div>
-  <div>
-      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>
@@ -211,7 +179,7 @@ C# 8 with default implementations of interfaces will be quite tempting</p>
                     <a href="https://github.com/TimeWarpEngineering/blazor-state/new/master/apiSpec/new?filename=BlazorState_Behaviors_ReduxDevTools_BlazorStateDevToolsComponent.md&amp;value=---%0Auid%3A%20BlazorState.Behaviors.ReduxDevTools.BlazorStateDevToolsComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/source/BlazorState/Behaviors/ReduxDevTools/Components/BlazorStateDevToolsComponent.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
