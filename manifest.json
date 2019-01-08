@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "QgY8Gtoy2gFx0NjKKUvDFQ=="
+          "hash": "dc0BmBQF7Xb93ZA+gnxrTg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -46,7 +46,7 @@
           "hash": "YZADif7dZfKpw4vTU/adSg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -58,7 +58,7 @@
           "hash": "sRbTBGoVn9BFriqvXrrjWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -70,7 +70,7 @@
           "hash": "P+hEgO/FfRdihQXUQMFcDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -82,7 +82,7 @@
           "hash": "C1Fb6AkeqCORb5L01gsGCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -94,7 +94,7 @@
           "hash": "MjYgvNe3xKKX6mEUxYSZrw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -106,7 +106,7 @@
           "hash": "C18jDNIfNTTdWGUah9PA1Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -118,7 +118,7 @@
           "hash": "hZpOc4ZkPESPP1HXp3+KjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -130,7 +130,271 @@
           "hash": "8B0OU/OTQ7ZRC7Vruo68eQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.html",
+          "hash": "Lw1YNOZmbnNjeeP00uXo5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.html",
+          "hash": "cOwLxteSZ3Mg6doGeAYO+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.html",
+          "hash": "G9UU3qCTQik0Yc17EVJrBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.html",
+          "hash": "Av1Sgm8P0qzy0iT+n6TwBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.html",
+          "hash": "+t9WL5qxWyZA7+rSvR1Stg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.html",
+          "hash": "i9LlHBXaF7jafIU6Mtc22g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.html",
+          "hash": "kxU2usKqPCeYeb3aduu0Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.html",
+          "hash": "80FhCHP3/oDuMsQg5a8Y9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.html",
+          "hash": "+oPI2hbMNq6uZk+suVgIiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.html",
+          "hash": "o5NAsPjQrPFis45Rsnv8Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.html",
+          "hash": "bJq4fizPPfqRR5LbuznLmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.html",
+          "hash": "GSJVBY0wl+F4hxJOpMH/yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.html",
+          "hash": "rKBMBbg4u+06m21JtpWndw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.html",
+          "hash": "yqlRGA9J2RxkRbu/Qiv86A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.html",
+          "hash": "uICfz6Pl2NE/LlBGrAhggw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.html",
+          "hash": "M6f4n1BgLj80OEfsZtZ2QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.html",
+          "hash": "3XPnl8aDNpAGXYkivohJZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.html",
+          "hash": "InyO491AJqG0CFKxVjQmfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.html",
+          "hash": "QAzxgfhZZijRMNSCUp0Nvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.html",
+          "hash": "nVZPaRH5JK4CSsH+HZsjcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.html",
+          "hash": "B2QKOyaxLJ/6ET5X2XYspg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "DeveloperNotebook/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/toc.html",
+          "hash": "6Eb6GpMVBUzOQSNDEqZdnQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -142,7 +406,7 @@
           "hash": "Q3dvb22r1APsujcdvmyiMA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -154,7 +418,7 @@
           "hash": "epnNcHxp95L+Mb2XbM1WhQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -526,7 +790,7 @@
           "hash": "L5ynEOVxU0AUOrdCPeUdQA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -610,7 +874,7 @@
           "hash": "QBfNiiuY67H02twnXG0jIQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,7 +921,7 @@
           "hash": "ijRRQiwa5D9nzq1K1WoxIA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,7 +933,7 @@
           "hash": "HQhX/7iWKlCoz/7ay3rNLQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -678,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "TzITFzgL+eqVoF5l4i2wmA=="
+          "hash": "uEBuTfSuv9ZuJd7SseO+Xg=="
         }
       },
       "is_incremental": false,
@@ -692,22 +956,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
