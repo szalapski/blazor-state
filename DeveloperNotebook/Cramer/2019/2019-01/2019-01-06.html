@@ -124,15 +124,30 @@ So we need a Console templates yml file.
 And thus need to be more explcit of the name for the timewarp-blazor template.
 Or should we put all our templates into the same nuget? timewarp-templates</p>
 </li>
-<li><p>[ ] Create ConsoleTemplate.yml for Development branch using MyGet</p>
+<li><p>[x] Create ConsoleTemplate.yml for Development branch using MyGet
+Tested in that it deployed to MyGet.</p>
 </li>
-<li><p>[ ] Create ConsoleTemplate.yml for master branch using Nuget</p>
+<li><p>[x] Create ConsoleTemplate.yml for master branch using Nuget</p>
 </li>
-<li><p>[ ] Version the template independently</p>
+<li><p>[x] Version the templates independently</p>
+<ul>
+<li>[x] Add Commands to Tools so we can set the version of each output as needed.</li>
+<li>[x] Add powershell script to set all the versions and also easy to remember the latest version.</li>
+</ul>
 </li>
-<li><p>[ ] Determine a Filnaming convention camelCase or PascalCase and try to clean up.</p>
+<li><p>[ ] Add Tools to the Blazor Template with at least the GenerateToc command.
+The SetVersion command is very useful but needs to be implemented specific so maybe include a shell.
+The GitService is probably useful for all.</p>
+</li>
+<li><p>[ ] Determine a file naming convention camelCase or PascalCase and try to clean up.</p>
+</li>
+<li><p>[ ] Deployment of Nuget pacakges to MyGet and or Nuget should be a part of the
+Release pipeline not the Build pipeline.  Once yaml is available for release we should clean that up.</p>
 </li>
 </ul>
+<h4 id="various-commandline-args-for-testing">Various Commandline Args for testing</h4>
+<p>&quot;commandLineArgs&quot;: &quot;SetVersion --Project BlazorState --Major 0 --Minor 0 --Patch 1&quot;
+&quot;commandLineArgs&quot;: &quot;SetVersion --help&quot;</p>
 </article>
           </div>
           
