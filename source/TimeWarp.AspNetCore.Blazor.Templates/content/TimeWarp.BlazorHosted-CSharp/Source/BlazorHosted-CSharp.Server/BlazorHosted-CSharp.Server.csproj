@@ -19,4 +19,8 @@
     <ProjectReference Include="..\BlazorHosted-CSharp.Client\BlazorHosted-CSharp.Client.csproj" />
     <ProjectReference Include="..\BlazorHosted-CSharp.Shared\BlazorHosted-CSharp.Shared.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\ModelMetaDataProvider\" />
+  </ItemGroup>
 </Project>

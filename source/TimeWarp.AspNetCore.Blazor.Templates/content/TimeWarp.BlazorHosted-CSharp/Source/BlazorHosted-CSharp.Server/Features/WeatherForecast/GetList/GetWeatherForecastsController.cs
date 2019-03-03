@@ -5,7 +5,7 @@
   using BlazorHosted_CSharp.Shared.Features.WeatherForecast;
   using Microsoft.AspNetCore.Mvc;
 
-  [Route(GetWeatherForecastsRequest.Route)]
+  //[Route(GetWeatherForecastsRequest.Route)]
   public class GetWeatherForecastsController : BaseController<GetWeatherForecastsRequest, GetWeatherForecastsResponse>
   {
     public async Task<IActionResult> Get(GetWeatherForecastsRequest aRequest) => await Send(aRequest);
