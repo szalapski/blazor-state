@@ -20,7 +20,7 @@
     {
       WebDriver = aWebDriver;
       aServerFixture.Environment = AspNetEnvironment.Development;
-      aServerFixture.BuildWebHostMethod = Server.Program.BuildWebHost;
+      aServerFixture.BuildWebHostMethod = Server.Program.CreateHostBuilder;
 
       Navigate("/", aReload: true);
       WaitUntilLoaded();

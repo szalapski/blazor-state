@@ -30,8 +30,8 @@
       return aApplicationBuilder.UseBlazorDualMode(new BlazorOptions
       {
         ClientAssemblyPath = clientAssemblyInServerBinDir.Location,
-      })
-      .UseRazorComponents<TProgram>();
+      });
+      //.UseRazorComponents<TProgram>();
     }
 
     /// <summary>
@@ -48,7 +48,7 @@
       // TODO: Make the .blazor.config file contents sane
       // Currently the items in it are bizarre and don't relate to their purpose,
       // hence all the path manipulation here. We shouldn't be hardcoding 'dist' here either.
-      var env = (IHostingEnvironment)aApplicationBuilder.ApplicationServices.GetService(typeof(IHostingEnvironment));
+      var env = (IWebHostEnvironment)aApplicationBuilder.ApplicationServices.GetService(typeof(IWebHostEnvironment));
       var config = BlazorConfig.Read(aBlazorOptions.ClientAssemblyPath);
 
       // The rebuild stuff is private and I dont' want to pull in all the source.

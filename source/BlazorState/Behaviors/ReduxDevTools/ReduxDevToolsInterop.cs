@@ -13,17 +13,20 @@
     public ReduxDevToolsInterop(
       ILogger<ReduxDevToolsInterop> aLogger,
       IReduxDevToolsStore aStore,
-      JsRuntimeLocation aJsRuntimeLocation)
+      JsRuntimeLocation aJsRuntimeLocation,
+      IJSRuntime aJSRuntime)
     {
       Logger = aLogger;
       Store = aStore;
       JsRuntimeLocation = aJsRuntimeLocation;
+      JSRuntime = aJSRuntime;
     }
 
     public bool IsEnabled { get; set; }
     private JsRuntimeLocation JsRuntimeLocation { get; }
     private ILogger Logger { get; }
     private IReduxDevToolsStore Store { get; }
+    private IJSRuntime JSRuntime { get; }
 
     public void Dispatch<TRequest>(TRequest aRequest, object aState)
     {
@@ -32,14 +35,14 @@
         Logger.LogDebug($"{GetType().Name}: {nameof(this.Dispatch)}");
         Logger.LogDebug($"{GetType().Name}: aRequest.GetType().FullName:{aRequest.GetType().FullName}");
         var reduxAction = new ReduxAction(aRequest);
-        JSRuntime.Current.InvokeAsync<object>(JsFunctionName, reduxAction, aState);
+        JSRuntime.InvokeAsync<object>(JsFunctionName, reduxAction, aState);
       }
     }
 
     public void DispatchInit(object aState)
     {
       if (IsEnabled)
-        JSRuntime.Current.InvokeAsync<object>(JsFunctionName, "init", aState);
+        JSRuntime.InvokeAsync<object>(JsFunctionName, "init", aState);
     }
 
     public async Task InitAsync()
@@ -49,7 +52,7 @@
       {
         Console.WriteLine("Running in WASM");
         const string ReduxDevToolsFactoryName = "ReduxDevToolsFactory";
-        IsEnabled = await JSRuntime.Current.InvokeAsync<bool>(ReduxDevToolsFactoryName);
+        IsEnabled = await JSRuntime.InvokeAsync<bool>(ReduxDevToolsFactoryName);
 
         if (IsEnabled)
           DispatchInit(Store.GetSerializableState());

@@ -6,6 +6,7 @@
   using System.Threading;
   using Microsoft.AspNetCore.Hosting;
   using Microsoft.AspNetCore.Hosting.Server.Features;
+  using Microsoft.Extensions.Hosting;
 
   public class ServerFixture
   {
@@ -17,12 +18,12 @@
         new Uri(StartAndGetRootUri()));
     }
 
-    public delegate IWebHost BuildWebHost(string[] args);
+    public delegate IHostBuilder HostBuilderFactory(string[] args);
 
-    public BuildWebHost BuildWebHostMethod { get; set; }
+    public HostBuilderFactory BuildWebHostMethod { get; set; }
     public AspNetEnvironment Environment { get; set; } = AspNetEnvironment.Production;
     public Uri RootUri => LazyUri.Value;
-    private IWebHost WebHost { get; set; }
+    private IHostBuilder WebHost { get; set; }
 
     /// <summary>
     /// Find the path to the server that you are testing.
@@ -63,7 +64,7 @@
       isDone.WaitOne();
     }
 
-    protected IWebHost CreateWebHost()
+    protected IHostBuilder CreateWebHost()
     {
       if (BuildWebHostMethod == null)
       {
@@ -74,7 +75,7 @@
       string sitePath = FindSitePath(
                 BuildWebHostMethod.Method.DeclaringType.Assembly.GetName().Name);
 
-      IWebHost webHost = BuildWebHostMethod(new[]
+      IHostBuilder webHost = BuildWebHostMethod(new[]
       {
         "--urls", "http://127.0.0.1:0",
         "--contentroot", sitePath,
@@ -88,7 +89,7 @@
     {
       WebHost = CreateWebHost();
       RunInBackgroundThread(WebHost.Start);
-      return WebHost.ServerFeatures
+      return WebHost.ConfigureWebHost(a =>
           .Get<IServerAddressesFeature>()
           .Addresses.Single();
     }

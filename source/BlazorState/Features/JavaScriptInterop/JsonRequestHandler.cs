@@ -13,17 +13,20 @@
   {
     public JsonRequestHandler(
       ILogger<JsonRequestHandler> aLogger,
-      IMediator aMediator)
+      IMediator aMediator,
+      IJSRuntime aJSRuntime)
     {
       Logger = aLogger;
       Logger.LogDebug($"{GetType().Name}: constructor");
       Mediator = aMediator;
       InitializeJavascriptInterop();
+      JSRuntime = aJSRuntime;
     }
 
     private ILogger Logger { get; }
 
     private IMediator Mediator { get; }
+    private IJSRuntime JSRuntime { get; }
 
     /// <summary>
     /// This will handle the Javascript interop
@@ -69,7 +72,7 @@
     /// <remarks>Sends an instance of this item to JavaScript side
     /// </remarks>
     private void InitializeJavascriptInterop() =>
-      JSRuntime.Current.InvokeAsync<object>("InitializeJavaScriptInterop", new DotNetObjectRef(this));
+      JSRuntime.InvokeAsync<object>("InitializeJavaScriptInterop", new DotNetObjectRef(this));
 
     private async Task<object> SendToMediator(Type aRequestType, object aInstance)
     {

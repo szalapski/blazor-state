@@ -1,5 +1,6 @@
 ﻿namespace BlazorHosted_CSharp.Client
 {
+  using System;
   using BlazorState;
   using BlazorState.Services;
   using Microsoft.AspNetCore.Components.Builder;
@@ -7,11 +8,15 @@
 
   public class Startup
   {
-    public void Configure(IComponentsApplicationBuilder aBlazorApplicationBuilder) =>
+    public void Configure(IComponentsApplicationBuilder aBlazorApplicationBuilder)
+    {
+      Console.WriteLine($"{nameof(Startup)}:{nameof(Configure)}");
       aBlazorApplicationBuilder.AddComponent<App>("app");
+    }
 
     public void ConfigureServices(IServiceCollection aServiceCollection)
     {
+      Console.WriteLine($"{nameof(Startup)}:{nameof(ConfigureServices)}");
       if (new JsRuntimeLocation().IsClientSide)
       {
         // TODO add this back once Blazor.Extentions.Logging is updated to 0.8.0
