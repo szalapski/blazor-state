@@ -5,6 +5,7 @@
   using System.Reflection;
   using System.Threading;
   using System.Threading.Tasks;
+  using BlazorState.Services;
   using MediatR;
   using Microsoft.Extensions.Logging;
   using Microsoft.JSInterop;
@@ -14,19 +15,18 @@
     public JsonRequestHandler(
       ILogger<JsonRequestHandler> aLogger,
       IMediator aMediator,
-      IJSRuntime aJSRuntime)
+      BlazorHostingLocation aBlazorHostingLocation)
     {
       Logger = aLogger;
       Logger.LogDebug($"{GetType().Name}: constructor");
       Mediator = aMediator;
-      InitializeJavascriptInterop();
-      JSRuntime = aJSRuntime;
+      BlazorHostingLocation = aBlazorHostingLocation;
     }
 
     private ILogger Logger { get; }
 
     private IMediator Mediator { get; }
-    private IJSRuntime JSRuntime { get; }
+    private BlazorHostingLocation BlazorHostingLocation { get; }
 
     /// <summary>
     /// This will handle the Javascript interop
@@ -71,9 +71,6 @@
     /// </summary>
     /// <remarks>Sends an instance of this item to JavaScript side
     /// </remarks>
-    private void InitializeJavascriptInterop() =>
-      JSRuntime.InvokeAsync<object>("InitializeJavaScriptInterop", new DotNetObjectRef(this));
-
     private async Task<object> SendToMediator(Type aRequestType, object aInstance)
     {
       // return Mediator.Send(aInstance) is what this does but uses generics everywhere.
@@ -98,6 +95,19 @@
       await task.ConfigureAwait(false);
       PropertyInfo resultProperty = task.GetType().GetProperty("Result");
       return resultProperty.GetValue(task);
+    }
+
+    // TOOD 0.9.0 we will have to Inject IJSRuntime so this technique won't work for the test.
+    public async Task InitAsync()
+    {
+      Console.WriteLine("Init JsonRequestHandler");
+      if (BlazorHostingLocation.IsClientSide || // Only init if running in WASM 
+          !Assembly.GetEntryAssembly().FullName.Contains("TestApp.Client.Integration.Tests")) // or for test case.
+      {
+        Console.WriteLine("InitializeJavaScriptInterop");
+        const string InitializeJavaScriptInteropName = "InitializeJavaScriptInterop";
+        await JSRuntime.Current.InvokeAsync<object>(InitializeJavaScriptInteropName, new DotNetObjectRef(this));
+      }
     }
   }
 }
