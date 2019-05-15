@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Blazor-State Sample Application </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Blazor-State Sample Application ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="assets/Logo.png">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="assets/Logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BlazorStateSample:README.md">
+<h1 id="blazor-state-sample-application">Blazor-State Sample Application</h1>
+
+<p>This sample shows how to add Blazor-State to a <code>Blazor (ASP.NET Core hosted)</code> application.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>Install the latest [].NET Core 3.0 Preview SDK release](<a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">https://dotnet.microsoft.com/download/dotnet-core/3.0</a>).</li>
+<li>Install the Blazor templates by running the following command in a command shell:</li>
+</ol>
+<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview5-19227-01
+</code></pre>
+<h2 id="creating-the-project">Creating the project</h2>
+<ol>
+<li>Create a new project <code>dotnet new blazorhosted -o Sample</code></li>
+<li>Change directory to the new project <code>cd Sample</code></li>
+<li>Run the default application and confirm it works.<br>
+<code>dotnet run --project .\Sample.Server\Sample.Server.csproj</code>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Notice that the counter resets on page changes.
+There is currently no state being maintained.
+When the counter page is no longer rendered it is freed by the <code>GarbageCollector</code>.
+When returning to the counter route a new page is created
+and therefore the count is back to zero.</p>
+</div>
+</li>
+</ol>
+<h2 id="add-blazor-state">Add Blazor-State</h2>
+<p>Add the Blazor-State NuGet package to <code>Sample.Client</code> project.
+<code>dotnet add .\Sample.Client\Sample.Client.csproj package Blazor-State --version 1.0.0-preview5-19227-*</code></p>
+<h2 id="configure-the-services">Configure the services</h2>
+<ol>
+<li>In the <code>Sample.Client</code> project in the <code>Startup.cs</code> file.</li>
+<li>Add <code>using BlazorState;</code></li>
+<li>Change <code>ConfigureServices</code> to configure blazor-state.</li>
+</ol>
+<pre><code class="lang-csharp">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddBlazorState();
+}
+</code></pre>
+<h2 id="feature-file-structure">Feature File Structure</h2>
+<p>With the mediator pattern for each <code>Request/Action</code> there is an associated <code>Handler</code>
+and possibly other items like a <code>Validator</code>, <code>Mapper</code> etc...
+These associated items are what we call a <code>Feature</code>.
+Let's organize the Features by the State they act upon.</p>
+<ol>
+<li>In the Client project add a folder named <code>Features</code>.</li>
+</ol>
+<h2 id="add-counterstate">Add CounterState</h2>
+<ol>
+<li>In the <code>Features</code> folder add a folder named <code>Counter</code>.</li>
+<li>Within the <code>Counter</code> folder create a class file named <code>CounterState.cs</code>.</li>
+</ol>
+<p>Your class should:</p>
+<ul>
+<li>be a partial class</li>
+<li>inherit from <code>State&lt;CounterState&gt;</code></li>
+<li>override the <code>Initialize()</code> method. To set the initial values.</li>
+</ul>
+<p>The only value we want to maintain is a Count.
+The code for the class should be as follows.</p>
+<pre><code class="lang-csharp">using BlazorState;
+
+namespace Sample.Client.Features.Counter
+{
+    public partial class CounterState : State&lt;CounterState&gt;
+    {
+        public int Count { get; private set; }
+        protected override void Initialize() =&gt; Count = 3;
+    }
+}
+</code></pre>
+<h2 id="displaying-state-in-the-user-interface">Displaying state in the user interface</h2>
+<ol>
+<li>Edit <code>Pages\Counter.razor</code> as follows</li>
+<li>Inherit from BlazorStateComponent <code>@inherits BlazorStateComponent</code>, to do that you need to also add <code>@using BlazorState</code></li>
+<li>Next add a <code>CounterState</code> property that gets the State from the store <code>GetState&lt;CounterState&gt;()</code>, this will require you add <code>@using Sample.Client.Features.Counter</code> also.</li>
+<li>change <code>currentCount</code> to pull the Count from state. <code>int currentCount =&gt; CounterState.Count;</code></li>
+<li>Notice that inside IncrementCount method the currentCount you can no longer increment. From the outside the state is immutable.
+So lets comment out that line.</li>
+</ol>
+<p>The code should look as follows:</p>
+<pre><code class="lang-csharp">@page &quot;/counter&quot;
+@using BlazorState
+@using Sample.Client.Features.Counter
+
+@inherits BlazorStateComponent
+
+&lt;h1&gt;Counter&lt;/h1&gt;
+
+&lt;p&gt;Current count: @currentCount&lt;/p&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; onclick=&quot;@IncrementCount&quot;&gt;Click me&lt;/button&gt;
+
+@functions {
+    CounterState CounterState =&gt; GetState&lt;CounterState&gt;();
+
+    int currentCount =&gt; CounterState.Count;
+
+    void IncrementCount()
+    {
+        //currentCount++;
+    }
+}
+</code></pre>
+<p>Run the application and on the Counter Page you should notice the count is being displayed as we initialized.
+The button no longer works.</p>
+<h2 id="sending-requests-that-will-mutate-the-state">Sending requests that will mutate the state</h2>
+<p>Changes to state are done by sending an <code>Action</code> through the mediator pipeline.
+The <code>Action</code> is then handled by a <code>Handler</code> which can freely mutate the state.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>State should NOT be mutated by anything other than handlers.
+All state changes should be done in handlers.
+This is easily controlled by making state immutable and your handlers a nested class of the state they modify.</p>
+</div>
+<h2 id="create-the-incrementcounterrequest">Create the <code>IncrementCounterRequest</code></h2>
+<ol>
+<li>In the Client project ensure the path <code>Features\Counter\Actions\IncrementCount</code> folder.</li>
+<li>In this folder create a class named <code>IncrementCountAction.cs</code>.</li>
+</ol>
+<ul>
+<li>The class should inherit from <code>IRequest&lt;CounterState&gt;</code>
+as follows:</li>
+</ul>
+<pre><code class="lang-csharp">using MediatR;
+
+namespace Sample.Client.Features.Counter
+{
+    public class IncrementCountAction: IRequest&lt;CounterState&gt;
+    {
+        public int Amount { get; set; }
+    }
+}
+</code></pre>
+<h2 id="sending-the-action-through-the-mediator-pipeline">Sending the action through the mediator pipeline</h2>
+<p>To Send the action to the pipeline when the user clicks the <code>Click me</code> button,
+In <code>Pages\Counter.razor</code> update the <code>IncrementCount</code> function as follows:</p>
+<pre><code class="lang-csharp">void IncrementCount()
+{
+    Mediator.Send(new IncrementCountAction { Amount = 5 });
+}
+</code></pre>
+<h2 id="handling-the-action">Handling the action</h2>
+<p>The <code>Handler</code> is where we actually mutate the state to complete the <code>Action</code>.</p>
+<ol>
+<li>In the <code>Features\Counter\IncrementCount</code> folder create a new class file named
+<code>IncrementCountHandler.cs</code></li>
+</ol>
+<p>The Handler should:</p>
+<ul>
+<li>be a nested class of the state it will mutate <code>CounterState</code></li>
+<li>Inherit from <code>BlazorState.Handlers.RequestHandler</code>.</li>
+<li>The generic parameters are the Request Type <code>IncrementCountRequest</code> and the state type <code>CounterState</code>.</li>
+<li>Override the <code>Handle</code> method to mutate state as desired:</li>
+</ul>
+<pre><code class="lang-csharp">using BlazorState;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Sample.Client.Features.Counter
+{
+    public partial class CounterState
+    {
+
+        public class IncrementCountHandler : RequestHandler&lt;IncrementCountAction, CounterState&gt;
+        {
+            public IncrementCountHandler(IStore aStore) : base(aStore) { }
+
+            CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
+
+            public override Task&lt;CounterState&gt; Handle(IncrementCountAction aIncrementCountAction, CancellationToken aCancellationToken)
+            {
+                CounterState.Count = CounterState.Count + aIncrementCountAction.Amount;
+                return Task.FromResult(CounterState);
+            }
+        }
+    }
+}
+</code></pre>
+<h2 id="validate">Validate</h2>
+<p>Execute the app and confirm that the &quot;Click me&quot; button properly increments the value.
+And when you navigate away from the page and back the value persists.</p>
+<h2 id="reduxdevtools-javascipt-interop-and-routestate">ReduxDevTools Javascipt Interop and RouteState</h2>
+<p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">ReduxDevTools</a> are a chrome extension that let you view the Actions and State for each action.
+This is quite handy for debugging.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Support for &quot;TimeTravel&quot; in via ReduxDevTools is being removed from Blazor-State as this feature, although cool for demos, does little to assist in debugging and requires more code to implement.</p>
+</div>
+<p>ReduxDevTools requires Javascript Interop.</p>
+<p>To facilitate Javascript Interop, enable ReduxDevTools and manage RouteState add <code>App.razor.cs</code> in the same directory as <code>App.razor</code> as follows:</p>
+<pre><code class="lang-csharp">namespace Sample.Client
+{
+    using System.Threading.Tasks;
+    using BlazorState.Pipeline.ReduxDevTools;
+    using BlazorState.Features.JavaScriptInterop;
+    using BlazorState.Features.Routing;
+    using Microsoft.AspNetCore.Components;
+
+    public class AppBase : ComponentBase
+    {
+        [Inject] private JsonRequestHandler JsonRequestHandler { get; set; }
+        [Inject] private ReduxDevToolsInterop ReduxDevToolsInterop { get; set; }
+
+        // Injected so it is created by the container. Even though the ide says it is not used it is.
+        [Inject] private RouteManager RouteManager { get; set; }
+
+        protected override async Task OnAfterRenderAsync()
+        {
+            await ReduxDevToolsInterop.InitAsync();
+            await JsonRequestHandler.InitAsync();
+        }
+    }
+}
+</code></pre>
+<p>In your <code>App.razor</code> add <code>@inherits AppBase</code></p>
+<p>Now run your app again and then Open the Redux Dev Tools (a tab in Chrome Dev Tools) and you should see Actions as they are executed.</p>
+<p>If you inspect the State in the DevTools you will also notice it maintains the current Route in RouteState.</p>
+<p>That is the basics of getting started.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/Sample.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

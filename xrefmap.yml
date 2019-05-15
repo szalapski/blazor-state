@@ -186,9 +186,6 @@ references:
   isSpec: "True"
   fullName: BlazorState.BlazorStateComponent.Store
   nameWithType: BlazorStateComponent.Store
-- uid: blazor-state.contributing.md
-  name: Contributing
-  href: contributing.html
 - uid: BlazorState.Features.JavaScriptInterop
   name: BlazorState.Features.JavaScriptInterop
   href: api/BlazorState.Features.JavaScriptInterop.html
@@ -1021,13 +1018,7 @@ references:
   nameWithType.vb: Subscriptions.ReRenderSubscribers(Of T)()
 - uid: BlazorStateSample:README.md
   name: Blazor-State Sample Application
-  href: samples/BlazorStateSample/README.html
-- uid: CodeBehind:CodeBehind.md
-  name: CodeBehind:CodeBehind.md
-  href: docs/CodeBehind.html
-- uid: FileStructure:FileStructure.md
-  name: File Structure
-  href: docs/FileStructure.html
+  href: Sample.html
 - uid: Microsoft.JSInterop
   name: Microsoft.JSInterop
   href: api/Microsoft.JSInterop.html
@@ -1053,6 +1044,3 @@ references:
   isSpec: "True"
   fullName: Microsoft.JSInterop.CamelCase.MemberNameToCamelCase
   nameWithType: CamelCase.MemberNameToCamelCase
-- uid: PartialClasses:PartialClasses.md
-  name: The use of Partial Classes
-  href: docs/partialClasses.html

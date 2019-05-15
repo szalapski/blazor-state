@@ -10,12 +10,12 @@
     <meta name="title" content=" ">
     <meta name="generator" content="docfx 2.42.3.0">
     
-    <link rel="shortcut icon" href="../../../../assets/Logo.png">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../toc.html">
+    <link rel="shortcut icon" href="../assets/Logo.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
-                <img id="logo" class="svg" src="../../../../assets/Logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../assets/Logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -68,39 +68,9 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
-<p>2019-01-05 12:38:53</p>
-<p>Updated Selenium to latest</p>
-<pre><code>npm install selenium-standalone@latest -g
-selenium-standalone install
-</code></pre>
-<p>testing the yaml changes from yesterday</p>
 <ul>
-<li>[x] Split yml into a yml file per output.
-Add yml for production versions of blazor-state and templates.</li>
-<li>[ ] Determine the dependencies of the build.</li>
-<li>[x] Move the yml files to the Build folder.  They seem to make more sense by themselves.</li>
-<li>[ ]</li>
+<li>[x] Update RouteManager to subscribe to Route Change and update the URL if not already there.</li>
 </ul>
-<p>Documentation deploy is failing with:</p>
-<pre><code>2019-01-05T06:29:36.0845182Z ##[section]Starting: Publishes to GitHub Pages
-2019-01-05T06:29:36.0849424Z ==============================================================================
-2019-01-05T06:29:36.0849553Z Task         : Publish to GitHub Pages
-2019-01-05T06:29:36.0849796Z Description  : Publishes files to a GitHub Pages gh-pages branch
-2019-01-05T06:29:36.0850596Z Version      : 0.13.0
-2019-01-05T06:29:36.0850645Z Author       : James Randall
-2019-01-05T06:29:36.0850687Z Help         : 
-2019-01-05T06:29:36.0850739Z ==============================================================================
-2019-01-05T06:29:37.4470810Z Cloning existing GitHub Pages branch
-2019-01-05T06:29:58.0802410Z Copying new documentation into branch
-2019-01-05T06:29:58.1948347Z Committing the GitHub Pages Branch
-2019-01-05T06:29:58.9454125Z [gh-pages 1b720b6] Automated Release $(Release.ReleaseId)
-2019-01-05T06:29:58.9456256Z  1 file changed, 27 insertions(+), 28 deletions(-)
-2019-01-05T06:30:05.2896039Z ##[error]To https://github.com/TimeWarpEngineering/blazor-state.git
-2019-01-05T06:30:05.3334701Z ##[section]Finishing: Publishes to GitHub Pages
-</code></pre>
-<p>doesn't give me much info I am guessing token expired? Token is fine.  And it actually does update the page.
-So I am not sure what the error is from.
-The source for the plugin is <a href="https://github.com/JamesRandall/Vsts-GitHub-Pages-Publish/blob/master/buildAndReleaseTask/publish.ps1">here</a></p>
 </article>
           </div>
           
@@ -109,7 +79,7 @@ The source for the plugin is <a href="https://github.com/JamesRandall/Vsts-GitHu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/Backlog/Done.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -135,8 +105,8 @@ The source for the plugin is <a href="https://github.com/JamesRandall/Vsts-GitHu
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
