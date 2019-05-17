@@ -72,24 +72,23 @@
 or the <a href="https://en.wikipedia.org/wiki/Command_pattern">Command Pattern</a>
 you will feel right at home.
 All of the behaviors are written as plug-ins/middle-ware and attached to the MediatR pipeline.</p>
-<p>Please see our <strong><a href="https://github.com/TimeWarpEngineering/blazor-state">GitHub Site</a></strong> for source and filing of issues.</p>
+<p>Please see the <strong><a href="https://github.com/TimeWarpEngineering/blazor-state">GitHub Site</a></strong> for source and filing of issues.</p>
 <h2 id="installation">Installation</h2>
 <p>Blazor-State is available as a <a href="https://www.nuget.org/packages/Blazor-State/">Nuget Package</a></p>
 <pre><code class="lang-console">dotnet add package Blazor-State
 </code></pre>
 <h2 id="getting-started">Getting Started</h2>
-<p>After you have completed the <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started">getting started for blazor</a>
-the easiest way to get started with blazor-state is to follow
-create new application based on the <a href="%7E/../Templates/TimeWarpBlazorTemplate/TemplateOverview.md">timewarp-blazor template</a>
+<p>If you are just beginning with blazor then I recommend you first check out <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started">getting started for blazor</a></p>
+<p>The easiest way to get started with blazor-state is to create a new application based on the <a href="%7E/../Templates/TimeWarpBlazorTemplate/TemplateOverview.md">timewarp-blazor template</a>
 Which gives you a base line for both client, server, and testing.</p>
-<p>If you would like a basic step by step then follow this <a class="xref" href="Sample.html">tutorial</a>.</p>
+<p>If you would like a basic step by step on adding blazor-state to the <code>blazorhosted</code> template then follow this <a class="xref" href="Sample.html">tutorial</a>.</p>
 <h2 id="architecture">Architecture</h2>
 <p>Blazor-State Implements a single <code>Store</code> with a collection of <code>State</code>s.
 The MediatR pipeline allows for easy integration
 by registering an interface with the DI container.</p>
 <pre><code class="lang-csharp">services.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(CloneStateBehavior&lt;,&gt;));
 services.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(DevToolsBehavior&lt;,&gt;));
-aServices.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(RenderSubscriptionsBehavior&lt;,&gt;));
+services.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(RenderSubscriptionsBehavior&lt;,&gt;));
 </code></pre>
 <p>The three interfaces available to extend the Pipeline are <code>IPipelineBehavior</code>, <code>IRequestPreProcessor</code>,
 and <code>IRequestPostProcessor</code>;</p>
