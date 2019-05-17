@@ -186,6 +186,9 @@ references:
   isSpec: "True"
   fullName: BlazorState.BlazorStateComponent.Store
   nameWithType: BlazorStateComponent.Store
+- uid: blazor-state.contributing.md
+  name: Contributing
+  href: Partials/Contributing.html
 - uid: BlazorState.Features.JavaScriptInterop
   name: BlazorState.Features.JavaScriptInterop
   href: api/BlazorState.Features.JavaScriptInterop.html
