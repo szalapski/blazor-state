@@ -87,7 +87,7 @@ and therefore the count is back to zero.</p>
 </li>
 </ol>
 <h2 id="add-blazor-state">Add Blazor-State</h2>
-<p>Add the Blazor-State NuGet package to <code>Sample.Client</code> project.
+<p>Add the Blazor-State NuGet package to the <code>Sample.Client</code> project.
 <code>dotnet add .\Sample.Client\Sample.Client.csproj package Blazor-State --version 1.0.0-preview5-19227-*</code></p>
 <h2 id="configure-the-services">Configure the services</h2>
 <ol>
@@ -248,10 +248,10 @@ And when you navigate away from the page and back the value persists.</p>
 This is quite handy for debugging.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Support for &quot;TimeTravel&quot; in via ReduxDevTools is being removed from Blazor-State as this feature, although cool for demos, does little to assist in debugging and requires more code to implement.</p>
+<p>Support for &quot;TimeTravel&quot; via ReduxDevTools is being removed from Blazor-State as this feature, although cool for demos, does little to assist in debugging and requires more code to implement.</p>
 </div>
 <p>ReduxDevTools requires Javascript Interop.</p>
-<p>To facilitate Javascript Interop, enable ReduxDevTools and manage RouteState add <code>App.razor.cs</code> in the same directory as <code>App.razor</code> as follows:</p>
+<p>To facilitate Javascript Interop, enable ReduxDevTools, and manage RouteState, add <code>App.razor.cs</code> in the same directory as <code>App.razor</code> as follows:</p>
 <pre><code class="lang-csharp">namespace Sample.Client
 {
     using System.Threading.Tasks;
