@@ -7,6 +7,9 @@ references:
   commentId: N:BlazorState
   fullName: BlazorState
   nameWithType: BlazorState
+- uid: blazor-state.Acknowledgements.md
+  name: Acknowledgements
+  href: Partials/Acknowledgements.html
 - uid: BlazorState.Behaviors.ReduxDevTools
   name: BlazorState.Behaviors.ReduxDevTools
   href: api/BlazorState.Behaviors.ReduxDevTools.html
@@ -1019,6 +1022,9 @@ references:
   fullName.vb: BlazorState.Subscriptions.ReRenderSubscribers(Of T)()
   nameWithType: Subscriptions.ReRenderSubscribers<T>()
   nameWithType.vb: Subscriptions.ReRenderSubscribers(Of T)()
+- uid: blazor-state.Terminology.md
+  name: Terminology
+  href: Partials/Terminology.html
 - uid: BlazorStateSample:README.md
   name: Blazor-State Sample Application
   href: Sample.html

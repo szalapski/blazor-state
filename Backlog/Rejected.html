@@ -69,16 +69,13 @@
             <article class="content wrap" id="_content" data-uid="">
 
 <ul>
-<li>[x] Update RouteManager to subscribe to Route Change and update the URL if not already there.</li>
-<li>[x] Search with powergrep for &quot;<langversion>&quot;
-if blazor-state\Directory.Build.props has <code>&lt;LangVersion&gt;preview&lt;/LangVersion&gt;</code> then do we need it in all the others?</langversion></li>
-<li>[x] Extract common items to Directory.Build.props</li>
-<li>[x] ReduxDevToolsBehavoir uses the pipeline but we probably don't care to log those interaction.
-So Maybe we should add a Filter to ignore logging some request IReduxAction marker or something?</li>
-<li>[x] Move ReduxDevToolsBehavoir to top of pipeline.
-So when doing time travel we can disable actions from actually being executed.</li>
-<li>[x] Move JavaScriptInterop Folder out of Behaviors (It isn't a behavior) although ReduxDevTools depends on it.
-This will let dev tools go back to pages.</li>
+<li>[ ] Implement DevTools Handlers (Currently only Jump works)
+See the MobX example for how to implement more ReduxDevTools functionality
+<a href="https://github.com/zalmoxisus/mobx-remotedev/blob/master/src/monitorActions.js">https://github.com/zalmoxisus/mobx-remotedev/blob/master/src/monitorActions.js</a>
+<blockquote>
+<p>I have changed my mind. The fancy stuff in ReduxDevTools I don't really use and is not high ROI</p>
+</blockquote>
+</li>
 </ul>
 </article>
           </div>
@@ -88,7 +85,7 @@ This will let dev tools go back to pages.</li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/Backlog/Done.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/Backlog/Rejected.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

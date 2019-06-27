@@ -68,7 +68,7 @@
 <li>Install the latest <a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core 3.0 Preview SDK release</a>.</li>
 <li>Install the Blazor templates by running the following command in a command shell:</li>
 </ol>
-<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview5-19227-01
+<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview6.19307.2
 </code></pre>
 <h2 id="creating-the-project">Creating the project</h2>
 <ol>
@@ -88,18 +88,7 @@ and therefore the count is back to zero.</p>
 </ol>
 <h2 id="add-blazor-state">Add Blazor-State</h2>
 <p>Add the Blazor-State NuGet package to the <code>Sample.Client</code> project.
-<code>dotnet add .\Sample.Client\Sample.Client.csproj package Blazor-State --version 1.0.0-preview5-19227-*</code></p>
-<h2 id="configure-the-services">Configure the services</h2>
-<ol>
-<li>In the <code>Sample.Client</code> project in the <code>Startup.cs</code> file.</li>
-<li>Add <code>using BlazorState;</code></li>
-<li>Change <code>ConfigureServices</code> to configure blazor-state.</li>
-</ol>
-<pre><code class="lang-csharp">public void ConfigureServices(IServiceCollection services)
-{
-    services.AddBlazorState();
-}
-</code></pre>
+<code>dotnet add .\Sample.Client\Sample.Client.csproj package Blazor-State --version 1.0.0-preview6.19307.2-*</code></p>
 <h2 id="feature-file-structure">Feature File Structure</h2>
 <p>With the mediator pattern for each <code>Request/Action</code> there is an associated <code>Handler</code>
 and possibly other items like a <code>Validator</code>, <code>Mapper</code> etc...
@@ -132,6 +121,26 @@ namespace Sample.Client.Features.Counter
     }
 }
 </code></pre>
+<h2 id="configure-the-services">Configure the services</h2>
+<ol>
+<li>In the <code>Sample.Client</code> project in the <code>Startup.cs</code> file.</li>
+<li>Change <code>ConfigureServices</code> to configure blazor-state as follows:</li>
+<li>Add the required usings.</li>
+<li>Configure the options passed to AddBlazorState to include the assemblies to scan for Handlers.</li>
+</ol>
+<pre><code class="lang-csharp">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddBlazorState
+    (
+      (aOptions) =&gt; aOptions.Assemblies =
+        new Assembly[]
+        {
+          typeof(Startup).GetTypeInfo().Assembly,
+        }
+    );
+    services.AddScoped&lt;CounterState&gt;();
+}
+</code></pre>
 <h2 id="displaying-state-in-the-user-interface">Displaying state in the user interface</h2>
 <ol>
 <li>Edit <code>Pages\Counter.razor</code> as follows</li>
@@ -152,9 +161,9 @@ So lets comment out that line.</li>
 
 &lt;p&gt;Current count: @currentCount&lt;/p&gt;
 
-&lt;button class=&quot;btn btn-primary&quot; onclick=&quot;@IncrementCount&quot;&gt;Click me&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; @onclick=&quot;@IncrementCount&quot;&gt;Click me&lt;/button&gt;
 
-@functions {
+@code {
     CounterState CounterState =&gt; GetState&lt;CounterState&gt;();
 
     int currentCount =&gt; CounterState.Count;
@@ -166,7 +175,7 @@ So lets comment out that line.</li>
 }
 </code></pre>
 <p>Run the application and on the Counter Page you should notice the count is being displayed as we initialized.
-The button no longer works.</p>
+Although the button no longer works.</p>
 <h2 id="sending-requests-that-will-mutate-the-state">Sending requests that will mutate the state</h2>
 <p>Changes to state are done by sending an <code>Action</code> through the mediator pipeline.
 The <code>Action</code> is then handled by a <code>Handler</code> which can freely mutate the state.</p>
@@ -174,7 +183,7 @@ The <code>Action</code> is then handled by a <code>Handler</code> which can free
 <h5>Warning</h5>
 <p>State should NOT be mutated by anything other than handlers.
 All state changes should be done in handlers.
-This is easily controlled by making state immutable and your handlers a nested class of the state they modify.</p>
+This can be controlled by making state immutable and your handlers a nested class of the state they modify.</p>
 </div>
 <h2 id="create-the-incrementcounterrequest">Create the <code>IncrementCounterRequest</code></h2>
 <ol>

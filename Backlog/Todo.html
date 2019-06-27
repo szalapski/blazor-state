@@ -69,18 +69,6 @@
             <article class="content wrap" id="_content" data-uid="">
 
 <ul>
-<li><p>[ ] Move ReduxDevToolsBehavoir to top of pipeline.
-So when doing time travel we can disable actions from actually being executed.</p>
-</li>
-<li><p>[ ] Move JavaScriptInterop Folder out of Behaviors (It isn't a behavior) although ReduxDevTools depends on it.</p>
-</li>
-</ul>
-<p>This will let dev tools go back to pages.</p>
-<ul>
-<li><p>[ ] Implement DevTools Handlers (Currently only Jump works)
-See the MobX example for how to implement more ReduxDevTools functionality
-<a href="https://github.com/zalmoxisus/mobx-remotedev/blob/master/src/monitorActions.js">https://github.com/zalmoxisus/mobx-remotedev/blob/master/src/monitorActions.js</a></p>
-</li>
 <li><p>[ ] Improve usefulness of ILogger.</p>
 </li>
 <li><p>[ ] Document all public interfaces</p>
@@ -93,36 +81,13 @@ See the MobX example for how to implement more ReduxDevTools functionality
 </li>
 <li><p>[ ] Review TODOs in source</p>
 </li>
-<li><p>[ ] Update Samples to latest templates</p>
-</li>
-<li><p>[ ] Extract common items to Directory.Build.props</p>
-</li>
-<li><p>[ ] ReduxDevToolsBehavoir uses the pipeline but we probably don't care to log those interaction.
-So Maybe we should add a Filter to ignore logging some request IReduxAction marker or something?</p>
+<li><p>[ ] Update Samples to latest templates (Samples have been removed the template is the sample)</p>
 </li>
 <li><p>[ ] CodeMaid Clean all before publish ()</p>
 </li>
-<li><p>[ ] Update Source link to the now .net foundation version. <a href="https://github.com/dotnet/sourcelink/">https://github.com/dotnet/sourcelink/</a></p>
+<li><p>[ ] Update Source link to the new .net foundation version. <a href="https://github.com/dotnet/sourcelink/">https://github.com/dotnet/sourcelink/</a></p>
 </li>
 <li><p>[ ] Add documentation on installing Selenium java and chromedriver.exe etc.</p>
-</li>
-<li><p>[ ] Search with powergrep for &quot;<langversion>&quot;
-if blazor-state\Directory.Build.props has <code>&lt;LangVersion&gt;latest&lt;/LangVersion&gt;</code> then do we need it in all the others?<p>
-</langversion></li>
-<li><p>[ ] Automate deployment to MyGet of template nuget.</p>
-</li>
-<li><p>[ ] Add vsts vsts.ci.yaml into the template project.</p>
-</li>
-<li><p>[ ] Update global.json to latest</p>
-</li>
-<li><p>[ ] Add DualMode.js to the template.</p>
-</li>
-<li><p>[ ] Write Console App that updates the version for all of Blazor-State
-I think changes in like 4 or 5 places.</p>
-<ul>
-<li>[ ] Create Pull Request template to show what each pull request should have.  Investigate if I can get AzureDevOps to default to that template.</li>
-<li>[ ] Add Javascript project to the template.</li>
-</ul>
 </li>
 </ul>
 </article>

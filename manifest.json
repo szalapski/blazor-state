@@ -31,10 +31,22 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "pnFjUVqLccORl2Sfz1gnNg=="
+          "hash": "DuHzSUvD+PgoUPTJZFdG6Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../ReleaseNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes.html",
+          "hash": "OkZv4PZNk1Epa+J/MA2oSg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -43,10 +55,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Done.html",
-          "hash": "FfR9U9FZlUARHB32BbVcAw=="
+          "hash": "ySqHkcFO25XFjwrx/4oPtw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -63,14 +75,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Backlog/Rejected.md",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/Rejected.html",
+          "hash": "lh+85ZzNBK9n7E1W6Ow4qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Backlog/Todo.md",
       "output": {
         ".html": {
           "relative_path": "Backlog/Todo.html",
-          "hash": "FxWd7PZjJVAM+ze4/BcNTQ=="
+          "hash": "lrbnl0qmqUlthqzuYaxywg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,7 +439,7 @@
       "output": {
         ".html": {
           "relative_path": "Overview.html",
-          "hash": "4ZS4NqOA/p6e5MpsA6jRaA=="
+          "hash": "TSyBJPZTavUzbBg1xvxA/Q=="
         }
       },
       "is_incremental": false,
@@ -427,10 +451,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Acknowledgements.html",
-          "hash": "c5n3XjYh1FpCVbXzxWG6hQ=="
+          "hash": "gXnHnCdibUHHt5vxcbdlog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -442,7 +466,7 @@
           "hash": "VRrWHuY4imI49nJR3Q5ORA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -451,7 +475,7 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Terminology.html",
-          "hash": "WP27pn7/dJO+yY4D0/ntpg=="
+          "hash": "Pymb2jGhLc4DLKikRG8g9A=="
         }
       },
       "is_incremental": false,
@@ -463,7 +487,7 @@
       "output": {
         ".html": {
           "relative_path": "Sample.html",
-          "hash": "gozci3jp9Q7aY6IY8ptFlA=="
+          "hash": "MEzx4lupi0qz5UgH6KarRQ=="
         }
       },
       "is_incremental": false,
@@ -475,7 +499,7 @@
       "output": {
         ".html": {
           "relative_path": "TemplateOverview.html",
-          "hash": "sgw//FR2/CPSGWf0NQJScg=="
+          "hash": "yTwV7qYcUTtHFuZYMPPOOQ=="
         }
       },
       "is_incremental": false,
@@ -847,7 +871,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "fmY/MfMG9zxBT0FXxZEgJQ=="
+          "hash": "WhDucr3HqH1V3Argm55Iwg=="
         }
       },
       "is_incremental": false,
@@ -882,17 +906,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 39,
+          "skipped_file_count": 27
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 28,
           "skipped_file_count": 28
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 37,
-          "skipped_file_count": 32
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
