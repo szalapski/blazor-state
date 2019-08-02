@@ -8,7 +8,7 @@
     <title>Blazor-State </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -98,15 +98,15 @@ Which gives you a base line for both client, server, and testing.</p>
 </code></pre>
 <h3 id="pipeline">Pipeline</h3>
 <p>Blazor-State utilizes the MediatR pipeline which allows for easy middleware integration
-by registering an interface with the DI container.
-Blazor-State provides the extension method, <code>AddBlazorState</code>, which registers behaviors on the pipeline.</p>
+by registering an interface with the <a href="(https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)">dependency injection container</a>.
+Blazor-State provides the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods">extension method</a>, <code>AddBlazorState</code>, which registers behaviors on the pipeline.</p>
 <p>The three interfaces available to extend the Pipeline are <code>IPipelineBehavior</code>, <code>IRequestPreProcessor</code>,
 and <code>IRequestPostProcessor</code>;</p>
 <p>You can integrate into the pipeline as well by implementing and registering one of these interfaces.
 See the timewarp-blazor template <code>EventStreamBehavior</code> for an example.</p>
 <h3 id="behaviors">Behaviors</h3>
 <h4 id="clonestatebehavior">CloneStateBehavior</h4>
-<p>To ensure your application is in a know good state the <code>CloneStateBehavior</code> creates a clone of the <code>State</code> prior to processing the <code>Action</code>.
+<p>To ensure your application is in a known good state the <code>CloneStateBehavior</code> creates a clone of the <code>State</code> prior to processing the <code>Action</code>.
 If any exception occurs during the processing of the <code>Action</code> the state is rolled back.</p>
 <h4 id="rendersubscriptionspostprocessor">RenderSubscriptionsPostProcessor</h4>
 <p>When a component accesses <code>State</code> we add a subscription.
@@ -144,7 +144,7 @@ of the application.</p>
 (see sample in Hosted Server), where the Features contain
 <code>Controller</code>, <code>Handler</code>, <code>Request</code>, <code>Response</code>, etc...
 Each endpoint has its own controller
-which maps the HTTP Request to the <code>Request</code> Object and then sends
+which maps the HTTP Request to the <code>Request</code> object and then sends
 on to the mediator pipeline.
 The <code>Handler</code> acts on the <code>Request</code> and returns a <code>Response</code>.</p>
 <p>Server side follows the <code>Request</code> in <code>Response</code> out pattern.</p>

@@ -8,7 +8,7 @@
     <title>TimeWarp-Blazor Template </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="TimeWarp-Blazor Template ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -66,16 +66,37 @@
 <pre><code class="lang-console">dotnet new --install TimeWarp.AspNetCore.Blazor.Templates
 </code></pre>
 <h2 id="usage">Usage</h2>
+<p>To create new solution enter the following:</p>
 <pre><code class="lang-console">dotnet new timewarp-blazor -n MyBlazorApp
 </code></pre>
-<h2 id="projects">Projects</h2>
-<p>MyBlazorApp.Client<br>
-MyBlazorApp.Server<br>
-MyBlazorApp.Shared</p>
-<h2 id="test-projects">Test Projects</h2>
-<p>MyBlazorApp.Client.Integration.Tests<br>
-MyBlazorApp.Server.Integration.Tests<br>
-MyBlazorApp.EndToEnd.Tests</p>
+<p>To run the new solution change to the directory that contains the startup project.  In our template the startup project is the server project.</p>
+<pre><code class="lang-console">cd .\MyBlazorApp\Source\MyBlazorApp.Server\
+dotnet run
+</code></pre>
+<p>You should see similar console output to the following:</p>
+<pre><code class="lang-console">λ  dotnet run
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\git\temp\MyBlazorApp\Source\MyBlazorApp.Server
+</code></pre>
+<p>Open up your browser to <a href="https://localhost:5001">https://localhost:5001</a> and confirm you have running site.</p>
+<h2 id="content">Content</h2>
+<p>The template creates 3 projects which will be deployed and 3 test projects.</p>
+<h3 id="projects">Projects</h3>
+<p>MyBlazorApp.Client - This is the user interface project . The &quot;Single Page Application (SPA)&quot;
+MyBlazorApp.Server - This is the server project that serves up the SPA and is also the web api.
+MyBlazorApp.Shared - This is a library of common code shared between the Client and Server Projects.</p>
+<h3 id="test-projects">Test Projects</h3>
+<p>MyBlazorApp.Client.Integration.Tests - contains integration tests for the SPA
+MyBlazorApp.Server.Integration.Tests - contains integration tests for the web api
+MyBlazorApp.EndToEnd.Tests - contains seleneum based web tests.  (Runs the app and controls a browser to test)</p>
 </article>
           </div>
           
