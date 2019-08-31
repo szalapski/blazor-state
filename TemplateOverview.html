@@ -63,14 +63,14 @@
 <h1 id="timewarp-blazor-template">TimeWarp-Blazor Template</h1>
 
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-console">dotnet new --install TimeWarp.AspNetCore.Blazor.Templates::1.0.0-3.0.0-preview8.19405.7-5
+<pre><code class="lang-console">dotnet new --install TimeWarp.AspNetCore.Blazor.Templates::1.0.0-3.0.100-preview8-013656-100
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>To create new solution enter the following:</p>
 <pre><code class="lang-console">dotnet new timewarp-blazor -n MyBlazorApp
 </code></pre>
 <p>To run the new solution change to the directory that contains the startup project.  In our template the startup project is the server project.</p>
-<pre><code class="lang-console">cd .\MyBlazorApp\Source\MyBlazorApp.Server\
+<pre><code class="lang-console">cd .\MyBlazorApp\Source\Server\
 dotnet run
 </code></pre>
 <p>You should see similar console output to the following:</p>
@@ -84,19 +84,20 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Production
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: C:\git\temp\MyBlazorApp\Source\MyBlazorApp.Server
+      Content root path: C:\git\temp\MyBlazorApp\Source\Server
 </code></pre>
 <p>Open up your browser to <a href="https://localhost:5001">https://localhost:5001</a> and confirm you have running site.</p>
 <h2 id="content">Content</h2>
-<p>The template creates 3 projects which will be deployed and 3 test projects.</p>
+<p>The template creates 3 projects which will be deployed and 4 test projects.</p>
 <h3 id="projects">Projects</h3>
 <p>MyBlazorApp.Client - This is the user interface project . The &quot;Single Page Application (SPA)&quot;
 MyBlazorApp.Server - This is the server project that serves up the SPA and is also the web api.
 MyBlazorApp.Shared - This is a library of common code shared between the Client and Server Projects.</p>
 <h3 id="test-projects">Test Projects</h3>
-<p>MyBlazorApp.Client.Integration.Tests - contains integration tests for the SPA
-MyBlazorApp.Server.Integration.Tests - contains integration tests for the web api
-MyBlazorApp.EndToEnd.Tests - contains seleneum based web tests.  (Runs the app and controls a browser to test)</p>
+<p>Client.Integration.Tests - contains integration tests for the SPA
+Server.Integration.Tests - contains integration tests for the web api
+EndToEnd.Selenium.Tests - contains Selenium based web tests.
+EndToEnd.TestCafe.Tests - contains TestCafe based end-to-end tests.</p>
 </article>
           </div>
           
