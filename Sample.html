@@ -68,7 +68,7 @@
 <li>Install the latest <a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core 3.0 Preview SDK release</a>.</li>
 <li>Install the Blazor templates by running the following command in a command shell:</li>
 </ol>
-<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview8.19405.7
+<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19424.4
 </code></pre>
 <h2 id="creating-the-project">Creating the project</h2>
 <ol>
@@ -103,7 +103,7 @@ and therefore the count is back to zero.</p>
 </div>
 <h2 id="add-blazor-state">Add Blazor-State</h2>
 <p>Add the Blazor-State NuGet package to the <code>Sample.Client</code> project.
-<code>dotnet add .\Client\Sample.Client.csproj package Blazor-State --version 1.0.0-3.0.100-preview8-013656-107</code></p>
+<code>dotnet add .\Client\Sample.Client.csproj package Blazor-State --version 1.0.0-3.0.100-preview9-014004-100</code></p>
 <h2 id="feature-file-structure">Feature File Structure</h2>
 <p>With the mediator pattern for each <code>Request/Action</code> there is an associated <code>Handler</code>
 and possibly other items like a <code>Validator</code>, <code>Mapper</code> etc...
@@ -298,26 +298,27 @@ This is quite handy for debugging.</p>
 <p>To facilitate Javascript Interop, enable ReduxDevTools, and manage RouteState, add <code>App.razor.cs</code> in the same directory as <code>App.razor</code> as follows:</p>
 <pre><code class="lang-csharp">namespace Sample.Client
 {
-    using System.Threading.Tasks;
-    using BlazorState.Pipeline.ReduxDevTools;
-    using BlazorState.Features.JavaScriptInterop;
-    using BlazorState.Features.Routing;
-    using Microsoft.AspNetCore.Components;
+  using System.Threading.Tasks;
+  using BlazorState.Pipeline.ReduxDevTools;
+  using BlazorState.Features.JavaScriptInterop;
+  using BlazorState.Features.Routing;
+  using Microsoft.AspNetCore.Components;
 
-    public class AppBase : ComponentBase
+  public class AppBase : ComponentBase
+  {
+    [Inject] private JsonRequestHandler JsonRequestHandler { get; set; }
+    [Inject] private ReduxDevToolsInterop ReduxDevToolsInterop { get; set; }
+
+    // Injected so it is created by the container. Even though the IDE says it is not used, it is.
+    [Inject] private RouteManager RouteManager { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        [Inject] private JsonRequestHandler JsonRequestHandler { get; set; }
-        [Inject] private ReduxDevToolsInterop ReduxDevToolsInterop { get; set; }
-
-        // Injected so it is created by the container. Even though the ide says it is not used, it is.
-        [Inject] private RouteManager RouteManager { get; set; }
-
-        protected override async Task OnAfterRenderAsync()
-        {
-            await ReduxDevToolsInterop.InitAsync();
-            await JsonRequestHandler.InitAsync();
-        }
+      await ReduxDevToolsInterop.InitAsync();
+      await JsonRequestHandler.InitAsync();
     }
+
+  }
 }
 </code></pre>
 <p>In your <code>App.razor</code> add <code>@inherits AppBase</code></p>
