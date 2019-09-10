@@ -10,6 +10,9 @@ references:
 - uid: blazor-state.Terminology.md
   name: Terminology
   href: Partials/Terminology.html
-- uid: BlazorStateSample:README.md
-  name: Blazor-State Sample Application
-  href: Sample.html
+- uid: BlazorState:Overview.md
+  name: Blazor-State Overview
+  href: Overview.html
+- uid: BlazorState:Tutorial.md
+  name: Blazor-State Tutorial
+  href: Tutorial.html
