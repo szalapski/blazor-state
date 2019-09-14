@@ -75,7 +75,7 @@
 <li>Create a new project <code>dotnet new blazorwasm --hosted -n Sample</code></li>
 <li>Change directory to the new project <code>cd Sample</code></li>
 <li>Run the default application and confirm it works.<br>
-<code>dotnet run --project .\Server\Sample.Server.csproj</code></li>
+<code>dotnet run --project ./Server/Sample.Server.csproj</code></li>
 </ol>
 <p>You should see something similar to the following:</p>
 <pre><code class="lang-console">λ  dotnet run --project .\Server\Sample.Server.csproj
@@ -103,7 +103,7 @@ and therefore the count is back to zero.</p>
 </div>
 <h2 id="add-blazor-state">Add Blazor-State</h2>
 <p>Add the Blazor-State NuGet package to the <code>Sample.Client</code> project.
-<code>dotnet add .\Client\Sample.Client.csproj package Blazor-State --version 1.0.0-3.0.100-preview9-014004-*</code></p>
+<code>dotnet add ./Client/Sample.Client.csproj package Blazor-State --version &quot;1.0.0-3.0.100-preview9-014004-*&quot;</code></p>
 <h2 id="feature-file-structure">Feature File Structure</h2>
 <p>With the mediator pattern for each <code>Request/Action</code> there is an associated <code>Handler</code>
 and possibly other items like a <code>Validator</code>, <code>Mapper</code> etc...
@@ -270,18 +270,20 @@ In <code>Pages\Counter.razor</code> update the <code>IncrementCount</code> funct
   using System.Threading;
   using System.Threading.Tasks;
   using BlazorState;
+  using MediatR;
+
   public partial class CounterState
   {
-    public class IncrementCountHandler : RequestHandler&lt;IncrementCountAction, CounterState&gt;
+    public class IncrementCountHandler : ActionHandler&lt;IncrementCountAction&gt;
     {
       public IncrementCountHandler(IStore aStore) : base(aStore) { }
 
       CounterState CounterState =&gt; Store.GetState&lt;CounterState&gt;();
 
-      public override Task&lt;CounterState&gt; Handle(IncrementCountAction aIncrementCountAction, CancellationToken aCancellationToken)
+      public override Task&lt;Unit&gt; Handle(IncrementCountAction aIncrementCountAction, CancellationToken aCancellationToken)
       {
         CounterState.Count = CounterState.Count + aIncrementCountAction.Amount;
-        return Task.FromResult(CounterState);
+        return Unit.Task;
       }
     }
   }
