@@ -175,7 +175,7 @@ The code for the class should be as follows.</p>
 </code></pre>
 <h2 id="displaying-state-in-the-user-interface">Displaying state in the user interface</h2>
 <ol>
-<li>Edit <code>Pages\Counter.razor</code> as follows</li>
+<li>Edit <code>Pages/Counter.razor</code> as follows</li>
 <li>Inherit from BlazorStateComponent <code>@inherits BlazorStateComponent</code>, to do that you need to also add <code>@using BlazorState</code></li>
 <li>Next add a <code>CounterState</code> property that gets the State from the store <code>GetState&lt;CounterState&gt;()</code>, this will require you add <code>@using Sample.Client.Features.Counter</code> also.</li>
 <li>change <code>currentCount</code> to pull the Count from state. <code>int currentCount =&gt; CounterState.Count;</code></li>
@@ -220,7 +220,7 @@ This can be controlled by making the states public interface immutable and your 
 </div>
 <h2 id="create-the-incrementcounteraction">Create the <code>IncrementCounterAction</code></h2>
 <ol>
-<li>In the Client project ensure the path <code>Features\Counter\Actions\IncrementCount</code> folder.</li>
+<li>In the Client project ensure the path <code>Features/Counter/Actions/IncrementCount</code> folder.</li>
 <li>In this folder create a class named <code>IncrementCountAction.cs</code>.</li>
 </ol>
 <p>The class should:</p>
@@ -246,7 +246,7 @@ as follows:</li>
 </code></pre>
 <h2 id="sending-the-action-through-the-mediator-pipeline">Sending the action through the mediator pipeline</h2>
 <p>To Send the action to the pipeline when the user clicks the <code>Click me</code> button,
-In <code>Pages\Counter.razor</code> update the <code>IncrementCount</code> function as follows:</p>
+In <code>Pages/Counter.razor</code> update the <code>IncrementCount</code> function as follows:</p>
 <pre><code class="lang-csharp">void IncrementCount()
 {
     Mediator.Send(new CounterState.IncrementCountAction { Amount = 5 });
@@ -255,7 +255,7 @@ In <code>Pages\Counter.razor</code> update the <code>IncrementCount</code> funct
 <h2 id="handling-the-action">Handling the action</h2>
 <p>The <code>Handler</code> is where we actually mutate the state to complete the <code>Action</code>.</p>
 <ol>
-<li>In the <code>Features\Counter\IncrementCount</code> folder create a new class file named
+<li>In the <code>Features/Counter/IncrementCount</code> folder create a new class file named
 <code>IncrementCountHandler.cs</code></li>
 </ol>
 <p>The Handler should:</p>
