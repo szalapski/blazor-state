@@ -510,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "Tutorial.html",
-          "hash": "5078urb7Vvs8oGzUkbtykw=="
+          "hash": "5zbKYpsztwc4fzYT1ohJXw=="
         }
       },
       "is_incremental": false,
@@ -557,18 +557,18 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 38,
-          "skipped_file_count": 36
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 38,
+          "skipped_file_count": 36
         }
       }
     },
