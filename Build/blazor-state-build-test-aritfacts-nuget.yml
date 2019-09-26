@@ -28,6 +28,8 @@ stages:
     steps:
     - script: echo Build
     - script: echo $(Version)
+    - task: dutchworkz.DisplayAllVariables.DisplayAllVariables.DutchWorkzToolsAllVariables@1
+      displayName: 'Show all build variables in build output.'
 
     - task: DotNetCoreCLI@2
       displayName: Build BlazorState
@@ -36,6 +38,8 @@ stages:
         arguments: '-maxcpucount:1 -p:Version=$(Version)'
         projects: 'Source/BlazorState/BlazorState.csproj'
     
+
+
     - task: PublishBuildArtifacts@1
       displayName: Publish Nuget Artifact
       inputs:
