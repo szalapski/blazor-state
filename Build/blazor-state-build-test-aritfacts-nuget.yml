@@ -62,8 +62,6 @@ stages:
   jobs:
   - deployment: DeployNuget
     displayName: Deploy To Nuget.org
-    pool:
-     name: TimeWarpEnterprises
     environment: NuGet-org 
     strategy:
      runOnce:
