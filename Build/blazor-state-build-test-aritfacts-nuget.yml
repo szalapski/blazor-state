@@ -99,3 +99,11 @@ stages:
        deploy:
         steps:
         - script: echo Deployed to Production
+
+        - task: GitHubRelease@1
+          displayName: 'GitHub release (create)'
+          inputs:
+            gitHubConnection: 'TimeWarp Enterprises GitHub'
+            repositoryName: 'TimeWarpEngineering/blazor-state'
+            title: '$(GitHubReleaseVersion)'
+            releaseNotesSource: filePath
