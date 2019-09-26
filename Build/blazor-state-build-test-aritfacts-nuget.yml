@@ -1,4 +1,9 @@
-# Built-test-staging-prod pipeline
+# Built-test-artifacts-prod pipeline
+# Build the blazor-state package
+# Run the tests
+# Deploy to Azure-DevOps Artifacts
+# Deploy to Nuget and or GitHub Package Managers
+# Create a Release in GitHub
 
 # Only run against master
 trigger:
@@ -7,12 +12,13 @@ trigger:
 # Don't run against PRs
 pr: none
 
+pool:
+  name: TimeWarpEnterprises
+
 stages:
 - stage: build
   jobs:
   - job: run_build
-    pool:
-      name: TimeWarpEnterprises
     steps:
     - script: echo Build
 
@@ -20,8 +26,6 @@ stages:
   dependsOn: build
   jobs:
   - job: run_tests
-    pool:
-      name: TimeWarpEnterprises
     steps:
     - script: echo Test
     
@@ -29,8 +33,6 @@ stages:
   dependsOn: test
   jobs:
   - job: deploy_staging
-    pool:
-      name: TimeWarpEnterprises
     steps:
     - script: echo Staging
 
@@ -38,7 +40,5 @@ stages:
   dependsOn: staging
   jobs:
   - job: deploy_prod
-    pool:
-      name: TimeWarpEnterprises
     steps:
     - script: echo Prod
