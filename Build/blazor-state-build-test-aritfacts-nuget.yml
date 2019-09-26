@@ -29,6 +29,20 @@ stages:
     - script: echo Build
     - script: echo $(Version)
 
+    - task: DotNetCoreCLI@2
+      displayName: Build BlazorState
+      inputs:
+        command: build
+        arguments: '-maxcpucount:1 -p:Version=$(Version)'
+        projects: 'Source/BlazorState/BlazorState.csproj'
+    
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Nuget Artifact
+      inputs:
+        PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+        ArtifactName: Nuget
+        publishLocation: Container
+
 - stage: test
   dependsOn: build
   jobs:
