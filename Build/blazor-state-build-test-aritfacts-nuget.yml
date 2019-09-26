@@ -1,0 +1,44 @@
+# Built-test-staging-prod pipeline
+
+# Only run against master
+trigger:
+- master
+
+# Don't run against PRs
+pr: none
+
+stages:
+- stage: build
+  jobs:
+  - job: run_build
+    pool:
+      name: TimeWarpEnterprises
+    steps:
+    - script: echo Build
+
+- stage: test
+  dependsOn: build
+  jobs:
+  - job: run_tests
+    pool:
+      name: TimeWarpEnterprises
+    steps:
+    - script: echo Test
+    
+- stage: staging
+  dependsOn: test
+  jobs:
+  - job: deploy_staging
+    pool:
+      name: TimeWarpEnterprises
+    steps:
+    - script: echo Staging
+
+- stage: prod
+  dependsOn: staging
+  jobs:
+  - job: deploy_prod
+    pool:
+      name: TimeWarpEnterprises
+    steps:
+    - script: echo Prod
