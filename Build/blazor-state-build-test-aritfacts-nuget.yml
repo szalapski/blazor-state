@@ -12,8 +12,14 @@ trigger:
 # Don't run against PRs
 pr: none
 
-pool:
-  name: TimeWarpEnterprises
+variables:
+  Major: '1'
+  Minor: '0'
+  MajorAndMinor: "$(Major).$(Minor)"
+  Patch: '0'
+  DotNetSdkVersion: 3.0.100
+  Version: "$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)"
+  Configuration: debug
 
 stages:
 - stage: build
