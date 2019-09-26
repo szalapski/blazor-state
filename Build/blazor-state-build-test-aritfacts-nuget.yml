@@ -27,6 +27,7 @@ stages:
   - job: run_build
     steps:
     - script: echo Build
+    - script: echo $(Version)
 
 - stage: test
   dependsOn: build
