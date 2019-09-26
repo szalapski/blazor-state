@@ -80,6 +80,14 @@ stages:
     steps:
     - script: echo development
 
+    - task: NuGetCommand@2
+      displayName: 'Push NuGet to Azure Devops Nuget feed.'
+      inputs:
+        command: push
+        packagesToPush: '$(System.DefaultWorkingDirectory)/_Blazor-State-Yaml/Nuget/**.nupkg'
+        publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
+
+
 - stage: production
   dependsOn: development
   jobs:
