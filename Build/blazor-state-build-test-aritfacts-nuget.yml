@@ -79,6 +79,7 @@ stages:
   - job: deploy_staging
     steps:
     - script: echo development
+    - script: echo $(Build.ArtifactStagingDirectory)
 
     - task: NuGetCommand@2
       displayName: 'Push NuGet to Azure Devops Nuget feed.'
