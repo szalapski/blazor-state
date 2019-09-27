@@ -84,11 +84,17 @@ stages:
     - script: echo development
     - script: echo $(Build.ArtifactStagingDirectory)
 
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        artifactName: 'Nuget'
+        buildType: 'current'
+        targetPath: '$(Pipeline.Workspace)/PipelineArtifacts'
+
     - task: NuGetCommand@2
       displayName: 'Push NuGet to Azure Devops Nuget feed.'
       inputs:
         command: push
-        packagesToPush: '$(Pipeline.Workspace)/Nuget/*.nupkg;!$(Pipeline.Workspace)/Nuget/*.symbols.nupkg'
+        packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
         nuGetFeedType: 'internal'
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
