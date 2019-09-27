@@ -23,12 +23,10 @@ variables:
 
 stages:
 - stage: build 
-  pool:
-    name: 'TimeWarpEnterprises'
-    workspace:
-      clean: all
   jobs:
   - job: run_build
+    workspace:
+      clean: all
     steps:
     - script: echo Build
     - script: echo $(Version)
@@ -82,12 +80,10 @@ stages:
     
 - stage: development
   dependsOn: test
-  pool:
-    name: 'TimeWarpEnterprises'
-    workspace:
-      clean: all
   jobs:
   - job: deploy_staging
+    workspace:
+      clean: all
     steps:
     - script: echo development
     - script: echo $(Build.ArtifactStagingDirectory)
