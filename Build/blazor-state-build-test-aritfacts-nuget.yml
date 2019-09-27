@@ -88,7 +88,7 @@ stages:
       displayName: 'Push NuGet to Azure Devops Nuget feed.'
       inputs:
         command: push
-        packagesToPush: '$(Pipeline.Workspace)/Nuget/*.nupkg;!$(Build.ArtifactStagingDirectory)/Nuget/*.symbols.nupkg'
+        packagesToPush: '$(Pipeline.Workspace)/Nuget/*.nupkg;!$(Pipeline.Workspace)/Nuget/*.symbols.nupkg'
         nuGetFeedType: 'internal'
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
