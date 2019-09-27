@@ -15,10 +15,10 @@ pr: none
 variables:
   Major: '1'
   Minor: '0'
-  MajorAndMinor: "$(Major).$(Minor)"
-  Patch: '0'
+  MajorAndMinor: '$(Major).$(Minor)'
+  Patch: $[counter(variables.MajorAndMinor,0)]
   DotNetSdkVersion: 3.0.100
-  Version: "$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)"
+  Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
   Configuration: debug
 
 stages:
@@ -29,8 +29,8 @@ stages:
     - script: echo Build
     - script: echo $(Version)
     - script: cleanup -y
-    - task: dutchworkz.DisplayAllVariables.DisplayAllVariables.DutchWorkzToolsAllVariables@1
-      displayName: 'Show all build variables in build output.'
+    # - task: dutchworkz.DisplayAllVariables.DisplayAllVariables.DutchWorkzToolsAllVariables@1
+    #   displayName: 'Show all build variables in build output.'
 
     - task: DotNetCoreCLI@2
       displayName: Build BlazorState
