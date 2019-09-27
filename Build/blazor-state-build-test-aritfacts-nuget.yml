@@ -88,7 +88,7 @@ stages:
       inputs:
         artifactName: 'Nuget'
         buildType: 'current'
-        targetPath: '$(Pipeline.Workspace)/PipelineArtifacts'
+        targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
 
     - task: NuGetCommand@2
       displayName: 'Push NuGet to Azure Devops Nuget feed.'
