@@ -28,6 +28,7 @@ stages:
     steps:
     - script: echo Build
     - script: echo $(Version)
+    - script: cleanup -y
     - task: dutchworkz.DisplayAllVariables.DisplayAllVariables.DutchWorkzToolsAllVariables@1
       displayName: 'Show all build variables in build output.'
 
@@ -87,7 +88,7 @@ stages:
       displayName: 'Push NuGet to Azure Devops Nuget feed.'
       inputs:
         command: push
-        packagesToPush: '$(Pipeline.Workspace)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+        packagesToPush: '$(Pipeline.Workspace)/Nuget/*.nupkg;!$(Build.ArtifactStagingDirectory)/Nuget/*.symbols.nupkg'
         nuGetFeedType: 'internal'
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
@@ -108,6 +109,9 @@ stages:
           displayName: 'GitHub release (create)'
           inputs:
             gitHubConnection: 'TimeWarp Enterprises GitHub'
+            tagSource: userSpecifiedTag
+            tag: '$(GitHubReleaseVersion)'
             repositoryName: 'TimeWarpEngineering/blazor-state'
             title: '$(GitHubReleaseVersion)'
             releaseNotesSource: filePath
+            addChangeLog: true
