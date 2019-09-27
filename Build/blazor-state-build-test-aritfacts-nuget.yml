@@ -22,7 +22,11 @@ variables:
   Configuration: debug
 
 stages:
-- stage: build
+- stage: build 
+  pool:
+    name: 'TimeWarpEnterprises'
+    workspace:
+      clean: all
   jobs:
   - job: run_build
     steps:
@@ -78,6 +82,10 @@ stages:
     
 - stage: development
   dependsOn: test
+  pool:
+    name: 'TimeWarpEnterprises'
+    workspace:
+      clean: all
   jobs:
   - job: deploy_staging
     steps:
@@ -103,6 +111,10 @@ stages:
   dependsOn: development
   jobs:
   - deployment: DeployNuget
+    pool:
+      name: 'TimeWarpEnterprises'
+      workspace:
+        clean: all
     displayName: Deploy To Nuget.org
     environment: NuGet-org 
     strategy:
