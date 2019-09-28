@@ -40,9 +40,7 @@ stages:
     steps:
     - script: | 
          echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
-         echo 'Stage1Counter:$(Stage1Counter)'
          echo 'Stage2Counter:$(Stage2Counter)'
-         echo 'Stage3Counter:$(Stage3Counter)'
 
 # environment NuGet-org has an approval check so we can see if the counter gets bumped or not.
 - stage: Stage3
@@ -64,6 +62,4 @@ stages:
         steps:
           - script: | 
               echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
-              echo 'Stage1Counter:$(Stage1Counter)'
-              echo 'Stage2Counter:$(Stage2Counter)'
               echo 'Stage3Counter:$(Stage3Counter)'
