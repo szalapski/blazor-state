@@ -44,24 +44,26 @@ stages:
          echo 'Stage2Counter:$(Stage2Counter)'
          echo 'Stage3Counter:$(Stage3Counter)'
 
-# # environment NuGet-org has an approval check so we can see if the counter gets bumped or not.
-# - stage: Stage3
-#   variables:
-#     Stage3Counter: $[counter("Stage2Counter",0)]
-#   dependsOn: Stage2
-#   jobs:
-#   - deployment: DeployNuget
-#     pool:
-#       name: 'TimeWarpEnterprises'
-#       workspace:
-#         clean: all
-#     displayName: Stage3
-#     environment: NuGet-org 
-#     strategy:
-#      runOnce:
-#        deploy:
-#         steps:
-#           - script: echo $(GlobalPipelineCounter)  
-#           - script: echo $(Stage1Counter)
-#           - script: echo $(Stage2Counter)
-#           - script: echo $(Stage3Counter)
+# environment NuGet-org has an approval check so we can see if the counter gets bumped or not.
+- stage: Stage3
+  variables:
+    Stage3CounterReset: '0'
+    Stage3Counter: $[counter(variables.Stage2CounterReset,0)]
+  dependsOn: Stage2
+  jobs:
+  - deployment: DeployNuget
+    pool:
+      name: 'TimeWarpEnterprises'
+      workspace:
+        clean: all
+    displayName: Stage3
+    environment: NuGet-org 
+    strategy:
+     runOnce:
+       deploy:
+        steps:
+          - script: | 
+              echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
+              echo 'Stage1Counter:$(Stage1Counter)'
+              echo 'Stage2Counter:$(Stage2Counter)'
+              echo 'Stage3Counter:$(Stage3Counter)'
