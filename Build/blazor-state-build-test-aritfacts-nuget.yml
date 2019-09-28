@@ -15,41 +15,10 @@ pr: none
 variables:
   Major: '1'
   Minor: '0'
-  MajorAndMinor: '$(Major).$(Minor)'
-  Patch: $[counter(variables.MajorAndMinor,0)]
   DotNetSdkVersion: 3.0.100
-  Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
-  Configuration: debug
 
 stages:
-- stage: build 
-  jobs:
-  - job: run_build
-    workspace:
-      clean: all
-    steps:
-    - script: echo Build
-    - script: echo $(Version)
-    - script: cleanup -y
-    # - task: dutchworkz.DisplayAllVariables.DisplayAllVariables.DutchWorkzToolsAllVariables@1
-    #   displayName: 'Show all build variables in build output.'
-
-    - task: DotNetCoreCLI@2
-      displayName: Build BlazorState
-      inputs:
-        command: build
-        arguments: '-maxcpucount:1 -p:Version=$(Version)'
-        projects: 'Source/BlazorState/BlazorState.csproj'
-    
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Nuget Artifact
-      inputs:
-        PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-        ArtifactName: Nuget
-        publishLocation: Container
-
 - stage: test
-  dependsOn: build
   jobs:
   - job: run_tests
     steps:
@@ -77,20 +46,44 @@ stages:
         codeCoverageTool: Cobertura
         summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
         reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
-    
-- stage: development
+  
+- stage: build
+  variables:
+    Patch: 0 # Can manually update this I do not see how I can automate it but if left zero it doesn't matter
+    Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
+    Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
   dependsOn: test
   jobs:
-  - job: deploy_staging
+  - job: run_build
     workspace:
       clean: all
     steps:
-    - script: echo development
-    - script: echo $(Build.ArtifactStagingDirectory)
+    - script: echo $(Version)
 
+    - task: DotNetCoreCLI@2
+      displayName: Build BlazorState nightly
+      inputs:
+        command: build
+        arguments: '-maxcpucount:1 -p:Version=$(Version)'
+        projects: 'Source/BlazorState/BlazorState.csproj'
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Nuget Artifact
+      inputs:
+        PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+        ArtifactName: NugetPreRelease
+        publishLocation: Container
+
+- stage: staging
+  dependsOn: build
+  jobs:
+  - job: DeployToAzure
+    workspace:
+      clean: all
+    steps:
     - task: DownloadPipelineArtifact@2
       inputs:
-        artifactName: 'Nuget'
+        artifactName: 'NugetPreRelease'
         buildType: 'current'
         targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
 
@@ -102,9 +95,11 @@ stages:
         nuGetFeedType: 'internal'
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
-
 - stage: production
-  dependsOn: development
+  variables:
+    Patch: $[counter(variables.Major, variables.Minor, 0)]
+    Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
+  dependsOn: staging
   jobs:
   - deployment: DeployNuget
     pool:
@@ -118,6 +113,27 @@ stages:
        deploy:
         steps:
         - script: echo Deployed to Production
+        - task: DotNetCoreCLI@2
+          displayName: Build BlazorState release
+          inputs:
+            command: build
+            arguments: '-maxcpucount:1 -p:Version=$(Version)'
+            projects: 'Source/BlazorState/BlazorState.csproj'
+
+        - task: PublishBuildArtifacts@1
+          displayName: Publish Nuget Artifact
+          inputs:
+            PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+            ArtifactName: Nuget
+            publishLocation: Container
+
+        - task: NuGetCommand@2
+          displayName: 'Push NuGet to Nuget.org'
+          inputs:
+            command: push
+            packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
+            nuGetFeedType: external
+            publishFeedCredentials: Nuget.org
 
         - task: GitHubRelease@1
           displayName: 'GitHub release (create)'
