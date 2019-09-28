@@ -13,7 +13,7 @@ trigger:
 pr: none
 
 variables:
-  GlobalPipelineCounter: $[counter("GlobalPipelineCounter",0)]
+  GlobalPipelineCounter: $[counter('GlobalPipelineCounter',0)]
 
 stages:
 - stage: Stage1 
