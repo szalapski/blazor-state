@@ -13,20 +13,21 @@ trigger:
 pr: none
 
 variables:
-  Foo: "Anything"
-  GlobalPipelineCounter: $[counter(variables.Foo,0)]
+  GlobalCounterReset: '0'
+  GlobalPipelineCounter: $[counter(variables.GlobalCounterReset,0)]
 
 stages:
 - stage: Stage1 
-  # variables:
-  #   Stage1Counter: $[counter("Stage1Counter",0)]
+  variables:
+    Stage1CounterReset: '0'
+    Stage1Counter: $[counter(variables.Stage1CounterReset,0)]
   jobs:
   - job: some_Job
     workspace:
       clean: all
     steps:
-    - script: echo $(GlobalPipelineCounter)  
-    # - script: echo $(Stage1Counter)
+    - script: echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
+    - script: echo 'Stage1Counter:$(Stage1Counter)'
     # - script: echo $(Stage2Counter)
     # - script: echo $(Stage3Counter)
 
