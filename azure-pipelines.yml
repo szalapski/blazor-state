@@ -18,8 +18,8 @@ variables:
 
 stages:
 - stage: Stage1 
-  variables:
-    Stage1Counter: $[counter("Stage1Counter",0)]
+  # variables:
+  #   Stage1Counter: $[counter("Stage1Counter",0)]
   jobs:
   - job: some_Job
     workspace:
