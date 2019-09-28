@@ -26,10 +26,9 @@ stages:
     workspace:
       clean: all
     steps:
-    - script: echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
-    - script: echo 'Stage1Counter:$(Stage1Counter)'
-    # - script: echo $(Stage2Counter)
-    # - script: echo $(Stage3Counter)
+    - script: |
+        echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
+        echo 'Stage1Counter:$(Stage1Counter)'
 
 - stage: Stage2
   variables:
@@ -39,10 +38,11 @@ stages:
   jobs:
   - job: some_Job2
     steps:
-    - script: echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
-    - script: echo 'Stage1Counter:$(Stage1Counter)'
-    - script: echo 'Stage2Counter:$(Stage2Counter)'
-    - script: echo 'Stage3Counter:$(Stage3Counter)'
+    - script: | 
+         echo 'GlobalPipelineCounter:$(GlobalPipelineCounter)'
+         echo 'Stage1Counter:$(Stage1Counter)'
+         echo 'Stage2Counter:$(Stage2Counter)'
+         echo 'Stage3Counter:$(Stage3Counter)'
 
 # # environment NuGet-org has an approval check so we can see if the counter gets bumped or not.
 # - stage: Stage3
