@@ -71,7 +71,7 @@ stages:
       displayName: Publish Nuget Artifact
       inputs:
         PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-        ArtifactName: NugetPreRelease
+        ArtifactName: 'NugetPreRelease'
         publishLocation: Container
 
 - stage: staging
