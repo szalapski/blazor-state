@@ -44,17 +44,16 @@ stages:
           - script: echo Staging
 
   - stage: Production_Stage
-    variables:
     jobs:
       - deployment: 
         environment: Production
+        variables:
+          PatchCounterReset: $(Major).$(Minor)
+          Patch: $[counter(variables.PatchCounterReset, 0)]
+          Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
         strategy:
           runOnce:
             deploy:
-              variables:
-                PatchCounterReset: $(Major).$(Minor)
-                Patch: $[counter(variables.PatchCounterReset, 0)]
-                Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
               steps:
               - script: |
                   echo Production_Stage
