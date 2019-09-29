@@ -15,9 +15,9 @@ stages:
         steps:
           - script: |
               echo TestStage
-              echo $(Major)
-              echo $(Minor)
-              echo $(DotNetSdkVersion)
+              echo Major:$(Major)
+              echo Minor:$(Minor)
+              echo DotNetSdkVersion:$(DotNetSdkVersion)
 
   - stage: Build_Stage
     variables:
@@ -29,12 +29,12 @@ stages:
         steps:
           - script: |
               echo Build
-              echo $(Major)
-              echo $(Minor)
-              echo $(DotNetSdkVersion)
-              echo $(Patch)
-              echo $(BuildNumber)
-              echo $(Version)
+              echo Major:$(Major)
+              echo Minor:$(Minor)
+              echo DotNetSdkVersion:$(DotNetSdkVersion)
+              echo Patch:$(Patch)
+              echo SomeCounter:$(SomeCounter)
+              echo Version:$(Version)
 
   - stage: Staging_Stage
     jobs:
