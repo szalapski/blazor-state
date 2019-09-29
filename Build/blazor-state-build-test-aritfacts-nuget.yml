@@ -47,7 +47,7 @@ stages:
     variables:
       PatchCounterReset: $(Major).$(Minor)
       Patch: $[counter(variables.PatchCounterReset, 0)]
-      Version: '$(Major).$(Minor).$(Patch)-(BuildCounter)+$(DotNetSdkVersion)'
+      Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
     jobs:
       - job:
         steps:
@@ -57,5 +57,4 @@ stages:
               echo Minor:$(Minor)
               echo DotNetSdkVersion:$(DotNetSdkVersion)
               echo Patch:$(Patch)
-              echo BuildCounter:$(BuildCounter)
               echo Version:$(Version)
