@@ -18,29 +18,29 @@ stages:
   - job: run_tests
     steps:
     - script: echo Test
-    - task: DotNetCoreCLI@2
-      displayName: 'Run all the Integration Tests in the repo and gather coverage data'
-      continueOnError: false
-      inputs:
-        command: test
-        arguments: '-maxcpucount:1 /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:UseSourceLink=true /p:Include="[BlazorState]*"'
-        projects: '**/*.Integration.Tests/*.csproj'
+    # - task: DotNetCoreCLI@2
+    #   displayName: 'Run all the Integration Tests in the repo and gather coverage data'
+    #   continueOnError: false
+    #   inputs:
+    #     command: test
+    #     arguments: '-maxcpucount:1 /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:UseSourceLink=true /p:Include="[BlazorState]*"'
+    #     projects: '**/*.Integration.Tests/*.csproj'
 
-    - task: reportgenerator@4
-      displayName: 'Test coverage Report Generator'
-      inputs:
-        reports: '$(Build.SourcesDirectory)/Tests/**/coverage.cobertura.xml'
-        targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
-        reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
-        historydir: '$(Build.SourcesDirectory)/CodeCoverage/History'
-        assemblyfilters: '+BlazorState'
+    # - task: reportgenerator@4
+    #   displayName: 'Test coverage Report Generator'
+    #   inputs:
+    #     reports: '$(Build.SourcesDirectory)/Tests/**/coverage.cobertura.xml'
+    #     targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
+    #     reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
+    #     historydir: '$(Build.SourcesDirectory)/CodeCoverage/History'
+    #     assemblyfilters: '+BlazorState'
 
-    - task: PublishCodeCoverageResults@1
-      displayName: 'Publish code coverage'
-      inputs:
-        codeCoverageTool: Cobertura
-        summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
-        reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+    # - task: PublishCodeCoverageResults@1
+    #   displayName: 'Publish code coverage'
+    #   inputs:
+    #     codeCoverageTool: Cobertura
+    #     summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+    #     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
   
 - stage: Build
   variables:
@@ -53,21 +53,21 @@ stages:
     workspace:
       clean: all
     steps:
-    - script: echo $(Version)
+    - script: echo Build
 
-    - task: DotNetCoreCLI@2
-      displayName: Build BlazorState nightly
-      inputs:
-        command: build
-        arguments: '-maxcpucount:1 -p:Version=$(Version)'
-        projects: 'Source/BlazorState/BlazorState.csproj'
+    # - task: DotNetCoreCLI@2
+    #   displayName: Build BlazorState nightly
+    #   inputs:
+    #     command: build
+    #     arguments: '-maxcpucount:1 -p:Version=$(Version)'
+    #     projects: 'Source/BlazorState/BlazorState.csproj'
 
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Nuget Artifact
-      inputs:
-        PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-        ArtifactName: 'NugetPreRelease'
-        publishLocation: Container
+    # - task: PublishBuildArtifacts@1
+    #   displayName: Publish Nuget Artifact
+    #   inputs:
+    #     PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+    #     ArtifactName: 'NugetPreRelease'
+    #     publishLocation: Container
 
 - stage: Staging
   dependsOn: Build
@@ -77,20 +77,20 @@ stages:
     workspace:
       clean: all
     steps:
-    - script: echo Statging
-    - task: DownloadPipelineArtifact@2
-      inputs:
-        artifactName: 'NugetPreRelease'
-        buildType: current
-        targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
+    - script: echo Staging
+    # - task: DownloadPipelineArtifact@2
+    #   inputs:
+    #     artifactName: 'NugetPreRelease'
+    #     buildType: current
+    #     targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
 
-    - task: NuGetCommand@2
-      displayName: 'Push NuGet to Azure Devops Nuget feed.'
-      inputs:
-        command: push
-        packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
-        nuGetFeedType: internal
-        publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
+    # - task: NuGetCommand@2
+    #   displayName: 'Push NuGet to Azure Devops Nuget feed.'
+    #   inputs:
+    #     command: push
+    #     packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
+    #     nuGetFeedType: internal
+    #     publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
 - stage: Production
   variables:
@@ -109,40 +109,40 @@ stages:
      runOnce:
        deploy:
         steps:
-        - script: echo Deployed to Production
-        - task: DotNetCoreCLI@2
-          displayName: Build BlazorState release
-          inputs:
-            command: build
-            arguments: '-maxcpucount:1 -p:Version=$(Version)'
-            projects: 'Source/BlazorState/BlazorState.csproj'
+        - script: echo Production
+        # - task: DotNetCoreCLI@2
+        #   displayName: Build BlazorState release
+        #   inputs:
+        #     command: build
+        #     arguments: '-maxcpucount:1 -p:Version=$(Version)'
+        #     projects: 'Source/BlazorState/BlazorState.csproj'
 
-        - task: PublishBuildArtifacts@1
-          displayName: Publish Nuget Artifact
-          inputs:
-            PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-            ArtifactName: Nuget
-            publishLocation: Container
+        # - task: PublishBuildArtifacts@1
+        #   displayName: Publish Nuget Artifact
+        #   inputs:
+        #     PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+        #     ArtifactName: Nuget
+        #     publishLocation: Container
 
-        - task: NuGetCommand@2
-          displayName: 'Push NuGet to Nuget.org'
-          inputs:
-            command: push
-            packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
-            nuGetFeedType: external
-            publishFeedCredentials: Nuget.org
+        # - task: NuGetCommand@2
+        #   displayName: 'Push NuGet to Nuget.org'
+        #   inputs:
+        #     command: push
+        #     packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
+        #     nuGetFeedType: external
+        #     publishFeedCredentials: Nuget.org
 
-        - task: GitHubRelease@1
-          displayName: 'GitHub release (create)'
-          inputs:
-            gitHubConnection: 'TimeWarp Enterprises GitHub'
-            target: '$(Build.SourceVersion)'
-            tagSource: userSpecifiedTag
-            tag: '$(GitHubReleaseVersion)'
-            repositoryName: 'TimeWarpEngineering/blazor-state'
-            title: '$(GitHubReleaseVersion)'
-            releaseNotesSource: filePath
-            releaseNotesFilePath: 'Documentation/ReleaseNotes.md'
-            addChangeLog: true
-            changeLogCompareToRelease: 'lastFullRelease'
-            changeLogType: 'commitBased'
+        # - task: GitHubRelease@1
+        #   displayName: 'GitHub release (create)'
+        #   inputs:
+        #     gitHubConnection: 'TimeWarp Enterprises GitHub'
+        #     target: '$(Build.SourceVersion)'
+        #     tagSource: userSpecifiedTag
+        #     tag: '$(GitHubReleaseVersion)'
+        #     repositoryName: 'TimeWarpEngineering/blazor-state'
+        #     title: '$(GitHubReleaseVersion)'
+        #     releaseNotesSource: filePath
+        #     releaseNotesFilePath: 'Documentation/ReleaseNotes.md'
+        #     addChangeLog: true
+        #     changeLogCompareToRelease: 'lastFullRelease'
+        #     changeLogType: 'commitBased'
