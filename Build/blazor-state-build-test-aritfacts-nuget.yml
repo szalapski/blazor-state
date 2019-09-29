@@ -49,12 +49,16 @@ stages:
       Patch: $[counter(variables.PatchCounterReset, 0)]
       Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
     jobs:
-      - job:
-        steps:
-          - script: |
-              echo Production_Stage
-              echo Major:$(Major)
-              echo Minor:$(Minor)
-              echo DotNetSdkVersion:$(DotNetSdkVersion)
-              echo Patch:$(Patch)
-              echo Version:$(Version)
+      - deployment: 
+        environment: Production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - script: |
+                  echo Production_Stage
+                  echo Major:$(Major)
+                  echo Minor:$(Minor)
+                  echo DotNetSdkVersion:$(DotNetSdkVersion)
+                  echo Patch:$(Patch)
+                  echo Version:$(Version)
