@@ -14,7 +14,7 @@ stages:
       - job:
         steps:
           - script: |
-              echo TestStage
+              echo Test_Stage
               echo Major:$(Major)
               echo Minor:$(Minor)
               echo DotNetSdkVersion:$(DotNetSdkVersion)
@@ -29,12 +29,12 @@ stages:
       - job:
         steps:
           - script: |
-              echo Build
+              echo Build_Stage
               echo Major:$(Major)
               echo Minor:$(Minor)
               echo DotNetSdkVersion:$(DotNetSdkVersion)
               echo Patch:$(Patch)
-              echo SomeCounter:$(BuildCounter)
+              echo BuildCounter:$(BuildCounter)
               echo Version:$(Version)
 
   - stage: Staging_Stage
@@ -44,7 +44,18 @@ stages:
           - script: echo Staging
 
   - stage: Production_Stage
+    variables:
+      PatchCounterReset: $(Major).$(Minor)
+      Patch: $[counter(variables.PatchCounterReset, 0)]
+      Version: '$(Major).$(Minor).$(Patch)-(BuildCounter)+$(DotNetSdkVersion)'
     jobs:
       - job:
         steps:
-          - script: echo Production
+          - script: |
+              echo Production_Stage
+              echo Major:$(Major)
+              echo Minor:$(Minor)
+              echo DotNetSdkVersion:$(DotNetSdkVersion)
+              echo Patch:$(Patch)
+              echo BuildCounter:$(BuildCounter)
+              echo Version:$(Version)
