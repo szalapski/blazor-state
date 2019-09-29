@@ -42,7 +42,7 @@ stages:
     #     summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
     #     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
   
-- stage: Build
+- stage: BuildStage
   variables:
     Patch: 0 # Can manually update this I do not see how I can automate it but if left zero it doesn't matter
     Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
@@ -70,7 +70,7 @@ stages:
     #     publishLocation: Container
 
 - stage: Staging
-  dependsOn: Build
+  dependsOn: BuildStage
   condition: succeeded('Build')
   jobs:
   - job: DeployToAzure
