@@ -20,10 +20,21 @@ stages:
               echo $(DotNetSdkVersion)
 
   - stage: Build
+    variables:
+      Patch: 0
+      Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
+      Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
     jobs:
       - job:
         steps:
-          - script: echo BuildStage
+          - script: |
+              echo Build
+              echo $(Major)
+              echo $(Minor)
+              echo $(DotNetSdkVersion)
+              echo $(Patch)
+              echo $(Build)
+              echo $(Version)
 
   - stage: Staging
     jobs:
