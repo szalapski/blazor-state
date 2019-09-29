@@ -22,8 +22,8 @@ stages:
   - stage: Build_Stage
     variables:
       Patch: 0
-      SomeCounter: $[counter('Anything', 0)]
-      Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
+      BuildCounter: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
+      Version: '$(Major).$(Minor).$(Patch)-(BuildCounter)+$(DotNetSdkVersion)'
     jobs:
       - job:
         steps:
@@ -33,7 +33,7 @@ stages:
               echo Minor:$(Minor)
               echo DotNetSdkVersion:$(DotNetSdkVersion)
               echo Patch:$(Patch)
-              echo SomeCounter:$(SomeCounter)
+              echo SomeCounter:$(BuildCounter)
               echo Version:$(Version)
 
   - stage: Staging_Stage
