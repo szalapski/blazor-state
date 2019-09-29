@@ -18,6 +18,29 @@ stages:
               echo Major:$(Major)
               echo Minor:$(Minor)
               echo DotNetSdkVersion:$(DotNetSdkVersion)
+              - task: DotNetCoreCLI@2
+                displayName: 'Run all the Integration Tests in the repo and gather coverage data'
+                continueOnError: false
+                inputs:
+                  command: test
+                  arguments: '-maxcpucount:1 /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:UseSourceLink=true /p:Include="[BlazorState]*"'
+                  projects: '**/*.Integration.Tests/*.csproj'
+
+              - task: reportgenerator@4
+                displayName: 'Test coverage Report Generator'
+                inputs:
+                  reports: '$(Build.SourcesDirectory)/Tests/**/coverage.cobertura.xml'
+                  targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
+                  reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
+                  historydir: '$(Build.SourcesDirectory)/CodeCoverage/History'
+                  assemblyfilters: '+BlazorState'
+
+              - task: PublishCodeCoverageResults@1
+                displayName: 'Publish code coverage'
+                inputs:
+                  codeCoverageTool: Cobertura
+                  summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+                  reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
 
   - stage: Build_Stage
     variables:
