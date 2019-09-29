@@ -13,7 +13,7 @@ variables:
   DotNetSdkVersion: 3.0.100
 
 stages:
-- stage: test
+- stage: Test
   jobs:
   - job: run_tests
     steps:
@@ -42,12 +42,12 @@ stages:
         summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
         reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
   
-- stage: build
+- stage: Build
   variables:
     Patch: 0 # Can manually update this I do not see how I can automate it but if left zero it doesn't matter
     Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
     Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
-  dependsOn: test
+  dependsOn: Test
   jobs:
   - job: run_build
     workspace:
@@ -69,8 +69,8 @@ stages:
         ArtifactName: 'NugetPreRelease'
         publishLocation: Container
 
-- stage: staging
-  dependsOn: build
+- stage: Staging
+  dependsOn: Build
   jobs:
   - job: DeployToAzure
     workspace:
@@ -90,11 +90,11 @@ stages:
         nuGetFeedType: internal
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
-- stage: production
+- stage: Production
   variables:
     Patch: $[counter(variables.Major, variables.Minor, 0)]
     Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
-  dependsOn: staging
+  dependsOn: Staging
   jobs:
   - deployment: DeployNuget
     pool:
