@@ -1,148 +1,38 @@
-# Built-test-artifacts-prod pipeline
-
-# Only run against master
 trigger:
 - master
 
-# Don't run against PRs
 pr: none
 
 variables:
-  Major: '1'
-  Minor: '0'
+  Major: 1
+  Minor: 0
   DotNetSdkVersion: 3.0.100
 
 stages:
-- stage: Test
-  jobs:
-  - job: run_tests
-    steps:
-    - script: echo Test
-    # - task: DotNetCoreCLI@2
-    #   displayName: 'Run all the Integration Tests in the repo and gather coverage data'
-    #   continueOnError: false
-    #   inputs:
-    #     command: test
-    #     arguments: '-maxcpucount:1 /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:UseSourceLink=true /p:Include="[BlazorState]*"'
-    #     projects: '**/*.Integration.Tests/*.csproj'
-
-    # - task: reportgenerator@4
-    #   displayName: 'Test coverage Report Generator'
-    #   inputs:
-    #     reports: '$(Build.SourcesDirectory)/Tests/**/coverage.cobertura.xml'
-    #     targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
-    #     reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
-    #     historydir: '$(Build.SourcesDirectory)/CodeCoverage/History'
-    #     assemblyfilters: '+BlazorState'
-
-    # - task: PublishCodeCoverageResults@1
-    #   displayName: 'Publish code coverage'
-    #   inputs:
-    #     codeCoverageTool: Cobertura
-    #     summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
-    #     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
-  
-- stage: BuildStage
-  variables:
-    Patch: 0 # Can manually update this I do not see how I can automate it but if left zero it doesn't matter
-    Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
-    Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
-  dependsOn: Test
-  jobs:
-  - job: run_build
-    workspace:
-      clean: all
-    steps:
-    - script: echo Build
-
-    # - task: DotNetCoreCLI@2
-    #   displayName: Build BlazorState nightly
-    #   inputs:
-    #     command: build
-    #     arguments: '-maxcpucount:1 -p:Version=$(Version)'
-    #     projects: 'Source/BlazorState/BlazorState.csproj'
-
-    # - task: PublishBuildArtifacts@1
-    #   displayName: Publish Nuget Artifact
-    #   inputs:
-    #     PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-    #     ArtifactName: 'NugetPreRelease'
-    #     publishLocation: Container
-
-- stage: Staging
-  dependsOn: BuildStage
-  condition: succeeded('Build')
-  jobs:
-  - job: DeployToAzure
-    workspace:
-      clean: all
-    steps:
-    - script: echo Staging
-    # - task: DownloadPipelineArtifact@2
-    #   inputs:
-    #     artifactName: 'NugetPreRelease'
-    #     buildType: current
-    #     targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
-
-    # - task: NuGetCommand@2
-    #   displayName: 'Push NuGet to Azure Devops Nuget feed.'
-    #   inputs:
-    #     command: push
-    #     packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
-    #     nuGetFeedType: internal
-    #     publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
-
-- stage: Production
-  variables:
-    Patch: $[counter(variables.Major, variables.Minor, 0)]
-    Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
-  dependsOn: Staging
-  jobs:
-  - deployment: DeployNuget
-    pool:
-      name: 'TimeWarpEnterprises'
-      workspace:
-        clean: all
-    displayName: Deploy To Nuget.org
-    environment: NuGet-org 
-    strategy:
-     runOnce:
-       deploy:
+  - stage: Test
+    jobs:
+      - job:
         steps:
-        - script: echo Production
-        # - task: DotNetCoreCLI@2
-        #   displayName: Build BlazorState release
-        #   inputs:
-        #     command: build
-        #     arguments: '-maxcpucount:1 -p:Version=$(Version)'
-        #     projects: 'Source/BlazorState/BlazorState.csproj'
+          - script: |
+              echo TestStage
+              echo $(Major)
+              echo $(Minor)
+              echo $(DotNetSdkVersion)
 
-        # - task: PublishBuildArtifacts@1
-        #   displayName: Publish Nuget Artifact
-        #   inputs:
-        #     PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
-        #     ArtifactName: Nuget
-        #     publishLocation: Container
+  - stage: Build
+    jobs:
+      - job:
+        steps:
+          - script: echo BuildStage
 
-        # - task: NuGetCommand@2
-        #   displayName: 'Push NuGet to Nuget.org'
-        #   inputs:
-        #     command: push
-        #     packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
-        #     nuGetFeedType: external
-        #     publishFeedCredentials: Nuget.org
+  - stage: Staging
+    jobs:
+      - job:
+        steps:
+          - script: echo Staging
 
-        # - task: GitHubRelease@1
-        #   displayName: 'GitHub release (create)'
-        #   inputs:
-        #     gitHubConnection: 'TimeWarp Enterprises GitHub'
-        #     target: '$(Build.SourceVersion)'
-        #     tagSource: userSpecifiedTag
-        #     tag: '$(GitHubReleaseVersion)'
-        #     repositoryName: 'TimeWarpEngineering/blazor-state'
-        #     title: '$(GitHubReleaseVersion)'
-        #     releaseNotesSource: filePath
-        #     releaseNotesFilePath: 'Documentation/ReleaseNotes.md'
-        #     addChangeLog: true
-        #     changeLogCompareToRelease: 'lastFullRelease'
-        #     changeLogType: 'commitBased'
+  - stage: Production
+    jobs:
+      - job:
+        steps:
+          - script: echo Production
