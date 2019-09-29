@@ -9,7 +9,7 @@ variables:
   DotNetSdkVersion: 3.0.100
 
 stages:
-  - stage: Test-Stage
+  - stage: Test_Stage
     jobs:
       - job:
         steps:
@@ -19,7 +19,7 @@ stages:
               echo $(Minor)
               echo $(DotNetSdkVersion)
 
-  - stage: Build-Stage
+  - stage: Build_Stage
     variables:
       Patch: 0
       Build: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
@@ -36,13 +36,13 @@ stages:
               echo $(Build)
               echo $(Version)
 
-  - stage: Staging-Stage
+  - stage: Staging_Stage
     jobs:
       - job:
         steps:
           - script: echo Staging
 
-  - stage: Production-Stage
+  - stage: Production_Stage
     jobs:
       - job:
         steps:
