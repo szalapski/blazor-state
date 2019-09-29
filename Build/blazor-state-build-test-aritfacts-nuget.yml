@@ -23,7 +23,7 @@ stages:
     variables:
       Patch: 0
       BuildCounterReset: $(Major).$(Minor).$(Patch)
-      BuildCounter: $[counter($BuildCounterReset, 0)]
+      BuildCounter: $[counter(variables.BuildCounterReset, 0)]
       Version: '$(Major).$(Minor).$(Patch)-(BuildCounter)+$(DotNetSdkVersion)'
     jobs:
       - job:
