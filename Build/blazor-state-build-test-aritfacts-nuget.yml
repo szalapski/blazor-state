@@ -22,7 +22,7 @@ stages:
   - stage: Build_Stage
     variables:
       Patch: 0
-      BuildNumber: $[counter(variables.Major, variables.Minor, variables.Patch, 0)]
+      SomeCounter: $[counter('Anything', 0)]
       Version: '$(Major).$(Minor).$(Patch)-(Build)+$(DotNetSdkVersion)'
     jobs:
       - job:
