@@ -22,7 +22,7 @@ stages:
   - stage: Build_Stage
     variables:
       Patch: 0
-      BuildCounterReset: $(Major).$(Minor).$(Patch)
+      BuildCounterReset: "12312312432423saxxasdfadf" #$(Major).$(Minor).$(Patch)
       BuildCounter: $[counter(variables.BuildCounterReset, 0)]
       Version: '$(Major).$(Minor).$(Patch)-$(BuildCounter)+$(DotNetSdkVersion)'
     jobs:
@@ -48,7 +48,7 @@ stages:
       - deployment: 
         environment: Production
         variables:
-          PatchCounterReset: $(Major).$(Minor)
+          PatchCounterReset: "anythingdifferent to reset the thing xxx123122343399" #$(Major).$(Minor)
           Patch: $[counter(variables.PatchCounterReset, 0)]
           Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
         strategy:
