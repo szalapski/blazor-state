@@ -1,9 +1,4 @@
 # Built-test-artifacts-prod pipeline
-# Build the blazor-state package
-# Run the tests
-# Deploy to Azure-DevOps Artifacts
-# Deploy to Nuget and or GitHub Package Managers
-# Create a Release in GitHub
 
 # Only run against master
 trigger:
@@ -84,7 +79,7 @@ stages:
     - task: DownloadPipelineArtifact@2
       inputs:
         artifactName: 'NugetPreRelease'
-        buildType: 'current'
+        buildType: current
         targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
 
     - task: NuGetCommand@2
@@ -92,7 +87,7 @@ stages:
       inputs:
         command: push
         packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
-        nuGetFeedType: 'internal'
+        nuGetFeedType: internal
         publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
 - stage: production
