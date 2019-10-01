@@ -60,6 +60,20 @@ stages:
               echo BuildCounter:$(BuildCounter)
               echo Version:$(Version)
 
+          - task: DotNetCoreCLI@2
+            displayName: Build BlazorState for Pre release
+            inputs:
+              command: build
+              arguments: '-maxcpucount:1 -p:Version=$(Version)'
+              projects: 'Source/BlazorState/BlazorState.csproj'
+
+          - task: PublishBuildArtifacts@1
+            displayName: Publish Nuget Artifact
+            inputs:
+              PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+              ArtifactName: 'NugetPreRelease'
+              publishLocation: Container
+
   - stage: Staging_Stage
     jobs:
       - job:
