@@ -112,3 +112,40 @@ stages:
                   echo DotNetSdkVersion:$(DotNetSdkVersion)
                   echo Patch:$(Patch)
                   echo Version:$(Version)
+                  
+              - task: DotNetCoreCLI@2
+                displayName: Build BlazorState release
+                inputs:
+                  command: build
+                  arguments: '-maxcpucount:1 -p:Version=$(Version)'
+                  projects: 'Source/BlazorState/BlazorState.csproj'
+
+              - task: PublishBuildArtifacts@1
+                displayName: Publish Nuget Artifact
+                inputs:
+                  PathtoPublish: $(System.DefaultWorkingDirectory)/Source/BlazorState/bin/Packages
+                  ArtifactName: Nuget
+                  publishLocation: Container
+
+              - task: NuGetCommand@2
+                displayName: 'Push NuGet to Nuget.org'
+                inputs:
+                  command: push
+                  packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
+                  nuGetFeedType: external
+                  publishFeedCredentials: Nuget.org
+
+              - task: GitHubRelease@1
+                displayName: 'GitHub release (create)'
+                inputs:
+                  gitHubConnection: 'TimeWarp Enterprises GitHub'
+                  target: '$(Build.SourceVersion)'
+                  tagSource: userSpecifiedTag
+                  tag: '$(GitHubReleaseVersion)'
+                  repositoryName: 'TimeWarpEngineering/blazor-state'
+                  title: '$(GitHubReleaseVersion)'
+                  releaseNotesSource: filePath
+                  releaseNotesFilePath: 'Documentation/ReleaseNotes.md'
+                  addChangeLog: true
+                  changeLogCompareToRelease: 'lastFullRelease'
+                  changeLogType: 'commitBased'
