@@ -5,7 +5,7 @@ pr: none
 
 variables:
   Major: 1
-  Minor: 0
+  Minor: 1
   DotNetSdkVersion: 3.0.100
 
 stages:
