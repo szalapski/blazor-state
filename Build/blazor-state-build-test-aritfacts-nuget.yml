@@ -79,6 +79,19 @@ stages:
       - job:
         steps:
           - script: echo Staging
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              artifactName: 'NugetPreRelease'
+              buildType: current
+              targetPath: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget'
+
+          - task: NuGetCommand@2
+            displayName: 'Push NuGet to Azure Devops Nuget feed.'
+            inputs:
+              command: push
+              packagesToPush: '$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.nupkg;!$(Pipeline.Workspace)/PipelineArtifacts/Nuget/*.symbols.nupkg'
+              nuGetFeedType: internal
+              publishVstsFeed: 'dfe61826-f0b9-46b3-a391-23626fc363f2'
 
   - stage: Production_Stage
     jobs:
