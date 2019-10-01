@@ -39,18 +39,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "../ReleaseNotes.md",
-      "output": {
-        ".html": {
-          "relative_path": "ReleaseNotes.html",
-          "hash": "4PzUox4ZZjWZO4s8zyEgNQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Api/Overview.md",
       "output": {
         ".html": {
@@ -465,7 +453,7 @@
           "hash": "3wGqDP/4y+LTDOAdiSKNLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -506,6 +494,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes.html",
+          "hash": "N/tOZR2D1hFudktVsgLeaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Tutorial.md",
       "output": {
         ".html": {
@@ -513,7 +513,7 @@
           "hash": "5zbKYpsztwc4fzYT1ohJXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -525,7 +525,7 @@
           "hash": "XIopMIdXDI6quTRFjD2jcQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -568,7 +568,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 38,
-          "skipped_file_count": 36
+          "skipped_file_count": 37
         }
       }
     },
