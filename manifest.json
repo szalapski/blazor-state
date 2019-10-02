@@ -434,6 +434,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "Features.md",
+      "output": {
+        ".html": {
+          "relative_path": "Features.html",
+          "hash": "Vzan1tM4zNZPM0ZZEpNX/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "Images/BlazorWasmHostedScreenShot.png",
       "output": {
@@ -446,14 +458,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Migration.md",
+      "output": {
+        ".html": {
+          "relative_path": "Migration.html",
+          "hash": "4egi+K+Khf9Qe7nlijSPjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Overview.md",
       "output": {
         ".html": {
           "relative_path": "Overview.html",
-          "hash": "3wGqDP/4y+LTDOAdiSKNLA=="
+          "hash": "iNK4KrxUe1boinFIruZDUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -494,26 +518,14 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "ReleaseNotes.md",
-      "output": {
-        ".html": {
-          "relative_path": "ReleaseNotes.html",
-          "hash": "N/tOZR2D1hFudktVsgLeaw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Tutorial.md",
       "output": {
         ".html": {
           "relative_path": "Tutorial.html",
-          "hash": "5zbKYpsztwc4fzYT1ohJXw=="
+          "hash": "Do6J+bA0+8Ii1uYVErSW3Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -522,10 +534,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "XIopMIdXDI6quTRFjD2jcQ=="
+          "hash": "OaLzoy3bf9BfkVLW0KQr5A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -557,18 +569,18 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 39,
+          "skipped_file_count": 34
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 38,
-          "skipped_file_count": 38
         }
       }
     },
