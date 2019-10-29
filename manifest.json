@@ -31,10 +31,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "C/FZ+EYQzvTy1rLKdAEyKg=="
+          "hash": "5OvvQYu3mZC8aUf9EO0ZyA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -43,10 +43,10 @@
       "output": {
         ".html": {
           "relative_path": "Api/Overview.html",
-          "hash": "QXyKDu5SwrjkpBdSuxUcqQ=="
+          "hash": "ZrruvmBvieRHNYMPGkwTmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,10 +55,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Done.html",
-          "hash": "zVX4YFDORBt9HvVwyziDoA=="
+          "hash": "9Rnr4WOtgKJj2Dp05dv6Gg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -67,10 +67,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Overview.html",
-          "hash": "HSaxuaIGvWoXOz7+qGO60A=="
+          "hash": "n4lOyZ5tKfySjggsijOkrw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -79,10 +79,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Rejected.html",
-          "hash": "1vlMYA0T0C6UrhGFnn/vZA=="
+          "hash": "rFAu3U0LimtQc+taCvollQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -91,10 +91,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Todo.html",
-          "hash": "fFHjAvjCm8xgHlLPeYaguQ=="
+          "hash": "pbBSXAdyDWXZQzgOoncbVA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -111,14 +111,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Contributing/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Contributing/Overview.html",
+          "hash": "DU/+XUvMqtIRAuCIFAC/qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "DevOps/DevOps.md",
       "output": {
         ".html": {
           "relative_path": "DevOps/DevOps.html",
-          "hash": "G/WlyhciAPhlKOnYKVNgZw=="
+          "hash": "jbjc81H6MWNLexqX1JX93w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -139,10 +151,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.html",
-          "hash": "J8OFG82iorPHkuALqRmfJg=="
+          "hash": "mqumUewhRpfGC/VxD0/KHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -151,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.html",
-          "hash": "k5/qJ3qGrkYmXluiaEIP3A=="
+          "hash": "eIKuyaKJ1l5ZdlxGnwnGyg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -163,10 +175,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.html",
-          "hash": "zUq3jQJJBV1cSnHayD1dGg=="
+          "hash": "wWBEULOPGouuNerh3lSP/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -175,10 +187,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.html",
-          "hash": "gdOqcBVmu7nBF0K+7v3QYA=="
+          "hash": "LXipzTtlNfkJUqCtrfU2lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -187,10 +199,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.html",
-          "hash": "DI+Gmut2z6ZbBOXykg+RsA=="
+          "hash": "gj55jaFLu/hfyY2Xh7Ukgw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -199,10 +211,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.html",
-          "hash": "jKAjpCcXf3Fk3ah6ydqpPA=="
+          "hash": "ynnGtw4hlryyWg+Vpm4nvQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -211,10 +223,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.html",
-          "hash": "y/b88F5+Rgq15/P0X0yULw=="
+          "hash": "2AOBm39h4MQl8e/Ev5P6Lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -223,10 +235,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.html",
-          "hash": "uRQD7+BQazqajwp7T+PdWA=="
+          "hash": "3iYvbHj0KfZfcju1Ak6m9g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,10 +247,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.html",
-          "hash": "le/G0cB85ZPPFvTMfTkoXw=="
+          "hash": "GtcslEZO/29GgpVnI2yWkQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -247,10 +259,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.html",
-          "hash": "jgApz/7Ym/ADBTpaxNzh5g=="
+          "hash": "kr76YkK00pljSE2VRslXcg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -259,10 +271,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.html",
-          "hash": "2CUy2Tt9wL595VSeSASsCQ=="
+          "hash": "k0eINDpxrARPI80/MTsOyg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -271,10 +283,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.html",
-          "hash": "VGZIHaKY7ecP5FadjrbOzA=="
+          "hash": "d1TyRq5/ljybTiBSu9AOeg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -283,10 +295,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.html",
-          "hash": "mzrfZtuAL6YzMaiqvrjtYg=="
+          "hash": "H4RCqkPXxBpo6++F6ML7uA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -295,10 +307,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.html",
-          "hash": "V35eokdHLTAdE8D3P+O3Rg=="
+          "hash": "tQL1PeXuAdFiM+Z2j5puJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -307,10 +319,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.html",
-          "hash": "BUUeXe4YRQ4XGetaCw/zZA=="
+          "hash": "OH8+nHjoTHABEB7mdgQTxg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -319,10 +331,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.html",
-          "hash": "meLBPjk52EEMk7pOcu1jtw=="
+          "hash": "CyfNhB9GuRvcONKRvArHDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -331,10 +343,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.html",
-          "hash": "ZDFjUvn3tbRkH7M3OqjHhA=="
+          "hash": "i4n4WqwwOikLZZik5pFyNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -343,10 +355,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.html",
-          "hash": "GNrz3i+AC/D85zvDhTlTYQ=="
+          "hash": "F/ZrRjWu3E3aDrML0z27wQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -355,10 +367,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.html",
-          "hash": "UN/NUSJVakN8I+4yH9R9Yw=="
+          "hash": "z0FJ4I+PKrIZ99IyOzQ0yQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,10 +379,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.html",
-          "hash": "OzIH5XFGxJaFDZXuG6RPhg=="
+          "hash": "Etej0zeUI8ID4Oqcqo0QWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -379,10 +391,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.html",
-          "hash": "jvXf9MXQ6JGdTO+3VbHiQg=="
+          "hash": "nIHmKUXSv1i7Y3SMjnAdhA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -391,10 +403,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-13.html",
-          "hash": "RyhbixbfvE+8XgqPdosmaw=="
+          "hash": "oyt+z11yDsqL0D4JTqSuFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -403,10 +415,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-21.html",
-          "hash": "t+kvp+gdR+ohMpkdTLr2nQ=="
+          "hash": "dWYRWdlJQBit8BJECiUL/g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,10 +427,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Overview.html",
-          "hash": "ErVS2CmK11/fB5652JhIJw=="
+          "hash": "A4IBupCKrGedorDtjw/YLQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -435,11 +447,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Features.md",
+      "source_relative_path": "Features/Features.md",
       "output": {
         ".html": {
-          "relative_path": "Features.html",
-          "hash": "Vzan1tM4zNZPM0ZZEpNX/Q=="
+          "relative_path": "Features/Features.html",
+          "hash": "hVutcBg74TnWtLr/auXjQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Toc",
+      "source_relative_path": "Features/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Features/toc.html",
+          "hash": "65ryRALzcu1g9FYsRE7FQg=="
         }
       },
       "is_incremental": false,
@@ -458,11 +485,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Migration.md",
+      "source_relative_path": "Migrations/Migration1-2.md",
       "output": {
         ".html": {
-          "relative_path": "Migration.html",
-          "hash": "4egi+K+Khf9Qe7nlijSPjw=="
+          "relative_path": "Migrations/Migration1-2.html",
+          "hash": "jPJLkpNr73VnyCEz9KiSjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Migrations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Migrations/toc.html",
+          "hash": "Q74/BKiO4EvnYGmv/Bj5Yg=="
         }
       },
       "is_incremental": false,
@@ -474,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "Overview.html",
-          "hash": "iNK4KrxUe1boinFIruZDUg=="
+          "hash": "HzYpIMOMKZ/hA9bPL9Oz2g=="
         }
       },
       "is_incremental": false,
@@ -486,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Acknowledgements.html",
-          "hash": "dllsfqHz0HTY6trjHu4KEw=="
+          "hash": "ZBNCqC4x2x9vxZQFvQp+Gg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -498,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Contributing.html",
-          "hash": "7syP9NoCCqijk5rpFQ7WGw=="
+          "hash": "vD2UH3JfhPGsF6p9h6wSZA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -510,10 +549,94 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Terminology.html",
-          "hash": "3jIkyviib+2a742uuovEWQ=="
+          "hash": "gViYvxkpwYNHT2w0TtM9Kg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes/Realease1.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/Realease1.0.0.html",
+          "hash": "tiLvnXyw29FTLnkit+KgFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes/Realease2.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/Realease2.0.0.html",
+          "hash": "P1IGBKY0ViVTXH/+3WTo7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ReleaseNotes/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/toc.html",
+          "hash": "koc/eOpwq39ySebczArCHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/AddReduxDevTools.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/AddReduxDevTools.html",
+          "hash": "0QdooliJfznUmrIUuoIqFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/EnableJavascriptInterop.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/EnableJavascriptInterop.html",
+          "hash": "sJ7ZQH9fNfkbdfVnvtW8gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/Routing.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/Routing.html",
+          "hash": "gJuh4ZVcdCAdUfdoKkdLsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Topics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/toc.html",
+          "hash": "r7qJCiCY3fRMuldz6NysMQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -522,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "Tutorial.html",
-          "hash": "Do6J+bA0+8Ii1uYVErSW3Q=="
+          "hash": "p1/P80Rk3wp9aDcd8v0YIw=="
         }
       },
       "is_incremental": false,
@@ -534,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OaLzoy3bf9BfkVLW0KQr5A=="
+          "hash": "cJXn66YZBuRKIwGJusLfZA=="
         }
       },
       "is_incremental": false,
@@ -546,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "liofx7Ak+y1nbdvyQUSHog=="
+          "hash": "RW+HteB9Bl5mR0nMDg2mVQ=="
         }
       },
       "is_incremental": false,
@@ -556,10 +679,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.45.0.0 to 2.46.0.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
       },
       "processors": {
         "ResourceDocumentProcessor": {
@@ -569,17 +694,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 39,
-          "skipped_file_count": 34
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 45,
           "skipped_file_count": 0
         }
       }

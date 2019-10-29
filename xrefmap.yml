@@ -10,9 +10,27 @@ references:
 - uid: blazor-state.Terminology.md
   name: Terminology
   href: Partials/Terminology.html
+- uid: BlazorState:AddReduxDevTools.md
+  name: Add Redux Dev Tools
+  href: Topics/AddReduxDevTools.html
+- uid: BlazorState:EnableJavascriptInterop.md
+  name: Enable Javascript Interop
+  href: Topics/EnableJavascriptInterop.html
+- uid: BlazorState:Migration1-2.md
+  name: Migrate From 1.X to 2.X
+  href: Migrations/Migration1-2.html
 - uid: BlazorState:Overview.md
   name: Blazor-State Overview
   href: Overview.html
+- uid: BlazorState:Release.1.0.0.md
+  name: Release 1.0.0
+  href: ReleaseNotes/Realease1.0.0.html
+- uid: BlazorState:Release.2.0.0.md
+  name: Release 2.0.0
+  href: ReleaseNotes/Realease2.0.0.html
+- uid: BlazorState:Routing.md
+  name: Enable Routing
+  href: Topics/Routing.html
 - uid: BlazorState:Tutorial.md
   name: Blazor-State Tutorial
   href: Tutorial.html

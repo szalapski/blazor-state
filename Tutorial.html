@@ -8,7 +8,7 @@
     <title>Blazor-State Tutorial </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State Tutorial ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.46.0.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -60,15 +60,15 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="BlazorState:Tutorial.md">
-<h1 id="blazor-state-sample-application">Blazor-State Sample Application</h1>
+<h1 id="blazor-state-tutorial">Blazor-State Tutorial</h1>
 
-<p>This sample shows how to add Blazor-State to a <code>Blazor hosted WebAssembly App</code> application.</p>
+<p>This tutorial shows how to add Blazor-State to a <code>Blazor hosted WebAssembly App</code> application.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
-<li>Install the latest <a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core 3.0 Preview SDK release</a>.</li>
+<li>Install the latest <a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core 3.0 SDK</a> release.</li>
 <li>Install the Blazor templates by running the following command in a command shell:</li>
 </ol>
-<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
+<pre><code class="lang-console">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19465.2
 </code></pre>
 <h2 id="creating-the-project">Creating the project</h2>
 <ol>
@@ -293,13 +293,24 @@ In <code>Pages/Counter.razor</code> update the <code>IncrementCount</code> funct
 <p>Execute the app and confirm that the &quot;Click me&quot; button properly increments the value.
 And when you navigate away from the page and back the value persists.</p>
 <h2 id="reduxdevtools-javascipt-interop-and-routestate">ReduxDevTools Javascipt Interop and RouteState</h2>
-<p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">ReduxDevTools</a> are a chrome extension that let you view the Actions and State for each action.
-This is quite handy for debugging.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Support for &quot;TimeTravel&quot; via ReduxDevTools is being removed from Blazor-State as this feature, although cool for demos, does little to assist in debugging and requires more code to implement.</p>
-</div>
-<p>ReduxDevTools requires Javascript Interop.</p>
+<p>To <a class="xref" href="Topics/AddReduxDevTools.html">enable ReduxDevTools</a> update the <code>ConfigureServices</code> method in <code>Startup.cs</code> as follows:</p>
+<pre><code>    public void ConfigureServices(IServiceCollection services)
+    {
+      services.AddBlazorState
+      (
+        (aOptions) =&gt; 
+        {
+          aOptions.UseReduxDevToolsBehavior = true;
+          aOptions.Assemblies =
+            new Assembly[]
+            {
+              typeof(Startup).GetTypeInfo().Assembly,
+            }
+        }
+      );
+      services.AddScoped&lt;CounterState&gt;();
+    }
+</code></pre>
 <p>To facilitate Javascript Interop, enable ReduxDevTools, and manage RouteState, add <code>App.razor.cs</code> in the same directory as <code>App.razor</code> as follows:</p>
 <pre><code class="lang-csharp">namespace Sample.Client
 {
