@@ -19,6 +19,9 @@ references:
 - uid: BlazorState:Migration1-2.md
   name: Migrate From 1.X to 2.X
   href: Migrations/Migration1-2.html
+- uid: BlazorState:Migration2-3.md
+  name: Migrate From 2.X to 3.X
+  href: Migrations/Migration2-3.html
 - uid: BlazorState:Overview.md
   name: Blazor-State Overview
   href: Overview.html
@@ -28,6 +31,9 @@ references:
 - uid: BlazorState:Release.2.0.0.md
   name: Release 2.0.0
   href: ReleaseNotes/Realease2.0.0.html
+- uid: BlazorState:Release.3.0.0.md
+  name: Release 3.0.0
+  href: ReleaseNotes/Realease3.0.0.html
 - uid: BlazorState:Routing.md
   name: Enable Routing
   href: Topics/Routing.html

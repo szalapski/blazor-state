@@ -103,7 +103,7 @@ Blazor-State provides the extension method <sup><a href="#footnotes">5</a></sup>
 and <code>IRequestPostProcessor</code>;</p>
 <p>You can integrate into the pipeline as well by implementing and registering one of these interfaces.
 See the timewarp-blazor template <code>EventStreamBehavior</code> for an example.</p>
-<h3 id="behaviors">Behaviors</h3>
+<h3 id="behaviorsmiddleware">Behaviors/Middleware</h3>
 <h4 id="clonestatebehavior">CloneStateBehavior</h4>
 <p>To ensure your application is in a known good state the <code>CloneStateBehavior</code> creates a clone of the <code>State</code> prior to processing the <code>Action</code>.
 If any exception occurs during the processing of the <code>Action</code> the state is rolled back.</p>
@@ -111,13 +111,17 @@ If any exception occurs during the processing of the <code>Action</code> the sta
 <p>When a component accesses <code>State</code> a subscription is added.
 The <code>RenderSubscriptionsPostProcessor</code> will iterate over these subscriptions and re-render those components.
 So you don't have to worry about where to call <code>StateHasChanged</code>.</p>
-<h4 id="reduxdevtoolspostprocessor">ReduxDevToolsPostProcessor</h4>
-<p>One of the nice features of redux is the developer tools <sup><a href="#footnotes">6</a></sup>.
-This processor implements the integration of these developer tools.</p>
 <h3 id="javascript-interop">JavaScript Interop</h3>
 <p>Blazor-State uses the same &quot;Command Pattern&quot; for JavaScript interoperability.
 The JavaScript creates a request and dispatches it to Blazor where it is added to the pipeline.
 Handlers on the Blazor side can callback to the JavaScript side if needed.</p>
+<h4 id="reduxdevtoolspostprocessor">ReduxDevToolsPostProcessor</h4>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Disabled by default.  This should be disabled in production.</p>
+</div>
+<p>One of the nice features of redux is the developer tools <sup><a href="#footnotes">6</a></sup>.
+This processor implements the integration of these developer tools.</p>
 <h2 id="terminology">Terminology</h2>
 <p>The pattern used by Blazor-State and MediatR has been around for many years and goes by different names.
 We list various related terms here and Bold indicates the term used in Blazor-State.</p>

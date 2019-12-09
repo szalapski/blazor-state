@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Release 2.0.0 </title>
+    <title>Release 3.0.0 </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Release 2.0.0 ">
+    <meta name="title" content="Release 3.0.0 ">
     <meta name="generator" content="docfx 2.46.0.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
@@ -66,15 +66,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BlazorState:Release.2.0.0.md">
-<h2 id="release-200">Release 2.0.0</h2>
+            <article class="content wrap" id="_content" data-uid="BlazorState:Release.3.0.0.md">
+<h2 id="release-300">Release 3.0.0</h2>
 
 <h3 id="breaking-changes">Breaking Changes</h3>
-<p>Since have moved from preview builds to release, and ReduxDevTools should be disabled in production, we are changing the default option setting to be disabled.</p>
-<p><code>BlazorStateOptions.UseReduxDevToolsBehavior</code> now defaults to false;</p>
+<p>Blazor-State has moved to netstandard 2.1
+The BlazorState Javascript location has changed.</p>
 <p>See <a class="xref" href="../Migrations/Migration1-2.html">Migrations</a> for how to migrate existing projects from 1.0 to 2.0.</p>
-<h3 id="improvements">Improvements</h3>
-<p><code>Action</code>s and their <code>Handler</code>s should be nested classes of the <code>State</code> they act on. Previously the developer could forget this and it would take some time to figure out the problem (I know I did it.).  Now RenderSubscriptionsPostProcessor will throw an exception if the IAction is not nested within an IState.</p>
 </article>
           </div>
           
@@ -83,7 +81,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/ReleaseNotes/Realease2.0.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeWarpEngineering/blazor-state/blob/master/documentation/ReleaseNotes/Realease3.0.0.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

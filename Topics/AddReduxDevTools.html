@@ -106,7 +106,6 @@ This is quite handy for debugging.</p>
       aServiceCollection.AddBlazorState
       (
         (aOptions) =&gt;
-        {
 
 #if ReduxDevToolsEnabled
           aOptions.UseReduxDevToolsBehavior = true;
@@ -115,9 +114,7 @@ This is quite handy for debugging.</p>
             new Assembly[]
             {
                 typeof(Startup).GetTypeInfo().Assembly,
-            };
-        }
-      );
+            });
       aServiceCollection.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(EventStreamBehavior&lt;,&gt;));
       aServiceCollection.AddTransient&lt;ApplicationState&gt;();
       aServiceCollection.AddTransient&lt;CounterState&gt;();
