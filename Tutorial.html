@@ -132,7 +132,7 @@ The code for the class should be as follows.</p>
   public partial class CounterState : State&lt;CounterState&gt;
   {
     public int Count { get; private set; }
-    protected override void Initialize() =&gt; Count = 3;
+    public override void Initialize() =&gt; Count = 3;
   }
 }
 </code></pre>
@@ -163,7 +163,7 @@ The code for the class should be as follows.</p>
             typeof(Startup).GetTypeInfo().Assembly,
           }
       );
-      services.AddScoped&lt;CounterState&gt;();
+      services.AddTransient&lt;CounterState&gt;();
     }
 
     public void Configure(IComponentsApplicationBuilder app)
