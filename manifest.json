@@ -1,0 +1,751 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/agent/_work/4/s/documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "../Assets/Logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "Assets/Logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../Assets/Logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "Assets/Logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "2ec6ONWGiTgN/CAURTnfsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Api/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Overview.html",
+          "hash": "ZrruvmBvieRHNYMPGkwTmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Backlog/Done.md",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/Done.html",
+          "hash": "9Rnr4WOtgKJj2Dp05dv6Gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Backlog/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/Overview.html",
+          "hash": "n4lOyZ5tKfySjggsijOkrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Backlog/Rejected.md",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/Rejected.html",
+          "hash": "rFAu3U0LimtQc+taCvollQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Backlog/Todo.md",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/Todo.html",
+          "hash": "pbBSXAdyDWXZQzgOoncbVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Backlog/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Backlog/toc.html",
+          "hash": "lxxH9VTIDQW1oQTBtxthcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Contributing/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Contributing/Overview.html",
+          "hash": "DU/+XUvMqtIRAuCIFAC/qA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DevOps/DevOps.md",
+      "output": {
+        ".html": {
+          "relative_path": "DevOps/DevOps.html",
+          "hash": "jbjc81H6MWNLexqX1JX93w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "DevOps/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "DevOps/toc.html",
+          "hash": "zQcZsagF5mpzy2AMSP4/ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.html",
+          "hash": "mqumUewhRpfGC/VxD0/KHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.html",
+          "hash": "eIKuyaKJ1l5ZdlxGnwnGyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.html",
+          "hash": "wWBEULOPGouuNerh3lSP/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.html",
+          "hash": "LXipzTtlNfkJUqCtrfU2lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.html",
+          "hash": "gj55jaFLu/hfyY2Xh7Ukgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.html",
+          "hash": "ynnGtw4hlryyWg+Vpm4nvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.html",
+          "hash": "2AOBm39h4MQl8e/Ev5P6Lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.html",
+          "hash": "3iYvbHj0KfZfcju1Ak6m9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.html",
+          "hash": "GtcslEZO/29GgpVnI2yWkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.html",
+          "hash": "kr76YkK00pljSE2VRslXcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.html",
+          "hash": "k0eINDpxrARPI80/MTsOyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.html",
+          "hash": "d1TyRq5/ljybTiBSu9AOeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.html",
+          "hash": "H4RCqkPXxBpo6++F6ML7uA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.html",
+          "hash": "tQL1PeXuAdFiM+Z2j5puJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.html",
+          "hash": "OH8+nHjoTHABEB7mdgQTxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.html",
+          "hash": "CyfNhB9GuRvcONKRvArHDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.html",
+          "hash": "i4n4WqwwOikLZZik5pFyNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.html",
+          "hash": "F/ZrRjWu3E3aDrML0z27wQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.html",
+          "hash": "z0FJ4I+PKrIZ99IyOzQ0yQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.html",
+          "hash": "Etej0zeUI8ID4Oqcqo0QWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.html",
+          "hash": "nIHmKUXSv1i7Y3SMjnAdhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-13.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-13.html",
+          "hash": "oyt+z11yDsqL0D4JTqSuFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-21.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-21.html",
+          "hash": "dWYRWdlJQBit8BJECiUL/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DeveloperNotebook/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/Overview.html",
+          "hash": "A4IBupCKrGedorDtjw/YLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "DeveloperNotebook/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "DeveloperNotebook/toc.html",
+          "hash": "WuXMbuKYjh81CNv/Q2nz3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Features/Features.md",
+      "output": {
+        ".html": {
+          "relative_path": "Features/Features.html",
+          "hash": "hVutcBg74TnWtLr/auXjQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Toc",
+      "source_relative_path": "Features/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Features/toc.html",
+          "hash": "65ryRALzcu1g9FYsRE7FQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/BlazorWasmHostedScreenShot.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/BlazorWasmHostedScreenShot.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Migrations/Migration1-2.md",
+      "output": {
+        ".html": {
+          "relative_path": "Migrations/Migration1-2.html",
+          "hash": "jPJLkpNr73VnyCEz9KiSjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Migrations/Migration2-3.md",
+      "output": {
+        ".html": {
+          "relative_path": "Migrations/Migration2-3.html",
+          "hash": "yChXl1HvAlHtsH8saVtq/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Migrations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Migrations/toc.html",
+          "hash": "3U946JiYVFN8MgMWMPR10g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Overview.html",
+          "hash": "McyXB1FRNXlKkxXyeufIjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Partials/Acknowledgements.md",
+      "output": {
+        ".html": {
+          "relative_path": "Partials/Acknowledgements.html",
+          "hash": "ZBNCqC4x2x9vxZQFvQp+Gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Partials/Contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "Partials/Contributing.html",
+          "hash": "vD2UH3JfhPGsF6p9h6wSZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Partials/Terminology.md",
+      "output": {
+        ".html": {
+          "relative_path": "Partials/Terminology.html",
+          "hash": "gViYvxkpwYNHT2w0TtM9Kg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes/Release1.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/Release1.0.0.html",
+          "hash": "ONLTqhMf0s3MTg1sHOTF8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes/Release2.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/Release2.0.0.html",
+          "hash": "4HiNHkNxrdmFzy78O3i6SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes/Release3.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/Release3.0.0.html",
+          "hash": "GRsjteSLn6ITig0zGsG5Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ReleaseNotes/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes/toc.html",
+          "hash": "ahwI+paPiHTTho7xZnKj7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/AddReduxDevTools.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/AddReduxDevTools.html",
+          "hash": "SYwitOKJTfsVoTYCcPDeaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/EnableJavascriptInterop.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/EnableJavascriptInterop.html",
+          "hash": "sJ7ZQH9fNfkbdfVnvtW8gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Topics/Routing.md",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/Routing.html",
+          "hash": "gJuh4ZVcdCAdUfdoKkdLsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Topics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Topics/toc.html",
+          "hash": "r7qJCiCY3fRMuldz6NysMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Tutorial.md",
+      "output": {
+        ".html": {
+          "relative_path": "Tutorial.html",
+          "hash": "EnaLEH/FqximWRpygiV9xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "T89qf37c4pVpIOue3pl6Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "cnAOp3QUgvZj3roOrr01lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 47,
+          "skipped_file_count": 42
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
