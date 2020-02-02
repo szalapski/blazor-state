@@ -8,7 +8,7 @@
     <title>Blazor-State Tutorial </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State Tutorial ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -141,14 +141,13 @@ The code for the class should be as follows.</p>
 <li>In the <code>Sample.Client</code> project in the <code>Startup.cs</code> file.</li>
 <li>Change <code>ConfigureServices</code> to configure blazor-state as follows:</li>
 <li>Add the required usings.</li>
-<li>Configure the options passed to AddBlazorState to include the assemblies to scan for Handlers.</li>
+<li>Configure the options passed to AddBlazorState to include the assemblies to scan for States and Handlers.</li>
 </ol>
 <pre><code class="lang-csharp">namespace Sample.Client
 {
   using BlazorState;
   using Microsoft.AspNetCore.Components.Builder;
   using Microsoft.Extensions.DependencyInjection;
-  using Sample.Client.Features.Counter;
   using System.Reflection;
 
   public class Startup
@@ -163,7 +162,6 @@ The code for the class should be as follows.</p>
             typeof(Startup).GetTypeInfo().Assembly,
           }
       );
-      services.AddTransient&lt;CounterState&gt;();
     }
 
     public void Configure(IComponentsApplicationBuilder app)

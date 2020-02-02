@@ -8,7 +8,7 @@
     <title>Add Redux Dev Tools </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Add Redux Dev Tools ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -114,13 +114,9 @@ This is quite handy for debugging.</p>
             new Assembly[]
             {
                 typeof(Startup).GetTypeInfo().Assembly,
-            });
+            }
+      );
       aServiceCollection.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(EventStreamBehavior&lt;,&gt;));
-      aServiceCollection.AddTransient&lt;ApplicationState&gt;();
-      aServiceCollection.AddTransient&lt;CounterState&gt;();
-      aServiceCollection.AddTransient&lt;CloneTestState&gt;();
-      aServiceCollection.AddTransient&lt;EventStreamState&gt;();
-      aServiceCollection.AddTransient&lt;WeatherForecastsState&gt;();
 
     }
   }
