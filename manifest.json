@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/agent/_work/1/s/documentation",
+  "source_base_path": "C:/agent/_work/2/s/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -31,10 +31,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "mwHjkEqJjl/9IMh6v93KDA=="
+          "hash": "Z+yoamThsLx/xJQYNMFxvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -43,10 +43,10 @@
       "output": {
         ".html": {
           "relative_path": "Api/Overview.html",
-          "hash": "cBXf14RHx7Qq7cLAUsk2Tw=="
+          "hash": "ipoBEbFvLoqH3ESEX5QoEQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,10 +55,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Done.html",
-          "hash": "RSg8jLSTQWzap4eFo5wqyg=="
+          "hash": "Ys9PBOcMn4ryX8hypCPLDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -67,10 +67,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Overview.html",
-          "hash": "M7rCq6aktYjbmC/4dKLzkA=="
+          "hash": "69mmlgEq9QFYjorikbAU2g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -79,10 +79,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Rejected.html",
-          "hash": "LcWy+z80rDZpaAk/1eI+Qg=="
+          "hash": "LdlTQEBNE5R5/JTAeijWBg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -91,10 +91,10 @@
       "output": {
         ".html": {
           "relative_path": "Backlog/Todo.html",
-          "hash": "lB+YubYlYwtgjy4egT8+Hw=="
+          "hash": "G3277M0s6isJzCCITnN6Hw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,10 +115,10 @@
       "output": {
         ".html": {
           "relative_path": "Contributing/Overview.html",
-          "hash": "1DWthCmTIMYoLi8ny2hd/Q=="
+          "hash": "fiOIZ5EfuCeqzlDV2U0mQw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -127,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "DevOps/DevOps.html",
-          "hash": "O7u/1Ir3G1OLgSTUW2gjIw=="
+          "hash": "eciUDO+rEV8Oc1iy57Grqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -151,10 +151,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-05.html",
-          "hash": "kcP+CqeOoVFTKxAMcsCPwA=="
+          "hash": "WiGNie27arpyHt5Y2KDeXQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -163,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-06.html",
-          "hash": "gJPBlkEXVUneh7c9Ng7GQA=="
+          "hash": "Z9MHhR9mGEDJMxmh5JtjmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -175,10 +175,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-14.html",
-          "hash": "8OJ8jLFXZS9pUBml63tbnA=="
+          "hash": "VnIxbVxbsfvTGxItE7+udQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -187,10 +187,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-15.html",
-          "hash": "Xfd8Bj5UbIMyzrgjnkjpDQ=="
+          "hash": "KMW7JIkjm3j4aTNQhdCBzA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -199,10 +199,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-16.html",
-          "hash": "szptH40nmIrCkEj1pJrzXw=="
+          "hash": "CYwqnZ4evEtXl8VGp1/CBQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -211,10 +211,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-18.html",
-          "hash": "gsinBXFtWMWGvT4NUFgStQ=="
+          "hash": "Iq28WylyAw7PLQuS1mnt1Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -223,10 +223,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-19.html",
-          "hash": "3UqQfxEKgSp0j7mXum9NdA=="
+          "hash": "j/NP1xBMGdI1wMtcZll4Vw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,10 +235,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-21.html",
-          "hash": "h6e4vbjBkOtXAs7cqt1WNQ=="
+          "hash": "tja3vL7WPqVxwHT1/MQj1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -247,10 +247,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-22.html",
-          "hash": "gVIgDPapWH4Nr0ngTAMpTw=="
+          "hash": "un3Y+Ri3GWo+FvuMhXZDQA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -259,10 +259,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-23.html",
-          "hash": "9aSYTnS+VwoMUAz8GvdaIA=="
+          "hash": "3BcMxXH46WBHPUdR7DYJCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -271,10 +271,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-24.html",
-          "hash": "4vLpu6D+4PzfVwSWylyXig=="
+          "hash": "HKOYCON0QPJtl4c0VqIIHA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -283,10 +283,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-25.html",
-          "hash": "NTaR7O4Tx4WRzbRCL7Y3vQ=="
+          "hash": "tL+ybmZLDH9Zdt3zI1QX1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -295,10 +295,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-08-26.html",
-          "hash": "SRgEwXS1jFnceFCylkWEUw=="
+          "hash": "mvRFGOSR1YOO93Wgt81WWg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -307,10 +307,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-05.html",
-          "hash": "EmqZoCxR9AsYUwCg1hElfg=="
+          "hash": "+XjfxIi3jg/5kLT4jTMOpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -319,10 +319,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-13.html",
-          "hash": "2KfYbMWOEZY90Kj/C/Ueng=="
+          "hash": "0HS4rYEy7GuvcsXbu8zjog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -331,10 +331,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-09-15.html",
-          "hash": "T8kts9rWu+hcRE3oKGACkQ=="
+          "hash": "Ex7KJRgl+kVHqAr3WRccUw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -343,10 +343,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2018/2018-12-13.html",
-          "hash": "2UfLg/8FF/KHgLntzQQ9nQ=="
+          "hash": "rpJkVpbtthMkettPTJPz5A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -355,10 +355,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-02.html",
-          "hash": "WX06iphuXUGS+2mOuV6n6w=="
+          "hash": "xjCJcItD4KIr9N3jlpP60Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,10 +367,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-04.html",
-          "hash": "Q6a2wHNE4aPSZsB6QgXWPQ=="
+          "hash": "5KS12npG+XpH4LpUoym6qg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -379,10 +379,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-05.html",
-          "hash": "ysedQRqRAFvP+WelXCpWDg=="
+          "hash": "4nrqvFmweEXLHTMIxV1K+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -391,10 +391,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-06.html",
-          "hash": "d8QPd6rE3G4seJ44XNiOEw=="
+          "hash": "WYqVTLu+hzEVm9ueXkj+Gg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -403,10 +403,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-13.html",
-          "hash": "Hyp6b2Vtdx4H+mImYJKfjw=="
+          "hash": "mMsEJNlPZchRGR41RNxWew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,10 +415,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Cramer/2019/2019-01/2019-01-21.html",
-          "hash": "4hTgDNV4KfwGKcYqJuMUWQ=="
+          "hash": "WWyDE2BDp3PkCAYVFNW4lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -427,10 +427,10 @@
       "output": {
         ".html": {
           "relative_path": "DeveloperNotebook/Overview.html",
-          "hash": "NWzWx3qnySrEbtaEDr36VA=="
+          "hash": "2inei6/FsmNK+KYe8Y24qA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -451,10 +451,10 @@
       "output": {
         ".html": {
           "relative_path": "Features/Features.html",
-          "hash": "S5jEYUKH+8DiqZTfWo3epA=="
+          "hash": "Co7yKoRFqI8XfCCQFGU0tw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "Migrations/Migration1-2.html",
-          "hash": "/iIyW3koXqOiB7OA7hIpsA=="
+          "hash": "VXeAsCnLexcqdZb4pM/Cdg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "Migrations/Migration2-3.html",
-          "hash": "prSbtXRm26OxniD3jWu5lA=="
+          "hash": "hgQp+StXU41KIrMS1aFupg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "Overview.html",
-          "hash": "N8qInpwAMi3n1LMhAIfnqg=="
+          "hash": "4mFzruuKG6aT2P1dYdLo9A=="
         }
       },
       "is_incremental": false,
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Acknowledgements.html",
-          "hash": "lB3YUs6OR9Md192DfHgoYw=="
+          "hash": "ktl4kdATpcgqxUuC4cuCbQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Contributing.html",
-          "hash": "97o7dF99yO4l+YyicseMEQ=="
+          "hash": "ieneeldAu8Hz7bZRTTxlEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "Partials/Terminology.html",
-          "hash": "EgRTeG+7za7YTCVNdYbNoA=="
+          "hash": "iwx8z1vVpeGkoETBYvaZ9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "ReleaseNotes/Release1.0.0.html",
-          "hash": "3NsvUjmB+eIE6kFmHKMnDQ=="
+          "hash": "m5ZA/yjYQ56Sz1SfjWYIJQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "ReleaseNotes/Release2.0.0.html",
-          "hash": "x/gEyYSyttReCZ+GhGndXA=="
+          "hash": "Fot13hRJB7uSK0lm4aoMzA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "ReleaseNotes/Release3.0.0.html",
-          "hash": "ukoje5Bjq+wocF7qyJ5x+g=="
+          "hash": "BwAhVLP7Z/x9gu5X1Q7gTA=="
         }
       },
       "is_incremental": false,
@@ -616,12 +616,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "codesnippet-not-found"
+      ],
       "type": "Conceptual",
       "source_relative_path": "Topics/AddReduxDevTools.md",
       "output": {
         ".html": {
           "relative_path": "Topics/AddReduxDevTools.html",
-          "hash": "rFsCsBQ3kAfh1OLJqnhiYQ=="
+          "hash": "QYGb6Oz3yuPdNrd1CdoEsw=="
         }
       },
       "is_incremental": false,
@@ -633,10 +636,10 @@
       "output": {
         ".html": {
           "relative_path": "Topics/EnableJavascriptInterop.html",
-          "hash": "6QAZzwFpcOMsRb9hT2ZEdg=="
+          "hash": "86IOwFtcDNT5hg7IABfB1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +648,10 @@
       "output": {
         ".html": {
           "relative_path": "Topics/Routing.html",
-          "hash": "l0Q0HMqY7R/UXl//vAjZeA=="
+          "hash": "hDlKi1euanf7qUbhBbwZWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,7 +672,7 @@
       "output": {
         ".html": {
           "relative_path": "Tutorial.html",
-          "hash": "+pVoR3SSlzUL7zmMyMIYPQ=="
+          "hash": "xDyvsqDXmP5eEqXjNxEJsQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +684,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ML5R8JZ8LrA0LXLvT+YyCQ=="
+          "hash": "OUDNLSVPwBxW9NHgthIOCQ=="
         }
       },
       "is_incremental": false,
@@ -703,17 +706,18 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 47,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
@@ -723,18 +727,19 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 47,
-          "skipped_file_count": 43
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

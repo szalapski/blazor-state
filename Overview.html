@@ -8,7 +8,7 @@
     <title>Blazor-State Overview </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor-State Overview ">
-    <meta name="generator" content="docfx 2.48.0.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="assets/Logo.png">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -63,8 +63,11 @@
 <h1 id="blazor-state">Blazor-State</h1>
 
 <p><a href="https://timewarpenterprises.visualstudio.com/Blazor-State/_build/latest?definitionId=7"><img src="https://timewarpenterprises.visualstudio.com/Blazor-State/_apis/build/status/Blazor-State-CI-Master-Yaml" alt="Build Status"></a>
-<a href="https://www.nuget.org/packages/Blazor-State/"><img src="https://img.shields.io/nuget/v/Blazor-State.svg" alt="nuget"></a>
-<a href="https://www.nuget.org/packages/Blazor-State/"><img src="https://img.shields.io/nuget/dt/Blazor-State.svg" alt="nuget"></a></p>
+<a href="https://www.nuget.org/packages/Blazor-State/"><img src="https://img.shields.io/nuget/v/Blazor-State" alt="nuget"></a>
+<a href="https://www.nuget.org/packages/Blazor-State/"><img src="https://img.shields.io/nuget/dt/Blazor-State?logo=nuget&amp;style=flat-square" alt="nuget"></a>
+<a href="https://github.com/TimeWarpEngineering/blazor-state/issues"><img src="https://img.shields.io/github/issues/TimeWarpEngineering/blazor-state.svg?style=flat-square&amp;logo=github" alt="Issues Open"></a>
+<a href="https://discord.gg/7F4bS2T"><img src="https://img.shields.io/discord/715274085940199487?logo=discord" alt="Discord"></a>
+<a href="https://github.com/TimeWarpEngineering/blazor-state/issues"><img src="https://img.shields.io/github/license/TimeWarpEngineering/blazor-state.svg?style=flat-square&amp;logo=github" alt="License"></a></p>
 <p>Blazor-State is a State Management architecture utilizing the MediatR pipeline.</p>
 <p>If you are familiar with MediatR <sup><a href="#footnotes">1</a></sup>, Redux <sup><a href="#footnotes">2</a></sup>,
 or the Command Pattern <sup><a href="#footnotes">3</a></sup>
@@ -124,7 +127,7 @@ Handlers on the Blazor side can callback to the JavaScript side if needed.</p>
 This processor implements the integration of these developer tools.</p>
 <h2 id="terminology">Terminology</h2>
 <p>The pattern used by Blazor-State and MediatR has been around for many years and goes by different names.
-We list various related terms here and Bold indicates the term used in Blazor-State.</p>
+We list various related terms here and <strong>Bold</strong> indicates the term used in Blazor-State.</p>
 <h3 id="signalsactionsrequestscommands">Signals/<strong>Actions</strong>/<strong>Requests</strong>/Commands/</h3>
 <p>In Redux they call them &quot;Action&quot;.<br>
 In UML they are &quot;Signal&quot;.<br>
@@ -142,9 +145,8 @@ In Blazor-State we call them <code>Handler</code>.</p>
 particular <a href="https://jimmybogard.com/vertical-slice-architecture/">Vertical Slice</a>
 of the application.</p>
 <p>On the server side we use the same architecture, where the Features contain
-<code>Controller</code>, <code>Handler</code>, <code>Request</code>, <code>Response</code>, etc...
-Each endpoint has its own controller
-which maps the HTTP Request to the <code>Request</code> object and then sends the <code>Request</code>
+<code>Endpoint</code>, <code>Handler</code>, <code>Request</code>, <code>Response</code>, etc...
+Each endpoint maps the HTTP Request to the <code>Request</code> object and then sends the <code>Request</code>
 on to the mediator pipeline.
 The <code>Handler</code> acts on the <code>Request</code> and returns a <code>Response</code>.</p>
 <p>Server side follows the <code>Request</code> in <code>Response</code> out pattern.</p>

@@ -8,7 +8,7 @@
     <title>Add Redux Dev Tools </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Add Redux Dev Tools ">
-    <meta name="generator" content="docfx 2.48.0.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,47 +81,10 @@ This is quite handy for debugging.</p>
 <p>Redux Dev Tools should NOT be enabled in production.</p>
 </div>
 <p>Redux Dev Tools are disabled by default.  Update the options passed to the <code>AddBlazorState</code> extension method to set <code>UseReduxDevToolsBehavior</code> to true, as show here in the test application:</p>
-<pre><code class="lang-csharp" name="Startup" title="Code Link" highlight-lines="29">namespace TestApp.Client
-{
-  using BlazorState;
-  using MediatR;
-  using Microsoft.AspNetCore.Components.Builder;
-  using Microsoft.Extensions.DependencyInjection;
-  using System.Reflection;
-  using System.Text.Json;
-  using TestApp.Client.Features.Application;
-  using TestApp.Client.Features.CloneTest;
-  using TestApp.Client.Features.Counter;
-  using TestApp.Client.Features.EventStream;
-  using TestApp.Client.Features.WeatherForecast;
-
-  public class Startup
-  {
-    public void Configure(IComponentsApplicationBuilder aComponentsApplicationBuilder) =&gt;
-      aComponentsApplicationBuilder.AddComponent&lt;App&gt;(&quot;app&quot;);
-
-    public void ConfigureServices(IServiceCollection aServiceCollection)
-    {
-
-      aServiceCollection.AddBlazorState
-      (
-        (aOptions) =&gt;
-
-#if ReduxDevToolsEnabled
-          aOptions.UseReduxDevToolsBehavior = true;
-#endif
-          aOptions.Assemblies =
-            new Assembly[]
-            {
-                typeof(Startup).GetTypeInfo().Assembly,
-            }
-      );
-      aServiceCollection.AddScoped(typeof(IPipelineBehavior&lt;,&gt;), typeof(EventStreamBehavior&lt;,&gt;));
-
-    }
-  }
-}
-</code></pre><h3 id="initialize-in-app-component">Initialize in App Component</h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>It looks like the sample you are looking for does not exist.</p>
+</div><h3 id="initialize-in-app-component">Initialize in App Component</h3>
 <p>ReduxDevTools requires Javascript interop. Similar to Routing and Javascript interop one must inject and initialize <code>ReduxDevToolsInterop</code> in the base Application component.</p>
 <p>See example from the test app below:</p>
 <pre><code class="lang-csharp" name="Startup" title="Code Link" highlight-lines="13,21">namespace TestApp.Client
@@ -132,7 +95,7 @@ This is quite handy for debugging.</p>
   using BlazorState.Features.Routing;
   using Microsoft.AspNetCore.Components;
 
-  public class AppBase : ComponentBase
+  public partial class App : ComponentBase
   {
     [Inject] private JsonRequestHandler JsonRequestHandler { get; set; }
 #if ReduxDevToolsEnabled
