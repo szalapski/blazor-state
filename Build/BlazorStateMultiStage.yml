@@ -1,12 +1,13 @@
 trigger:
 - master
+  dontnetcore.3.1
 
 pr: none
 
 variables:
-  Major: 2
+  Major: 3
   Minor: 0
-  DotNetSdkVersion: 3.0.100
+  DotNetSdkVersion: 3.1.100-preview2-014569
 
 stages:
   - stage: Test_Stage
@@ -134,6 +135,7 @@ stages:
           PatchCounterReset: $(Major).$(Minor)
           Patch: $[counter(variables.PatchCounterReset, 0)]
           Version: '$(Major).$(Minor).$(Patch)+$(DotNetSdkVersion)'
+          Version: '$(Major).$(Minor).$(Patch)-$(BuildCounter)+$(DotNetSdkVersion)'
         strategy:
           runOnce:
             deploy:
