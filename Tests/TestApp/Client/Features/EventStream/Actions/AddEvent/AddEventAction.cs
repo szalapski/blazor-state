@@ -4,9 +4,10 @@ namespace TestApp.Client.Features.EventStream
 
   internal partial class EventStreamState
   {
-    public class AddEventAction : IAction
-    {
-      public string Message { get; set; }
-    }
+    public record AddEventAction
+    (
+      string Message
+    ) : IAction
+    { };
   }
 }

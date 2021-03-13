@@ -52,17 +52,19 @@ namespace TestApp.Client.Features.EventStream
     {
       if (!(aRequest is AddEventAction)) //Skip to avoid recursion
       {
-        var addEventAction = new AddEventAction();
         string requestTypeName = aRequest.GetType().Name;
+        string message;
 
         if (aRequest is BaseRequest request)
         {
-          addEventAction.Message = $"{aTag}:{requestTypeName}:{request.CorrelationId}";
+          message = $"{aTag}:{requestTypeName}:{request.CorrelationId}";
         }
         else
         {
-          addEventAction.Message = $"{aTag}:{requestTypeName}";
+          message = $"{aTag}:{requestTypeName}";
         }
+        var addEventAction = new AddEventAction(message);
+
         await Sender.Send(addEventAction);
       }
     }
