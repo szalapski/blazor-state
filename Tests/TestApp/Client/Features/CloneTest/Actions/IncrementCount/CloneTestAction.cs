@@ -4,6 +4,6 @@ namespace TestApp.Client.Features.CloneTest
 
   internal partial class CloneTestState
   {
-    internal class CloneTestAction : IAction { }
+    internal record CloneTestAction : IAction { }
   }
 }
