@@ -37,7 +37,7 @@ namespace BlazorState.Features.Routing
       string absoluteUri = NavigationManager.ToAbsoluteUri(aLocationChangedEventArgs.Location).ToString();
       if (RouteState.Route != absoluteUri)
       {
-        Mediator.Send(new RouteState.ChangeRouteAction { NewRoute = absoluteUri });
+        Mediator.Send(new RouteState.ChangeRouteAction(NewRoute: absoluteUri));
       }
     }
   }

@@ -18,11 +18,10 @@ namespace TestApp.Client.Features.Application
     }
 
 
-    public async Task<Unit> Handle(ResetStoreAction aResetStoreAction, CancellationToken aCancellationToken)
+    public Task<Unit> Handle(ResetStoreAction aResetStoreAction, CancellationToken aCancellationToken)
     {
       Store.Reset();
-      await Sender.Send(new ChangeRouteAction { NewRoute = "/" });
-      return Unit.Value;
+      return Sender.Send(new ChangeRouteAction(NewRoute: "/"), aCancellationToken);
     }
   }
 }
