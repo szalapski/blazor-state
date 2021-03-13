@@ -4,6 +4,6 @@ namespace TestApp.Client.Features.WeatherForecast
 
   internal partial class WeatherForecastsState
   {
-    public class FetchWeatherForecastsAction : IAction { }
+    public record FetchWeatherForecastsAction : IAction { }
   }
 }
