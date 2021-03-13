@@ -14,7 +14,7 @@
 
   <!-- Common compile parameters -->
   <PropertyGroup>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
