@@ -6,7 +6,7 @@ namespace TestApp.Client.Features.Counter.Components
 
   public partial class Counter : BaseComponent
   {
-    protected async Task ButtonClick() =>
-      _ = await Mediator.Send(new IncrementCounterAction { Amount = 5 });
+    protected Task ButtonClick() =>
+      Mediator.Send(new IncrementCounterAction(Amount: 5));
   }
 }

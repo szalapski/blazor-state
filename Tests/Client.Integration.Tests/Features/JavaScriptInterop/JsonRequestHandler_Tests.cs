@@ -31,9 +31,9 @@ namespace JsonRequestHandler
 
       string requestTypeAssemblyQualifiedName = typeof(IncrementCounterAction).AssemblyQualifiedName;
       var incrementCounterAction = new IncrementCounterAction
-      {
-        Amount = 5
-      };
+      (
+        Amount: 5
+      );
 
       string requestAsJson = JsonSerializer.Serialize(incrementCounterAction, JsonSerializerOptions);
       int preActionCount = CounterState.Count;

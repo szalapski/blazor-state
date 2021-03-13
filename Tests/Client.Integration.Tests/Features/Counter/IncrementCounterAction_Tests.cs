@@ -18,9 +18,9 @@ namespace CounterState
       CounterState.Initialize(aCount: 15);
 
       var incrementCounterAction = new IncrementCounterAction
-      {
-        Amount = -2
-      };
+      (
+        Amount: -2
+      );
 
       //Act
       await Send(incrementCounterAction);
@@ -35,9 +35,9 @@ namespace CounterState
       CounterState.Initialize(aCount: 22);
 
       var incrementCounterRequest = new IncrementCounterAction
-      {
-        Amount = 5
-      };
+      (
+        Amount: 5
+      );
 
       //Act
       await Send(incrementCounterRequest);
