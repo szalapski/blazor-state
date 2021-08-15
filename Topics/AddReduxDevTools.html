@@ -8,7 +8,7 @@
     <title>Add Redux Dev Tools </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Add Redux Dev Tools ">
-    <meta name="generator" content="docfx 2.54.0.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../assets/Logo.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -89,11 +89,11 @@ This is quite handy for debugging.</p>
 <p>See example from the test app below:</p>
 <pre><code class="lang-csharp" name="Startup" title="Code Link" highlight-lines="13,21">namespace TestApp.Client
 {
-  using System.Threading.Tasks;
-  using BlazorState.Pipeline.ReduxDevTools;
   using BlazorState.Features.JavaScriptInterop;
   using BlazorState.Features.Routing;
+  using BlazorState.Pipeline.ReduxDevTools;
   using Microsoft.AspNetCore.Components;
+  using System.Threading.Tasks;
 
   public partial class App : ComponentBase
   {
@@ -101,8 +101,16 @@ This is quite handy for debugging.</p>
 #if ReduxDevToolsEnabled
     [Inject] private ReduxDevToolsInterop ReduxDevToolsInterop { get; set; }
 #endif
-    // Injected so it is created by the container. Even though the IDE says it is not used it is.
-    [Inject] private RouteManager RouteManager { get; set; }
+    [
+      System.Diagnostics.CodeAnalysis.SuppressMessage
+      (
+        &quot;CodeQuality&quot;,
+        &quot;IDE0051:Remove unused private members&quot;,
+        Justification = &quot;Injected so it is created by the container. Even though the IDE says it is not used it is.&quot;
+      )
+    ]
+    [Inject]
+    private RouteManager RouteManager { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool aFirstRender)
     {
@@ -128,7 +136,8 @@ This is quite handy for debugging.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
