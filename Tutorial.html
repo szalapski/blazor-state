@@ -145,25 +145,22 @@ The code for the class should be as follows.</p>
 </ol>
 <pre><code class="lang-csharp">namespace Sample.Client
 {
-  using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-  using Microsoft.Extensions.DependencyInjection;
   using System;
   using System.Net.Http;
   using System.Threading.Tasks;
+  using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+  using Microsoft.Extensions.DependencyInjection;
   using BlazorState;
   using System.Reflection;
-  using MediatR;
 
   public class Program
   {
     public static async Task Main(string[] args)
     {
       var builder = WebAssemblyHostBuilder.CreateDefault(args);
-      builder.RootComponents.Add&lt;App&gt;(&quot;app&quot;);
-      builder.Services.AddSingleton
-      (
-        new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) }
-      );
+      builder.RootComponents.Add&lt;App&gt;(&quot;#app&quot;);
+
+      builder.Services.AddScoped(sp =&gt; new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
       ConfigureServices(builder.Services);
 
@@ -186,6 +183,7 @@ The code for the class should be as follows.</p>
     }
   }
 }
+
 </code></pre>
 <h2 id="displaying-state-in-the-user-interface">Displaying state in the user interface</h2>
 <ol>
@@ -260,9 +258,9 @@ as follows:</li>
 <h2 id="sending-the-action-through-the-mediator-pipeline">Sending the action through the mediator pipeline</h2>
 <p>To Send the action to the pipeline when the user clicks the <code>Click me</code> button,
 In <code>Pages/Counter.razor</code> update the <code>IncrementCount</code> function as follows:</p>
-<pre><code class="lang-csharp">void IncrementCount()
+<pre><code class="lang-csharp">async Task IncrementCount()
 {
-    Mediator.Send(new CounterState.IncrementCountAction { Amount = 5 });
+  await Mediator.Send(new CounterState.IncrementCountAction { Amount = 5 });
 }
 </code></pre>
 <h2 id="handling-the-action">Handling the action</h2>
@@ -345,7 +343,6 @@ And when you navigate away from the page and back the value persists.</p>
       await ReduxDevToolsInterop.InitAsync();
       await JsonRequestHandler.InitAsync();
     }
-
   }
 }
 </code></pre>
