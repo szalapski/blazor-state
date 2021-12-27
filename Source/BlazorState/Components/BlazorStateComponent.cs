@@ -4,6 +4,9 @@ namespace BlazorState
   using Microsoft.AspNetCore.Components;
   using System;
   using System.Collections.Concurrent;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Linq.Expressions;
 
   /// <summary>
   /// A non required Base Class that injects Mediator and Store.
@@ -51,13 +54,34 @@ namespace BlazorState
     /// And returns the requested state
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
     protected T GetState<T>()
     {
       Type stateType = typeof(T);
       Subscriptions.Add(stateType, this);
       return Store.GetState<T>();
     }
+
+    /// <summary>
+    /// Place a Subscription for the calling component so that individual subscriptions can be added piecemeal
+    /// And returns the requested state
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    protected T GetStateWithPropertySubscriptions<T>(params Expression<Func<T,object>>[] propertySelectors) where T : State<T>
+    {
+      Type stateType = typeof(T);
+      Subscriptions.Add(stateType, this, propertySelectors);
+      return Store.GetState<T>();
+    }
+
+
+    // TODO idea: can we enable modifying a state that already exists via extension method?
+    //public static State<TState> ClearPropertySubscriptions<TState>(this State<TState> state)
+    //{
+    //  Subscriptions.
+    //}
+
+    private List<ParameterExpression> SubscribedProperties { get; } = new();
+
 
     public virtual void Dispose()
     {

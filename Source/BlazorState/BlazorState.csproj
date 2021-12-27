@@ -20,7 +20,7 @@
     <PackageLicenseFile>UNLICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-  
+
   <!-- Source Link see https://github.com/dotnet/sourcelink/blob/master/README.md -->
   <PropertyGroup>
     <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
@@ -54,8 +54,8 @@
     <PackageReference Include="AnyClone" Version="$(AnyCloneVersion)" />
     <PackageReference Include="MediatR" Version="$(MediatrVersion)" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="$(MediatrExtensionsMicrosoftDependencyInjectionVersion)" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="$(MicrosoftAspNetCoreComponentsWebVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsLoggingAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
     <PackageReference Include="TypeSupport" Version="$(TypeSupportVersion)" />
   </ItemGroup>
 
@@ -75,5 +75,5 @@
     <ProjectReference Include="..\BlazorState.Js\BlazorState.Js.csproj" PrivateAssets="All" />
   </ItemGroup>
   <!-- End TypeScript project-->
-  
+
 </Project>

@@ -4,6 +4,7 @@ namespace BlazorState
   using System;
   using System.Collections.Generic;
   using System.Linq;
+  using System.Linq.Expressions;
 
   public class Subscriptions
   {
@@ -40,6 +41,35 @@ namespace BlazorState
       return this;
     }
 
+    /// <summary>
+    /// Add subscriptions, but only on the specified properties.
+    /// </summary>
+    public Subscriptions Add<T>(Type aType, IBlazorStateComponent aBlazorStateComponent, params Expression<Func<T, object>>[] propertySelectors) where T:State<T>
+    {
+      // Add only once.
+      if (!BlazorStateComponentReferencesList.Any(aSubscription => aSubscription.StateType == aType && aSubscription.ComponentId == aBlazorStateComponent.Id))
+      {
+        string[] parameterNames = propertySelectors
+          .Select(tree => (tree.Body as MemberExpression)?.Member.Name)
+          .Where(n => n is not null)
+          .ToArray();
+
+        Console.WriteLine($"Subscriptions.Add {string.Join(", ", parameterNames)}");
+
+        var subscription = new Subscription(
+          aType,
+          aBlazorStateComponent.Id,
+          new WeakReference<IBlazorStateComponent>(aBlazorStateComponent),
+          parameterNames.ToArray()
+        );
+        BlazorStateComponentReferencesList.Add(subscription);
+
+      }
+
+      return this;
+    }
+
+
     public override bool Equals(object aObject) =>
       aObject is Subscriptions subscriptions &&
       EqualityComparer<ILogger>.Default.Equals(Logger, subscriptions.Logger) &&
@@ -75,11 +105,16 @@ namespace BlazorState
     public void ReRenderSubscribers(Type aType)
     {
       IEnumerable<Subscription> subscriptions = BlazorStateComponentReferencesList.Where(aRecord => aRecord.StateType == aType);
+      Console.WriteLine($"ReRenderSubscribers");
+
       foreach (Subscription subscription in subscriptions.ToList())
       {
+        Console.WriteLine($"ReRenderSubscribers {subscription.GetType().Name}");
+
         if (subscription.BlazorStateComponentReference.TryGetTarget(out IBlazorStateComponent target))
         {
           Logger.LogDebug($"ReRender ComponentId:{subscription.ComponentId} StateType.Name:{subscription.StateType.Name}");
+          Console.WriteLine($"ReRenderSubscribers {subscription.GetType().Name} target {target.GetType().Name} props {string.Join(", ", subscription.PropertyNames)}");
           target.ReRender();
         }
         else
@@ -95,16 +130,21 @@ namespace BlazorState
     private readonly struct Subscription : IEquatable<Subscription>
     {
       public WeakReference<IBlazorStateComponent> BlazorStateComponentReference { get; }
-
+      public string[] PropertyNames { get; }
       public string ComponentId { get; }
 
       public Type StateType { get; }
 
-      public Subscription(Type aStateType, string aComponentId, WeakReference<IBlazorStateComponent> aBlazorStateComponentReference)
+      public Subscription(
+        Type aStateType,
+        string aComponentId,
+        WeakReference<IBlazorStateComponent> aBlazorStateComponentReference,
+        string[] propertyNames = null)
       {
         StateType = aStateType;
         ComponentId = aComponentId;
         BlazorStateComponentReference = aBlazorStateComponentReference;
+        PropertyNames = propertyNames ?? new string[0];
       }
 
       public static bool operator !=(Subscription aLeftSubscription, Subscription aRightSubscription) => !(aLeftSubscription == aRightSubscription);
